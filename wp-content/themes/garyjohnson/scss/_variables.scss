@@ -1,15 +1,56 @@
-$themePath: '/wp-content/themes/starter/';
+$themePath: '/wp-content/themes/garyjohnson/';
+
+// fonts
+
+// montserrat
+
+@mixin montserratbold {
+ 	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
 
 
+@mixin montserratblack {
+ 	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
 
+// notoserif
 
-/*
-@mixin quatro_reg {
-  font-family: quatro, sans-serif;
+@mixin notoserifreg {
+ 	font-family: 'Noto Serif', serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
-@include quatro_reg;
 
-*/
+@mixin notoserifbold {
+ 	font-family: 'Noto Serif', serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+// sourcesans pro
+
+@mixin sourcesanssemibold {
+ 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+@mixin sourcesansbold {
+ 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+//color
+
+$black: #0a0d28;
+$gold: #c3984f;
+$orange: #e75841;
+$white: #fbf8f3;
+
