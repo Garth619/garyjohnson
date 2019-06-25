@@ -256,7 +256,21 @@ jQuery(document).ready(function($){
 
 
 
-
+	 // nav
+	 
+	 
+	 	function navTypes() {
+	     
+	     if ($(window).width() > 1450) {
+	     	  
+	     	  $('nav').addClass('desktop');
+	     		
+	     } 
+	     
+	  };
+	 	
+	 
+	 navTypes();
         
     
 

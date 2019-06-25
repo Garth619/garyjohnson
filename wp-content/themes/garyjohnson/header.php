@@ -47,13 +47,46 @@
 
 <body <?php body_class(); ?>>
 	
-	garrett
-	
 	<header>
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		<div class="header_left">
+			
+			<div class="vertical_logo">
+					
+					<a class="" href="">
+				
+						<?php echo file_get_contents("wp-content/themes/garyjohnson/images/hero_logo_vertical-01.svg"); ?>
+					
+					</a>
+				
+				</div><!-- vertical_logo -->
+				
+			</div><!-- header_left -->
+			
+			<div class="header_middle">
+				
+					<nav>
+				
+						<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+					
+					</nav>
+				
+			</div><!-- header_middle -->
+			
+			<div class="header_right">
+				
+				<a class="phone" href="tel:6062624551">(606) 262-4551</a>
+				
+				<span class="free_consultation"><strong>call for your</strong> free consultation</span><!-- free_consultation -->
+				
+			</div><!-- header_right -->
 		
 	</header>
+	
+	
+	
+	
+
 				
 
 
