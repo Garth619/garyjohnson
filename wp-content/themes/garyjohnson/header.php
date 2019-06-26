@@ -83,66 +83,7 @@
 		
 	</header>
 	
-	<div class="mega_menu">
-		
-		<div class="mega_menu_inner">
-			
-			<div class="mega_menu_col">
-				
-				<ul>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-				</ul>
-				
-			</div><!-- mega_menu_col -->
-			
-			<div class="mega_menu_col">
-				
-				<ul>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-				</ul>
-				
-			</div><!-- mega_menu_col -->
-			
-			<div class="mega_menu_col">
-				
-				<ul>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-				</ul>
-				
-			</div><!-- mega_menu_col -->
-			
-			<div class="mega_menu_col">
-				
-				<ul>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-					<li><a href="">Practice Area</a></li>
-				</ul>
-				
-			</div><!-- mega_menu_col -->
-		
-			
-		</div><!-- mega_menu_inner -->
-		
-	</div><!-- mega_menu -->
+	
 	
 	
 

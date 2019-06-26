@@ -262,9 +262,39 @@ jQuery(document).ready(function($){
 	 	function navTypes() {
 	     
 	     if ($(window).width() > 1450) {
+		     
+		     	// hover effects just on desktop
 	     	  
 	     	  $('nav').addClass('desktop');
+	     	  
+	     	  // mega menu
+	     	  
+	     	  $('header').after('<div class="mega_menu"><div class="mega_menu_inner"></div></div>');
+	     	  
+	     		$('nav ul.menu > li.menu-item-has-children > a').on('mouseover', function(e) {
+		     		
+		     		// fadein megamenu
+		     		
+		     		$('.mega_menu').fadeIn();
+		     		
+		     		// clone ul.sub-menu
+		     		
+		     		$(this).next('ul.sub-menu').clone().appendTo('.mega_menu_inner');
+		     		
+		     	});
 	     		
+	     		/*
+	     		$('nav ul.menu > li.menu-item-has-children > a').on('mouseout', function(e) {
+		     		
+		     		$('.mega_menu').fadeOut();
+	     		  
+	     		});
+*/
+	     		
+	     		
+	     		
+	     		
+
 	     } 
 	     
 	  };
