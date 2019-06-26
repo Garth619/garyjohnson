@@ -4,6 +4,14 @@ $themePath: '/wp-content/themes/garyjohnson/';
 
 // montserrat
 
+
+@mixin montserratsemibold {
+ 	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+
 @mixin montserratbold {
  	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;

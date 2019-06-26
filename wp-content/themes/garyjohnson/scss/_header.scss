@@ -5,6 +5,8 @@ header {
 	height:133px;
 	display: flex;
 	box-shadow: 0px 4px 5.6px 1.4px rgba(0, 0, 0, 0.11);
+	position: relative;
+	z-index:5;
 }
 
 
@@ -111,8 +113,7 @@ header {
 	a, span {
 		display: block;
 		text-align: right;
-		position: relative
-		;
+		position: relative;
 		top:-5px;
 	}
 	a {
@@ -133,3 +134,51 @@ header {
 	}
 }
 
+.mega_menu {
+	width:100%;
+	height:calc(100vh - 133px);
+	position: relative;
+	z-index:5;
+	padding:1px 0 0;
+}
+
+.mega_menu_inner {
+	padding:0 100px;
+	max-width:1470px;
+	margin:128px auto 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.mega_menu_col {
+	flex-basis:23%;
+	ul {
+		list-style: none;
+		li {
+			text-transform: lowercase;
+			font-size: 18px;
+			margin-bottom:19px;
+			@include montserratsemibold;
+			a {
+				color:$black;
+				display: inline-block;
+				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				&:after {
+					content:"";
+					display: block;
+					padding-bottom:8px;
+					border-bottom:4px solid transparent;
+					transition: all 200ms ease-in-out;
+				}
+				&:hover {
+					color:$gold;
+					&:after {
+						border-bottom:4px solid $gold;
+					}
+				}
+			}
+		}
+	}
+}
