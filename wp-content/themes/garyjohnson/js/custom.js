@@ -267,31 +267,70 @@ jQuery(document).ready(function($){
 	     	  
 	     	  $('nav').addClass('desktop');
 	     	  
-	     	  // mega menu
+	     	  // megamenu bg
 	     	  
-	     	  $('header').after('<div class="mega_menu"><div class="mega_menu_inner"></div></div>');
+	     	  $('header').after("<div class='mega_menu_bg'></div>");
 	     	  
-	     		$('nav ul.menu > li.menu-item-has-children > a').on('mouseover', function(e) {
+	     	  // wrap ul.sub-menu 
 		     		
-		     		// fadein megamenu
+		     	$('ul.sub-menu').wrap("<div class='sub_menu_wrap'><div class='sub_menu_inner'></div></div>");
+		     	
+		     	// spit into four columns
+		     	
+		     	$(function($) {
+				 		
+				 		var num_cols = 4,
+				 		
+				 		container = $('ul.sub-menu'),
+				 		
+				 		listItem = 'li',
+				 		
+				 		listClass = 'sub-list';
+				 		
+				 		container.each(function() {
+				 			
+				 			var items_per_col = new Array(),
+				 			
+				 			items = $(this).find(listItem),
+				 			
+				 			min_items_per_col = Math.floor(items.length / num_cols),
+				 			
+				 			difference = items.length - (min_items_per_col * num_cols);
+				 			
+				 			for (var i = 0; i < num_cols; i++) {
+				 				
+				 				if (i < difference) {
+                	
+                	items_per_col[i] = min_items_per_col + 1;
+            		} else {
+                		items_per_col[i] = min_items_per_col;
+							}
+        		}
+        
+						for (var i = 0; i < num_cols; i++) {
+            	
+            	$(this).append($('<ul ></ul>').addClass(listClass));
+							
+							for (var j = 0; j < items_per_col[i]; j++) {
+                var pointer = 0;
+                for (var k = 0; k < i; k++) {
+                    pointer += items_per_col[k];
+                }
+                
+                $(this).find('.' + listClass).last().append(items[j + pointer]);
+            }
+        	}
+    	});
+	});
+	     	  
+	     	  
+	     	  $('nav ul.menu > li.menu-item-has-children > a').on('mouseover', function(e) {
 		     		
-		     		$('.mega_menu').fadeIn();
 		     		
-		     		// clone ul.sub-menu
-		     		
-		     		$(this).next('ul.sub-menu').clone().appendTo('.mega_menu_inner');
 		     		
 		     	});
 	     		
-	     		/*
-	     		$('nav ul.menu > li.menu-item-has-children > a').on('mouseout', function(e) {
-		     		
-		     		$('.mega_menu').fadeOut();
-	     		  
-	     		});
-*/
-	     		
-	     		
+	     		     		
 	     		
 	     		
 
