@@ -260,6 +260,10 @@ jQuery(document).ready(function($){
 	 
 	 
 	 	function navTypes() {
+		 		
+		 		// splitting the sub-menus into columns causes a flash so im hiding it with opacity and visibility in the stylesheet and showing below
+		 		
+		 		$('ul.sub-menu').addClass('show');
 	     
 	     if ($(window).width() > 1450) {
 		     
@@ -337,16 +341,7 @@ jQuery(document).ready(function($){
 							$('.mega_menu_bg').removeClass('show');
 					
 					});
-	     	  
-	     	  
-	     	  
-	     	 
-		     	
-	     		
-	     		     		
-	     		
-	     		
-
+	     
 	     } 
 	     
 	  };
