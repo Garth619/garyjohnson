@@ -75,13 +75,43 @@
 			
 			<div class="header_right">
 				
-				<a class="phone" href="tel:6062624551">(606) 262-4551</a>
+				<div class="phone_consultation_wrapper">
 				
-				<span class="free_consultation"><strong>call for your</strong> free consultation</span><!-- free_consultation -->
+					<a class="phone" href="tel:6062624551">(606) 262-4551</a>
+				
+					<span class="free_consultation"><strong>call for your</strong> free consultation</span><!-- free_consultation -->
+				
+				</div><!-- phone_consultation_wrapper -->
+				
+				<div class="menu_wrapper">
+				
+				<div class="menu_bar"></div><!-- menu_bar -->
+				<div class="menu_bar"></div><!-- menu_bar -->
+				<div class="menu_bar"></div><!-- menu_bar -->
+				
+				<div class="menu_title">MENU</div><!-- menu_bar -->
+				
+			</div><!-- menu_wrapper -->
 				
 			</div><!-- header_right -->
-		
+			
 	</header>
+	
+	<div class="tablet_nav">
+		
+		<div class="tablet_nav_inner">
+			
+			<div class="tablet_col tablet_nav_col_one"></div><!-- tablet_col -->
+			
+			<div class="tablet_col tablet_nav_col_two">
+				
+				<div class="tablet_sub_nav"></div><!-- tablet_sub_nav -->
+				
+			</div><!-- tablet_col -->
+			
+		</div><!-- tablet_nav_inner -->
+		
+	</div><!-- tablet_nav -->
 	
 	
 <!-- 	<div class="mega_menu"><div class="mega_menu_inner"></div></div> -->

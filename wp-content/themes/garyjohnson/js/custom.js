@@ -265,7 +265,7 @@ jQuery(document).ready(function($){
 		 		
 		 		$('ul.sub-menu').addClass('show');
 	     
-	     if ($(window).width() > 1450) {
+	     if ($(window).width() > 1650) {
 		     
 		     	// hover effects just on desktop
 	     	  
@@ -342,7 +342,23 @@ jQuery(document).ready(function($){
 					
 					});
 	     
-	     } 
+	     }
+	     
+	     if ($(window).width() <= 1650) {
+		     
+		     $('.header_middle').addClass('hide');
+		     
+		     $('nav').clone().appendTo('.tablet_nav_col_one');
+		     
+		     $('.tablet_nav_col_one ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+			     
+			     $('.tablet_sub_nav').empty();
+		       
+					 $(this).next('ul.sub-menu').clone().appendTo('.tablet_sub_nav').fadeIn();
+		     	
+		     	});
+		     
+	     }
 	     
 	  };
 	 	
