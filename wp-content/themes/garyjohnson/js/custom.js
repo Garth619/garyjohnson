@@ -318,17 +318,30 @@ jQuery(document).ready(function($){
                 }
                 
                 $(this).find('.' + listClass).last().append(items[j + pointer]);
-            }
-        	}
-    	});
-	});
+            		}
+        			}
+    				});
+					});
+	     	  
+	     	  // show hide menu bg (needs to be seperate bc it needs to be tucked under header with the drop showdow effect
+	     	  
+	     	  $("nav ul.menu > li.menu-item-has-children").hover(
+	     	  
+	     	  		function() {
+			 			
+			 					$('.mega_menu_bg').addClass('show')
+  					}, 
+  						
+  						function() {
+							
+							$('.mega_menu_bg').removeClass('show');
+					
+					});
 	     	  
 	     	  
-	     	  $('nav ul.menu > li.menu-item-has-children > a').on('mouseover', function(e) {
-		     		
-		     		
-		     		
-		     	});
+	     	  
+	     	 
+		     	
 	     		
 	     		     		
 	     		
