@@ -357,6 +357,18 @@ jQuery(document).ready(function($){
 					 $(this).next('ul.sub-menu').clone().appendTo('.tablet_sub_nav').fadeIn();
 		     	
 		     	});
+		     	
+		     	$('.tablet_nav_col_one ul.menu > li.current-menu-ancestor > ul.sub-menu').clone().appendTo('.tablet_sub_nav').fadeIn();
+		     	
+		     	$('.open_close_wrapper').on('click', function(e) {
+			     	
+			     	$('.tablet_nav').slideToggle(400);
+			     	
+			     	$('.menu_wrapper').toggleClass('show');
+			     	
+			     	$('.close').toggleClass('hide');
+		     	  
+		     	});
 		     
 	     }
 	     

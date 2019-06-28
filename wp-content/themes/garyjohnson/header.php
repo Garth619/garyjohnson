@@ -83,15 +83,21 @@
 				
 				</div><!-- phone_consultation_wrapper -->
 				
-				<div class="menu_wrapper">
+				<div class="open_close_wrapper">
 				
-				<div class="menu_bar"></div><!-- menu_bar -->
-				<div class="menu_bar"></div><!-- menu_bar -->
-				<div class="menu_bar"></div><!-- menu_bar -->
+					<div class="menu_wrapper show">
 				
-				<div class="menu_title">MENU</div><!-- menu_bar -->
+					<div class="menu_bar"></div><!-- menu_bar -->
+					<div class="menu_bar"></div><!-- menu_bar -->
+					<div class="menu_bar"></div><!-- menu_bar -->
+				
+					<div class="menu_title">MENU</div><!-- menu_bar -->
 				
 			</div><!-- menu_wrapper -->
+			
+			<div class="close hide"></div><!-- close -->
+			
+			</div><!-- open_close_wrapper -->
 				
 			</div><!-- header_right -->
 			
