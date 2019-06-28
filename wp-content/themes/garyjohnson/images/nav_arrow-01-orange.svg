@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.9 9.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e75841;
+      }
+    </style>
+  </defs>
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="nav_arrow" data-name="nav arrow">
+      <polygon class="cls-1" points="10.7 0 7 4.8 3.2 0 0 0 5.3 7 7 9.1 8.6 7 13.9 0 10.7 0"/>
+    </g>
+  </g>
+</svg>
