@@ -54,8 +54,18 @@
 			<div class="vertical_logo">
 					
 					<a class="" href="">
+						
+						<div class="desktop_logo">
 				
-						<?php echo file_get_contents("wp-content/themes/garyjohnson/images/hero_logo_vertical-01.svg"); ?>
+							<?php echo file_get_contents("wp-content/themes/garyjohnson/images/hero_logo_vertical-01.svg"); ?>
+						
+						</div><!-- desktop_logo -->
+						
+						<div class="mobile_logo">
+				
+							<?php echo file_get_contents("wp-content/themes/garyjohnson/images/hero_logo_horizontal-01.svg"); ?>
+						
+						</div><!-- desktop_logo -->
 					
 					</a>
 				
@@ -105,6 +115,8 @@
 	
 	<div class="tablet_nav">
 		
+		<div class="mobile_close"></div><!-- mobile_close -->
+		
 		<div class="tablet_nav_inner">
 			
 			<div class="tablet_col tablet_nav_col_one"></div><!-- tablet_col -->
@@ -119,13 +131,4 @@
 			
 		</div><!-- tablet_nav_inner -->
 		
-	</div><!-- tablet_nav -->
-	
-	
-<!-- 	<div class="mega_menu"><div class="mega_menu_inner"></div></div> -->
-	
-
-				
-
-
-			
+	</div><!-- tablet_nav -->			
