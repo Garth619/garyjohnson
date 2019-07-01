@@ -713,6 +713,7 @@ header {
 	.tablet_nav {
 		z-index:5;
 		top: 107px;
+		height: calc(100vh - 107px);
 		padding: 88px 0 50px;
 	}
 	
