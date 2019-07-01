@@ -36,9 +36,51 @@
 	
 	<div class="sec_one_right">
 		
+		<div class="sec_one_video_wrapper">
+			
+			<div class="sec_one_single_vid">
+				
+				<a class="" href="">
+					
+					<div class="sec_one_video_img">
+						
+						<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/header_video_img_01.jpg"/><!-- video_thumb -->
+						
+						<div class="sec_one_video_overlay">
+							
+							<div class="play_button"></div><!-- play_button -->
+							
+						</div><!-- sec_one_video_overlay -->
+						
+					</div><!-- sec_one_video_img -->
+					
+				</a>
+				
+			</div><!-- sec_one_single_vid -->
+			
+			<div class="sec_one_single_vid">
+				
+				<a class="" href="">
+					
+					<div class="sec_one_video_img">
+						
+						<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/header_video_img_02.jpg"/><!-- video_thumb -->
+						
+						<div class="sec_one_video_overlay">
+							
+							<img src="<?php bloginfo('template_directory');?>/images/header_icon-01.svg"/>
+							
+						</div><!-- sec_one_video_overlay -->
+						
+					</div><!-- sec_one_video_img -->
+					
+				</a>
+				
+			</div><!-- sec_one_single_vid -->
+			
+		</div><!-- sec_one_video_wrapper -->
 		
 	</div><!-- sec_one_right -->
 
-	
 </section><!-- section_one -->
 
