@@ -54,6 +54,12 @@
 						
 					</div><!-- sec_one_video_img -->
 					
+					<span class="sec_one_video_title">About Our Firm</span><!-- sec_one_video_title -->
+					
+					<span class="sec_one_video_description">We blend strong passionate advocacy with friendly compassionate client service.</span><!-- sec_one_video_description -->
+					
+					<span class="click_to_watch">Click to watch</span><!-- click_to_watch -->
+					
 				</a>
 				
 			</div><!-- sec_one_single_vid -->
@@ -73,6 +79,13 @@
 						</div><!-- sec_one_video_overlay -->
 						
 					</div><!-- sec_one_video_img -->
+					
+					<span class="sec_one_video_title">Judo Law</span><!-- sec_one_video_title -->
+					
+					<span class="sec_one_video_description">Introducing the Judo Law origins and concept.</span><!-- sec_one_video_description -->
+					
+					<span class="click_to_watch">Click to watch</span><!-- click_to_watch -->
+
 					
 				</a>
 				
