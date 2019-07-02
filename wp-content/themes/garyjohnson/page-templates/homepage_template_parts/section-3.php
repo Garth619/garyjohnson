@@ -2,7 +2,7 @@
 	
 	<div class="sec_three_inner">
 		
-		<h1 class="sec_three_header">kentucky personal injury attorneys</h1><!-- section_three_header -->
+		<h1 class="sec_three_header">kentucky personal injury attorneys</h1><!-- section_three_header -->
 		
 		<span class="sec_three_description">At the law firm of Gary C. Johnson, P.S.C., we provide comprehensive client service in the aftermath of serious accidents. We work hard to maximize the financial value of your legal claims and also work closely with you and your family to help you meet the personal challenges that can result from an injury or a death in the family.</span><!-- sec_three_description -->
 		
@@ -42,7 +42,7 @@
 						
 						<div class="sec_three_quote">
 							
-							<strong>“We are driven by</strong><strong> the passion to work</strong> tirelessly for
+							<strong>“We are driven by</strong><strong>the passion to work</strong> tirelessly for
 							our clients to get them back on their feet and the <strong>results they deserve.”</strong>
 						
 						</div><!-- sec_three_quote -->
