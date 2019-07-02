@@ -27,11 +27,24 @@ $themePath: '/wp-content/themes/garyjohnson/';
 
 // notoserif
 
+
+// had to self host this because google isn't hpsting this one correctly!!
+
+
+@font-face {
+    font-family: 'NotoSerif';
+    src: url(#{$themePath}fonts/NotoSerif.woff2) format('woff2'),
+        url(#{$themePath}fonts/NotoSerif.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @mixin notoserifreg {
- 	font-family: 'Noto Serif', serif;
+ 	font-family: 'NotoSerif';
 	font-weight: 400;
 	font-style: normal;
 }
+
 
 
 @mixin notoserifbold {

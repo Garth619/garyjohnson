@@ -49,6 +49,27 @@ h1,h2,h3,h4 {
     opacity: 1; }
 
 
+
+
+.content {
+	font-size: 18px;
+	line-height: 34px;
+	@include sourcesanssemibold;
+	h2 {
+		color:$gold;
+		font-size: 23px;
+		line-height: 34px;
+		padding-top:32px;
+		padding-bottom:18px;
+		@include sourcesansbold;
+	}
+	p {
+		margin-bottom:35px;
+	}
+}
+
+
+
 @media screen and (max-width: 767px) {
 	
 	

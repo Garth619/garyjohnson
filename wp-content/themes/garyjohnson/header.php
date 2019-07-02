@@ -31,7 +31,7 @@
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,900|Noto+Serif:400,700|Source+Sans+Pro:600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,900|Noto+Serif:400,400i,700|Source+Sans+Pro:600,700&display=swap');
 
 <?php the_field( 'review_css','option'); ?>
 

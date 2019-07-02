@@ -475,6 +475,30 @@ $('.sec_one_video_wrapper').slick({
 	]
  });
  
+ 
+ $('.sec_two_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	mobileFirst:true,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   },
+   {
+      breakpoint: 1360,
+      settings: "unslick"
+   }
+	]
+ });
+ 
+ 
 
 
 /*

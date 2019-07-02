@@ -1,0 +1,157 @@
+
+#section_three {
+	
+}
+
+.sec_three_inner {
+	padding:140px 0;
+}
+
+
+h1.sec_three_header {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 50px;
+	letter-spacing: 0.2em;
+	line-height: 64px;
+	max-width:800px;
+	margin:0 auto;
+	@include montserratblack;
+}
+
+
+span.sec_three_description {
+	display: block;
+	color:$gold;
+	font-size: 24px;
+	line-height: 43px;
+	max-width: 895px;
+	margin:33px auto 0;
+	text-align: center;
+	@include sourcesansbold;
+}
+
+
+.sec_three_top_content_wrapper {
+	max-width:1530px;
+	margin:160px auto 0;
+	display: flex;
+}
+
+.sec_three_top_content {
+	padding-top:42px;
+	flex-grow:1;
+	padding-right:13%;
+	&:before {
+		content:"";
+		display: block;
+		width:100%;
+		height:5px;
+		background: $orange;
+		margin-bottom:32px;
+	
+	}
+}
+
+
+.sec_three_top_img {
+	flex-shrink:0;
+	flex-basis:645px;
+	position: relative;
+	.sec_three_top_img_inner {
+		position: relative;
+		img {
+			max-width:100%;
+			height:auto;
+			display: block;
+		}
+		a.meet_attorneys_button {
+			display: inline-block;
+			background: $orange;
+			position: absolute;
+			bottom:0;
+			right:0;
+			color:#fff;
+			text-decoration: none;
+			font-size: 16px;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			padding:27px 86px;
+			transition: all 200ms ease-in-out;
+			@include montserratblack;
+			&:hover {
+				background: $gold;
+			}
+		}
+	}
+}
+
+
+.sec_three_bottom_content_wrapper {
+	display: flex;
+	margin-top:165px;
+	justify-content: space-between;
+}
+
+.sec_three_blockquote {
+	flex-basis:44%;
+	max-width:846px;
+	flex-shrink:0;
+	margin-top:9px;
+}
+
+.sec_three_blockquote_inner {
+	width:100%;
+	padding:107px 40px 130px 24.5%;
+}
+
+
+.sec_three_blockquote_content {
+	max-width: 560px;
+	.sec_three_quote {
+		font-size: 45px;
+		line-height: 76px;
+		@include montserratbold;
+		strong {
+			position: relative;
+			display: inline-block;
+			&:after {
+				content:"";
+				display: block;
+				width:100%;
+				height:6px;
+				background: $orange;
+				position: absolute;
+				top:68px;
+				left:0;
+			}
+		}
+	}
+	span.blockquote_name {
+		display: block;
+		margin-top:52px;
+		text-transform: uppercase;
+		color:$gold;
+		font-size: 16px;
+		letter-spacing: 0.2em;
+		@include montserratblack;
+	}
+}
+
+
+.sec_three_bottom_content {
+	padding-left:11%;
+	padding-right:10.1%;
+	&:before {
+		content:"";
+		display: block;
+		width:100%;
+		height:5px;
+		background: $orange;
+		margin-bottom:47px;
+	}
+	h2.hack {
+		padding-top:0;
+	}
+}
+
