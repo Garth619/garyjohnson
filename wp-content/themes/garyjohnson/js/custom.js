@@ -458,7 +458,28 @@ jQuery(document).ready(function($){
 --------------------------------------------------------------------------------------- */
 
 
+
+$('.sec_one_video_wrapper').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	mobileFirst:true,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1066,
+      settings: "unslick"
+     },
+   
+	]
+ });
+ 
+
+
 /*
+
+
 $('.sec_three_slider').slick({
   infinite: true,
   slidesToShow: 6,
