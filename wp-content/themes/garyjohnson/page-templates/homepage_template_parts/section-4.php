@@ -26,7 +26,25 @@
 			
 			<div class="sec_four_hover">
 				
-				<div class="sec_four_hover_inner"></div><!-- sec_four_hover_inner -->
+				<a class="" href="">
+				
+				<div class="sec_four_hover_inner">
+					
+					<div class="sec_four_hover_description_wrapper">
+				  
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  
+				  </div><!-- sec_four_hover_description_wrapper -->
+				  
+				  <div class="view_sp_button_wrapper">
+				  
+				  	<span class="view_sp_button">View All Results</span><!-- view_all_results -->
+				  
+				  </div><!-- view_sp_button_wrapper -->
+					
+				</div><!-- sec_four_hover_inner -->
+				
+				</a>
 				
 			</div><!-- sec_four_hover -->
 			
@@ -54,7 +72,25 @@
 			
 			<div class="sec_four_hover">
 				
-				<div class="sec_four_hover_inner"></div><!-- sec_four_hover_inner -->
+				<a class="" href="">
+				
+				<div class="sec_four_hover_inner">
+					
+					<div class="sec_four_hover_description_wrapper">
+				  
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  
+				  </div><!-- sec_four_hover_description_wrapper -->
+				  
+				  <div class="view_sp_button_wrapper">
+				  
+				  	<span class="view_sp_button">View All Results</span><!-- view_all_results -->
+				  
+				  </div><!-- view_sp_button_wrapper -->
+					
+				</div><!-- sec_four_hover_inner -->
+				
+				</a>
 				
 			</div><!-- sec_four_hover -->
 			
@@ -82,7 +118,25 @@
 			
 			<div class="sec_four_hover">
 				
-				<div class="sec_four_hover_inner"></div><!-- sec_four_hover_inner -->
+				<a class="" href="">
+				
+				<div class="sec_four_hover_inner">
+					
+					<div class="sec_four_hover_description_wrapper">
+				  
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  
+				  </div><!-- sec_four_hover_description_wrapper -->
+				  
+				  <div class="view_sp_button_wrapper">
+				  
+				  	<span class="view_sp_button">View All Results</span><!-- view_all_results -->
+				  
+				  </div><!-- view_sp_button_wrapper -->
+					
+				</div><!-- sec_four_hover_inner -->
+				
+				</a>
 				
 			</div><!-- sec_four_hover -->
 			
@@ -110,7 +164,25 @@
 			
 			<div class="sec_four_hover">
 				
-				<div class="sec_four_hover_inner"></div><!-- sec_four_hover_inner -->
+				<a class="" href="">
+				
+				<div class="sec_four_hover_inner">
+					
+					<div class="sec_four_hover_description_wrapper">
+				  
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  
+				  </div><!-- sec_four_hover_description_wrapper -->
+				  
+				  <div class="view_sp_button_wrapper">
+				  
+				  	<span class="view_sp_button">View All Results</span><!-- view_all_results -->
+				  
+				  </div><!-- view_sp_button_wrapper -->
+					
+				</div><!-- sec_four_hover_inner -->
+				
+				</a>
 				
 			</div><!-- sec_four_hover -->
 			

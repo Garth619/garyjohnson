@@ -1,11 +1,10 @@
 #section_four {
 	padding:44px 0;
-	background: pink;
 }
 
 .sec_four_inner {
 	background: $blue;
-	height:818px;
+
 }
 
 .sec_four_slider {
@@ -16,13 +15,14 @@
 .sec_four_slide {
 	flex-basis:25%;
 	text-align: center;
+	position: relative;
+	height:818px;
 }
 
 
 
 .sec_four_reg {
 	.sec_four_reg_inner {
-		position: relative;
 		.sec_four_svg {
 			width:100%;
 			position: absolute;
@@ -81,3 +81,95 @@
 		}
 	}
 }
+
+
+
+
+.sec_four_hover {
+	height:100%;
+	width:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	opacity: 0;
+	transition: all 200ms ease-in-out;
+	a {
+			text-decoration: none;
+		}
+	&:after {
+		content:"";
+		display: block;
+		background: $orange;
+		width:100%;
+		height: 100%;
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+		left:0;
+		z-index:-1;
+		box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0);
+		transition: opacity 200ms linear, height 700ms cubic-bezier(.17,.66,.34,.98);;
+		opacity: 0;
+	}
+	.sec_four_hover_inner {
+		.sec_four_hover_description_wrapper {
+			position: absolute;
+			width:100%;
+			height:575px;
+			bottom:240px;
+			left:0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			span.sec_four_hover_description {
+				color:#fff;
+				font-size: 20px;
+				line-height: 40px;
+				display: block;
+				max-width: 355px;
+				margin:35px auto 0;
+				@include sourcesansbold;
+			}
+		}
+		.view_sp_button_wrapper {
+			position: absolute;
+			bottom:105px;
+			left:0;
+			width:100%;
+			span.view_sp_button {
+				background: #fff;
+				display: inline-block;
+				text-transform: lowercase;
+				text-transform: uppercase;
+				text-decoration: none;
+				color:$gold;
+				font-size: 16px;
+				padding:34px 68px;
+				letter-spacing: 0.2em;
+				transition: all 200ms ease-in-out;
+				@include montserratblack;
+			}
+		}
+	}
+}
+
+
+.sec_four_slide {
+	&:hover {
+		.sec_four_hover {
+			opacity: 1;
+			&:after {
+				opacity: 1;
+				height:calc(100% + 88px);
+				box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.44);
+			}
+		}
+	}
+}
+
+
+
+
+
+ 
