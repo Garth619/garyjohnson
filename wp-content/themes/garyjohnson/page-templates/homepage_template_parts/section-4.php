@@ -20,6 +20,8 @@
 					
 					<span class="sp_type">Gas Explosion</span><!-- sp_type -->
 					
+					<span class="sec_four_reg_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span><!-- sec_four_reg_description -->
+					
 				</div><!-- sec_four_reg_inner -->
 				
 			</div><!-- sec_four_reg -->
@@ -32,7 +34,7 @@
 					
 					<div class="sec_four_hover_description_wrapper">
 				  
-				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span>
 				  
 				  </div><!-- sec_four_hover_description_wrapper -->
 				  
@@ -66,6 +68,9 @@
 					
 					<span class="sp_type">Medical Malprctice</span><!-- sp_type -->
 					
+					<span class="sec_four_reg_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span><!-- sec_four_reg_description -->
+
+					
 				</div><!-- sec_four_reg_inner -->
 				
 			</div><!-- sec_four_reg -->
@@ -78,7 +83,7 @@
 					
 					<div class="sec_four_hover_description_wrapper">
 				  
-				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted regarding these claims resulted  in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span>
 				  
 				  </div><!-- sec_four_hover_description_wrapper -->
 				  
@@ -112,6 +117,9 @@
 					
 					<span class="sp_type">Auto Accident</span><!-- sp_type -->
 					
+					<span class="sec_four_reg_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span><!-- sec_four_reg_description -->
+
+					
 				</div><!-- sec_four_reg_inner -->
 				
 			</div><!-- sec_four_reg -->
@@ -124,7 +132,7 @@
 					
 					<div class="sec_four_hover_description_wrapper">
 				  
-				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span>
 				  
 				  </div><!-- sec_four_hover_description_wrapper -->
 				  
@@ -158,6 +166,9 @@
 					
 					<span class="sp_type">Railroad Negligence</span><!-- sp_type -->
 					
+					<span class="sec_four_reg_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span><!-- sec_four_reg_description -->
+
+					
 				</div><!-- sec_four_reg_inner -->
 				
 			</div><!-- sec_four_reg -->
@@ -170,7 +181,7 @@
 					
 					<div class="sec_four_hover_description_wrapper">
 				  
-				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was $1,000,000.</span>
+				  	<span class="sec_four_hover_description">The trial regarding these claims resulted in a jury verdict of $8,063,000 with 75 percent of the fault being placed on the OB/GYN. The case was eventually settled post-trial for the amount of the doctor's insurance coverage, which was&nbsp;$1,000,000.</span>
 				  
 				  </div><!-- sec_four_hover_description_wrapper -->
 				  

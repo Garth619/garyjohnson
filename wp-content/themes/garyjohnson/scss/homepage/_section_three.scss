@@ -4,7 +4,7 @@
 }
 
 .sec_three_inner {
-	padding:140px 0 200px;
+	padding:140px 0 95px;
 }
 
 
@@ -221,7 +221,7 @@ span.sec_three_description {
 	
 	
 	.sec_three_inner {
-    padding: 137px 0 200px;
+    padding: 137px 0 95px;
 	}
 	
 
@@ -298,12 +298,16 @@ span.sec_three_description {
 	.sec_three_top_content_wrapper {
 		display: block;
 		margin: 68px auto 0;
+		max-width:1100px;
 		padding-left:87px;
 		padding-right:87px;
 	}
 	
 		.sec_three_top_content {
 			padding-right:0;
+			
+			margin-left:auto;
+			margin-right:auto;
 		}
 	
 	
@@ -350,8 +354,11 @@ span.sec_three_description {
 	
 	.sec_three_bottom_content {
 		margin-top:115px;
+		margin-left:auto;
+		margin-right:auto;
 		padding-left:87px;
 		padding-right:87px;
+		max-width:1100px;
 	}
 	
 	
