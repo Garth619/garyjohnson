@@ -62,9 +62,9 @@
 					
 					</div><!-- sec_four_svg -->
 					
-					<span class="sp_amount">$270M</span><!-- sp_amount -->
+					<span class="sp_amount">$8M</span><!-- sp_amount -->
 					
-					<span class="sp_type">Gas Explosion</span><!-- sp_type -->
+					<span class="sp_type">Medical Malprctice</span><!-- sp_type -->
 					
 				</div><!-- sec_four_reg_inner -->
 				
@@ -108,9 +108,9 @@
 					
 					</div><!-- sec_four_svg -->
 					
-					<span class="sp_amount">$270M</span><!-- sp_amount -->
+					<span class="sp_amount">6.20M</span><!-- sp_amount -->
 					
-					<span class="sp_type">Gas Explosion</span><!-- sp_type -->
+					<span class="sp_type">Auto Accident</span><!-- sp_type -->
 					
 				</div><!-- sec_four_reg_inner -->
 				
@@ -154,9 +154,9 @@
 					
 					</div><!-- sec_four_svg -->
 					
-					<span class="sp_amount">$270M</span><!-- sp_amount -->
+					<span class="sp_amount">$5M</span><!-- sp_amount -->
 					
-					<span class="sp_type">Gas Explosion</span><!-- sp_type -->
+					<span class="sp_type">Railroad Negligence</span><!-- sp_type -->
 					
 				</div><!-- sec_four_reg_inner -->
 				

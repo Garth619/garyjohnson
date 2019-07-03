@@ -113,6 +113,7 @@
 		opacity: 0;
 	}
 	.sec_four_hover_inner {
+		padding:0 35px;
 		.sec_four_hover_description_wrapper {
 			position: absolute;
 			width:100%;
@@ -137,6 +138,7 @@
 			bottom:105px;
 			left:0;
 			width:100%;
+			padding:0 50px;
 			span.view_sp_button {
 				background: #fff;
 				display: inline-block;
@@ -144,8 +146,9 @@
 				text-transform: uppercase;
 				text-decoration: none;
 				color:$gold;
+				width:357px;
 				font-size: 16px;
-				padding:34px 68px;
+				padding:34px 0px;
 				letter-spacing: 0.2em;
 				transition: all 200ms ease-in-out;
 				@include montserratblack;
@@ -169,6 +172,8 @@
 }
 
 
+
+@media screen and (max-width: 1450px) {} /* Media Query */
 
 
 
