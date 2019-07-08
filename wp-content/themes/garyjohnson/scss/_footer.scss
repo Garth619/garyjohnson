@@ -141,22 +141,77 @@ footer {
 
 
 .footer_location_wrapper {
-	height:4000px;
+	padding:130px 102px 100px
 }
 
 .footer_location_inner {
 	display: flex;
 	max-width:1515px;
-	margin:0 auto;
+	margin:0px auto;
 	justify-content: space-between;
 }
 
 .location_col {
 	flex-basis:20%;
-	height:300px;
-	background: $blue;
+	span {
+		display: block;
+		font-size:18px;
+		line-height: 28px;
+		color:#2c2e3e;
+		@include montserratbold;
+	}
 }
 
+
+span.location_col_title {
+	color:$gold;
+	text-transform: uppercase;
+	font-size: 26px;
+	letter-spacing: 0.2em;
+	margin-bottom:33px;
+	@include montserratblack;
+}
+
+
+span.street_address, span.po_box_address {
+	margin-bottom:28px;
+}
+
+
+span.phone_title {
+	color:$gold;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 0.2em;
+	margin-bottom:0;
+	@include montserratblack;
+}
+
+a.footer_phone {
+	font-size:18px;
+	line-height: 28px;
+	color:#2c2e3e;
+	display: block;
+	text-decoration: none;
+	@include montserratbold;
+}
+
+a.get_directions {
+	color:$orange;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: lowercase;
+	font-size: 17px;
+	margin-top:45px;
+	padding-bottom:20px;
+	border-bottom:4px solid $orange;
+	@include montserratblack;
+}
+
+
+a.locations_button {
+	display: none;
+}
 
 
 @media screen and (max-width: 1450px) {
@@ -181,6 +236,12 @@ footer {
 		margin: 124px 0 0;
 		flex-basis:auto;
 		flex-grow:1;
+	}
+	
+	
+	
+	.footer_location_wrapper {
+		padding:107px 100px 93px;
 	}
 	
 	
@@ -220,8 +281,22 @@ footer {
 	.footer_form_inner {
 		display: block;
 	}
-
 	
+	.footer_location_wrapper {
+		padding: 95px 117px 93px;
+	}
+
+	.footer_location_inner {
+		flex-wrap:wrap;
+		max-width: 539px;
+		.location_col {
+			flex-basis: 40%;
+			margin-bottom:100px;
+			&:nth-last-of-type(-n + 2) {
+				margin-bottom:0;
+			}
+		}
+	}
 	
 	
 } /* Media Query */
@@ -270,6 +345,40 @@ footer {
 	.footer_form_wrapper {
 		padding-bottom:0;
 	}
+	
+	.footer_location_wrapper {
+    padding: 65px 42px 48px;
+	}
+	
+	
+	.footer_location_inner {
+		display: block;
+		.location_col {
+			display: none;
+			&:first-of-type {
+				display: block;
+				text-align: center;
+				margin-bottom: 50px;
+			}
+		}
+	}
+	
+	a.locations_button {
+		width:100%;
+		display: block;
+		text-align: center;
+		max-width:321px;
+		margin:0 auto;
+		background: $orange;
+		color:#fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 16px;
+		letter-spacing: 0.2em;
+		padding:27px 20px;
+		@include montserratblack;
+	}
+
 	
 	
 	
