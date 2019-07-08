@@ -501,6 +501,28 @@ $('.sec_one_video_wrapper').slick({
  
 
 
+
+$('.sec_four_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	adaptiveHeight: true,
+	mobileFirst:true,
+	dots:true,
+	fade:true,
+	responsive: [
+    {
+      breakpoint: 1300,
+      settings: "unslick"
+     },
+  ]
+ });
+
+
+
+
+
 /*
 
 

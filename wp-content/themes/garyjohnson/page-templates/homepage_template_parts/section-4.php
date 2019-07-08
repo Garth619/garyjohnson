@@ -203,4 +203,6 @@
 		
 	</div><!-- sec_four_inner -->
 	
+	<a class="sec_four_view_all" href="">View All Results</a><!-- sec_four_view_all -->
+	
 </section><!-- section_four -->
