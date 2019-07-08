@@ -29,8 +29,24 @@
 		</div><!-- footer_form_inner -->
 		
 	</div><!-- footer_form_wrapper -->
-		
-</footer>
+	
+	<div class="footer_location_wrapper" style="background:url(<?php bloginfo('template_directory');?>/images/light-grey-terrazzo.png) top left repeat">
+			
+			<div class="footer_location_inner">
+				
+				<div class="location_col"></div><!-- location_col -->
+				
+				<div class="location_col"></div><!-- location_col -->
+				
+				<div class="location_col"></div><!-- location_col -->
+				
+				<div class="location_col"></div><!-- location_col -->
+				
+			</div><!-- footer_location_inner -->
+			
+		</div><!-- footer_location_wrapper -->
+
+	</footer>
 
 
 <?php wp_footer();?>
