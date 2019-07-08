@@ -2,7 +2,7 @@
 	
 	<div class="sec_five_inner">
 		
-		<h2 class="sec_five_inner_header">lorem ipsum dol sit ametconsec</h2><!-- sec_five_inner -->
+		<h2 class="sec_five_inner_header">lorem ipsum dol sit amet con sec</h2><!-- sec_five_inner -->
 		
 		<div class="sec_five_container">
 			
