@@ -89,4 +89,22 @@
 			
 		</div><!-- sidebar_box -->
 		
+		<div class="small_sidebar_box">
+			
+			<div class="small_sidebar_inner">
+				
+				<span class="small_sidebar_title">About Our Firm</span><!-- small_sidebar_title -->
+				
+				<div class="small_sidebar_video">
+					
+					<div class="play_button"></div><!-- play_button -->
+				
+					<img src="<?php bloginfo('template_directory');?>/images/header_video_img_01.jpg"/>
+				
+				</div><!-- small_sidebar_video -->
+				
+			</div><!-- small_sidebar_inner -->
+			
+		</div><!-- small_sidebar_box -->
+		
 	</div><!-- sidebar_wrapper -->

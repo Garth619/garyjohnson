@@ -53,7 +53,7 @@
 			
 			<div class="vertical_logo">
 					
-					<a class="" href="">
+					<a class="" href="<?php bloginfo('url');?>">
 						
 						<div class="desktop_logo">
 				
