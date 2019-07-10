@@ -1,3 +1,10 @@
+<div class="sidebar_wrapper">
+		
+		<div class="sidebar_box">
+			
+			<div class="sidebar_box_inner">
+
+
 <?php
 				
 				if ( get_field('sidebar_menu') ){ //use same classes as widgets ?>
@@ -76,3 +83,10 @@
     	}
 	
 	};?>
+	
+	
+	</div><!-- sidebar_box_inner -->
+			
+		</div><!-- sidebar_box -->
+		
+	</div><!-- sidebar_wrapper -->

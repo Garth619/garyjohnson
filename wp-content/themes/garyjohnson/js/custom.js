@@ -6,6 +6,9 @@
 jQuery(document).ready(function($){
 	
 
+
+		$('body').addClass('ready');
+
 	
 	 /* Modernizr - check if browser supports webp for section_one. 
      --------------------------------------------------------------------------------------- */
@@ -263,7 +266,7 @@ jQuery(document).ready(function($){
 		 		
 		 		// splitting the sub-menus into columns causes a flash so im hiding it with opacity and visibility in the stylesheet and showing below
 		 		
-		 		$('ul.sub-menu').addClass('show');
+		 		$('nav ul.sub-menu').addClass('show');
 	     
 	     if ($(window).width() > 1650) {
 		     
@@ -277,7 +280,7 @@ jQuery(document).ready(function($){
 	     	  
 	     	  // wrap ul.sub-menu 
 		     		
-		     	$('ul.sub-menu').wrap("<div class='sub_menu_wrap'><div class='sub_menu_inner'></div></div>");
+		     	$('nav ul.sub-menu').wrap("<div class='sub_menu_wrap'><div class='sub_menu_inner'></div></div>");
 		     	
 		     	// spit into four columns
 		     	
@@ -285,7 +288,7 @@ jQuery(document).ready(function($){
 				 		
 				 		var num_cols = 4,
 				 		
-				 		container = $('ul.sub-menu'),
+				 		container = $('nav ul.sub-menu'),
 				 		
 				 		listItem = 'li',
 				 		
@@ -570,6 +573,16 @@ $('.sec_three_slider').slick({
 
 
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
+
+
+//sidebars
+
+
+$('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+  
+	$(this).next('ul.sub-menu').slideToggle();
+
+});
 
 
   
