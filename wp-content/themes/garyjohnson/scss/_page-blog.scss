@@ -1,5 +1,30 @@
 
 
+.sidebar_wrapper.blog {
+	.sidebar_box {
+		margin-bottom:85px;
+		ul {
+			li {
+				a {
+					span {
+						display: block;
+					}
+					span.sidebar_post_date {
+						text-transform: uppercase;
+						color:$gold;
+						font-size: 14px;
+						letter-spacing: 0.1em;
+						@include montserratblack;
+					}
+					span.sidebar_post_title {
+						
+					}
+				}
+			}
+		}
+	}
+}
+
 
 
 .blog_feed {
@@ -8,13 +33,18 @@
 
 
 .blog_post {
+	margin-bottom:95px;
 	h2 {
 		font-size: 44px;
 		line-height: 54px;
 		@include montserratblack;
 		a {
 			color:$blue;
+			transition: all 200ms ease-in-out;
 			text-decoration: none;
+			&:hover {
+				color:$gold;
+			}
 		}
 	}
 }
@@ -23,7 +53,10 @@
 	text-transform: uppercase;
 	font-size: 16px;
 	letter-spacing: 0.1em;
-	@include sourcesansbold;
+	padding-bottom:33px;
+	border-bottom: 5px solid $orange;
+	margin-bottom:31px;
+	@include sourcesansblack;
 	span.date {
 		display: inline;
 		&:after {
@@ -58,7 +91,60 @@
 			a {
 				color:$blue;
 				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$gold;
+				}
 			}
 		}
 	}
 }
+
+
+a.blog_read_more {
+	background: $orange;
+	color:#fff;
+	margin-top:35px;
+	text-decoration: none;
+	padding:15px 50px;
+	font-size: 16px;
+	display: inline-block;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	transition: all 200ms ease-in-out;
+	@include montserratblack;
+	&:hover {
+		background: $gold;
+	}
+}
+
+
+.navigation {
+	ul {
+		display: inline-block;
+		li {
+			display: inline-block;
+			padding:0;
+			margin:0;
+			text-transform: uppercase;
+			margin-right:15px;
+			letter-spacing: 0.1em;
+			@include sourcesansblack;
+			&:before {
+				display: none;
+			}
+			a {
+				text-decoration: none;
+				color:$blue;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$gold;
+				}
+			}
+		}
+	}
+}
+
+
+
+

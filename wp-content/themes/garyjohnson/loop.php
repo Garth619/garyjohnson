@@ -34,11 +34,13 @@
 		
 		<div class="blog_content">
 			
-			<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			<?php echo wp_trim_words( get_the_content(), 40, '...' );?>
 			
 			<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 		
 		</div><!-- blog_content -->
+		
+		<a class="blog_read_more" href="<?php the_permalink();?>">Read More</a><!-- blog_read_more -->
 
 	</div><!-- blog_post -->
 		
@@ -50,11 +52,11 @@
 
 </div><!-- blog_feed -->
 
-<div class="pagination">
+
 
 	<?php wpbeginner_numeric_posts_nav(); ?>
 
-</div><!-- pagination -->
+
 
 
 <!--

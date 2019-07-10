@@ -195,17 +195,6 @@ register_nav_menus(array(
 
 if (function_exists('register_sidebars')) {
 
-
-    register_sidebar(array(
-        'name' => 'Recent Posts',
-        'id' => 'recent_posts',
-        'description' => '',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3 class="widgettitle">',
-        'after_title' => '</h3>'
-    ));
-
     
     register_sidebar(array(
         'name' => 'Category',
