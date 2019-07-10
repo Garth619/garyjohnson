@@ -82,6 +82,9 @@ h1,h2,h3,h4 {
 		padding-bottom:28px;
 		font-size: 19px;
 		letter-spacing: 0.15em;
+		padding-top: 43px;
+		line-height: 23px;
+		text-transform: uppercase;
 		@include montserratblack;
 	}
 	ul {
@@ -111,6 +114,24 @@ h1,h2,h3,h4 {
 }
 
 
+@media screen and (max-width: 1066px) {
+	
+	
+	.content {
+		h1 {
+			font-size: 44px;
+    	line-height: 53px;
+			&:after {
+				margin-top: 42px;
+			}
+		}
+	}
+	    
+	
+	
+} /* Media Query */
+
+
 
 @media screen and (max-width: 767px) {
 	
@@ -127,7 +148,12 @@ img.aligncenter {
 	height:auto;
 }
 	
-	
+.content {
+	h1 {
+		font-size: 40px;
+    line-height: 50px;
+	}
+}
 	
 	
 } /* Media Query */
