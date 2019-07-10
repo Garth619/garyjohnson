@@ -68,6 +68,12 @@ $themePath: '/wp-content/themes/garyjohnson/';
 	font-style: normal;
 }
 
+@mixin sourcesansblack {
+ 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
 //color
 
 $blue: #0a0d28;

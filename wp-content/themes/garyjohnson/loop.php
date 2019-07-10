@@ -15,26 +15,40 @@
 
 <?php endif; ?>
 
+<div class="blog_feed">
+
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	
+	<div class="blog_post">
 		
-	<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+		<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 		
-	<?php $pfx_date = get_the_date(); echo $pfx_date ?>
+		<div class="blog_meta">
 			
-	<?php echo get_the_category_list();?>
+			<span class="date"><?php $pfx_date = get_the_date(); echo $pfx_date ?></span>
 			
-	<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			<?php echo get_the_category_list();?>
 			
-	<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+		</div><!-- blog_meta -->
+		
+		<div class="blog_content">
+			
+			<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			
+			<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+		
+		</div><!-- blog_content -->
 
-			
+	</div><!-- blog_post -->
 		
 <?php endwhile; // end of loop ?>
 
 <?php endif; ?>
+
+
+
+</div><!-- blog_feed -->
 
 <div class="pagination">
 
