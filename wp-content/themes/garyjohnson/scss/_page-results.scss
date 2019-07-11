@@ -1,0 +1,171 @@
+
+.case_results_wrapper {
+	max-width:1400px;
+	margin:0 auto;
+}
+
+.case_results_intro {
+	color:$gold;
+	font-size: 26px;
+	line-height: 43px;
+	display: block;
+	text-align: center;
+	max-width: 999px;
+	margin:37px auto 0;
+	@include sourcesansbold;
+}
+
+
+.case_results_grid {
+	display: flex;
+	justify-content: space-between;
+	margin:160px 0 0;
+}
+
+
+.cr_col {
+	flex-basis: 45%;
+	.cr_single {
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+}
+
+
+.cr_single {
+	border-top:4px solid $orange;
+	padding-top:35px;
+	margin-bottom:130px;
+	span {
+		display: block;
+	}
+	span.cr_amount {
+		font-size: 56px;
+		@include notoserifbold;
+	}
+	span.cr_type {
+		text-transform: uppercase;
+		color:$gold;
+		margin-top:20px;
+		letter-spacing: 0.2em;
+		@include montserratblack;
+	}
+	.cr_content_wrapper {
+		margin:64px 0 0;
+		span.cr_subtitle {
+			font-size: 28px;
+			color:$orange;
+			padding-bottom:8px;
+			text-transform: lowercase;
+			@include montserratbold;
+		}
+		.results {
+			padding-top:29px;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	
+	
+	.case_results_grid {
+		margin: 100px 0 0;
+		display: block;
+	}
+	
+	.cr_col {
+		&:first-of-type {
+			.cr_single {
+				&:last-of-type {
+					margin-bottom:130px;
+				}
+			}
+		}
+		
+	}
+	    
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.case_results_intro {
+		font-size: 23px;
+		line-height: 37px;
+	}
+	
+	
+	
+	.case_results_grid {
+		margin: 75px 0 0;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.cr_single {
+		margin-bottom: 60px;
+		span.cr_amount {
+			font-size: 41px;
+		}
+		.cr_content_wrapper {
+			margin: 29px 0 0;
+			span.cr_subtitle {
+				font-size: 24px;
+			}
+			.results {
+				padding-top:0;
+			}
+		}
+	}
+	
+	
+	.cr_col {
+		&:first-of-type {
+			.cr_single {
+				&:last-of-type {
+					margin-bottom:60px;
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 395px) {
+	
+	
+	.cr_single {
+		
+		span.cr_amount {
+			font-size: 38px;
+		}
+		.cr_content_wrapper {
+			
+			span.cr_subtitle {
+				
+			}
+			.results {
+				
+			}
+		}
+	}
+	
+} /* Media Query */
