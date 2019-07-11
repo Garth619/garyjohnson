@@ -79,7 +79,18 @@ a.internal_consultation_button {
 	display: flex;
 	max-width:1625px;
 	margin:155px auto 0;
-	//margin:155px 0 0 237px;
+}
+
+
+.internal_wrapper {
+	padding-top:155px;
+	h1.internal_header {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 55px;
+		letter-spacing: 0.2em;
+		@include montserratblack;
+	}
 }
 
 

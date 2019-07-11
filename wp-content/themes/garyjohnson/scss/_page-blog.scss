@@ -45,6 +45,13 @@
 					}
 				}
 			}
+			li.active {
+				a {
+					span.sidebar_post_title {
+						color:$gold;
+					}
+				}
+			}
 		}
 	}
 	.sidebar_box.cat_box {
@@ -58,6 +65,11 @@
 					&:hover {
 						border-bottom:4px solid $gold;
 					}
+				}
+			}
+			li.active {
+				a {
+					color:$gold;
 				}
 			}
 		}
@@ -179,6 +191,18 @@ a.blog_read_more {
 				&:hover {
 					color:$gold;
 				}
+			}
+		}
+	}
+}
+
+
+body.single {
+	.content {
+		h1 {
+			margin-bottom:45px;
+			&:after {
+				display: none;
 			}
 		}
 	}
@@ -316,6 +340,11 @@ a.blog_read_more {
 		padding-bottom: 40px;
 	}
 	
+	body.single {
+		.blog_meta {
+			padding-bottom: 20px;
+		}
+	}
 	
 } /* Media Query */
 

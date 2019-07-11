@@ -585,5 +585,16 @@ $('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e
 });
 
 
+	var pgurl = window.location.href;
+	
+	$(".sidebar_wrapper.blog ul li").each(function(){
+  
+  if($(this).find('a').attr("href") == pgurl)
+    
+    $(this).addClass("active");
+	
+	})
+
+
   
 }); // document ready
