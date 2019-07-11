@@ -1,16 +1,23 @@
 <?php get_header(); ?>
 
-<h1>Not Found</h1>
-		
-		<p>The page you were looking for appears to have been moved, deleted or does not exist. You could <span class="go_back" onclick="goBack()">go back</span> to where you were or head straight to our <a href="/">home page</a>.</p>
-		
-		
-	<script type="text/javascript">
-		function goBack() {
-    	window.history.back();
-		}
-	</script>
+<div class="internal_main">
 
+	<div class="not_found_wrapper">
+		
+		<h1 class="not_found_header">404</h1><!-- internal_header -->
+		
+		<span class="not_found_verbiage">Sorry, We couldn’t find this page</span><!-- not_found_verbiage -->
+		
+		<span class="go_back" onclick="goBack()">go back</span>
 	
+	</div><!-- not_found_wrapper -->
+	
+</div><!-- internal_main -->
+
+<script type="text/javascript">
+	function goBack() {
+    window.history.back();
+	}
+</script>
 
 <?php get_footer(); ?>

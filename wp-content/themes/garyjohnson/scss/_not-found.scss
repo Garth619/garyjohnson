@@ -1,0 +1,55 @@
+
+
+.not_found_wrapper {
+	text-align: center;
+	margin:105px 0 150px;
+	padding:0 33px;
+	h1.not_found_header {
+		color:$orange;
+		font-size: 164px;
+		@include notoserifreg;
+	}
+	span.not_found_verbiage {
+		display: block;
+		font-size: 28px;
+		margin-top:30px;
+		margin-bottom:55px;
+		@include montserratblack;
+	}
+	span.go_back {
+		color:$gold;
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 18px;
+		letter-spacing: 0.2em;
+		padding-bottom:9px;
+		cursor: pointer;
+		border-bottom:4px solid $gold;
+		@include montserratblack;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	
+	
+.not_found_wrapper {
+	h1.not_found_header {
+		font-size: 125px;
+	}
+	span.not_found_verbiage {
+		max-width:300px;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 40px;
+	}
+	span.go_back {
+		
+	}
+}
+	
+	
+	
+} /* Media Query */
+
+
