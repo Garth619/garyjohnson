@@ -134,8 +134,10 @@
 			}
 	}
 	ul.sub-menu {
+		justify-content: space-between;
 		li {
-			flex-basis: calc(50% - 90px);
+			flex-basis: 47%;
+			margin:0;
 			&:hover {
 				a {
 				
@@ -149,6 +151,33 @@
 }
 
 	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.pa_directory_wrapper {
+		margin: 55px auto 0;
+		ul.menu {
+			li {
+				&:last-of-type {
+					ul.sub-menu {
+						margin-bottom:0;
+					}
+				}
+			}
+		}
+		ul.sub-menu {
+			margin: 50px auto 80px;
+			display: block;
+		}
+	}
+	
+	    
 	
 	
 } /* Media Query */
