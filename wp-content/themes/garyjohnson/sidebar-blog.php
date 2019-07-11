@@ -35,7 +35,7 @@
 			
 		</div><!-- sidebar_box -->
 		
-		<div class="sidebar_box">
+		<div class="sidebar_box cat_box">
 			
 			<div class="sidebar_box_inner">
 
@@ -45,7 +45,7 @@
 			
 		</div><!-- sidebar_box -->
 		
-		<div class="sidebar_box">
+		<div class="sidebar_box cat_box">
 			
 			<div class="sidebar_box_inner">
 
