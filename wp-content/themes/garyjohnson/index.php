@@ -4,24 +4,7 @@
 
 <div class="internal_main">
 
-<div class="internal_banner">
-	
-	<div class="banner_content">
-		
-		<div class="banner_title">
-			
-			<span>We go the extra</span><br/>
-			<span>mile for our clients</span>
-		
-		</div><!-- banner_title -->
-		
-		<a class="internal_consultation_button" href="">Click for your free consultation</a><!-- internal_consultation_button -->
-		
-	</div><!-- banner_content -->
-	
-	<img class="banner_image" src="<?php bloginfo('template_directory');?>/images/intl_header_img.jpg"/>
-	
-</div><!-- internal_banner -->
+<?php get_template_part('page-templates/template', 'banner' ); ?>
 
 <div class="internal_container two_col">
 	

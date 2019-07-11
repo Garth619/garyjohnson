@@ -40,6 +40,7 @@
 						font-size: 18px;
 						line-height: 28px;
 						margin-bottom:15px;
+						text-transform: none;
 						@include sourcesansbold;
 					}
 				}
@@ -231,6 +232,37 @@ a.blog_read_more {
 	}
 	
 	
+	
+	body.category {
+		.internal_banner {
+			display: block;
+			height:auto;
+			padding: 73px 87px 0;
+			img.banner_image {
+				display: none;
+			}
+		}
+		.banner_content {
+			.banner_title {
+				.banner_header {
+					color:$blue;
+					border-bottom: 5px solid #e75841;
+					font-size: 44px;
+					line-height: 53px;
+					display: block;
+					padding-bottom: 30px;
+					@include montserratblack;
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+		a.internal_consultation_button {
+			display: none;
+		}
+	}
+	
 } /* Media Query */
 
 
@@ -255,6 +287,34 @@ a.blog_read_more {
    	}
 	}
 	
+	
+	
+	body.category {
+		.internal_banner {
+			padding: 37px 33px 0;
+			img.banner_image {
+				
+			}
+		}
+		.banner_content {
+			.banner_title {
+				.banner_header {
+					font-size: 37px;
+					line-height: 46px;
+					&:after {
+						
+					}
+				}
+			}
+		}
+		a.internal_consultation_button {
+			
+		}
+	}
+	
+	.blog_meta {
+		padding-bottom: 40px;
+	}
 	
 	
 } /* Media Query */
