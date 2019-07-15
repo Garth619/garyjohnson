@@ -1,0 +1,180 @@
+
+
+body.page-template-template-contact {
+	.footer_location_wrapper {
+		display: none;
+	}
+}
+
+
+
+
+.contact_page_wrapper {
+	display: flex;
+	max-width:1585px;
+	margin: 155px auto 0;
+	justify-content: space-between;
+}
+
+
+.contact_left {
+	flex-basis:48%;
+	img {
+		width:100%;
+		height:auto;
+		display: block;
+	}
+}
+
+
+.contact_right {
+	flex-basis:52%;
+	padding-left:10%;
+	margin-top:20px;
+	.contact_location_wrapper {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: space-between;
+		//margin-bottom: 60px;
+		.location_col {
+			flex-basis: 50%;
+			margin-bottom:125px;
+			&:nth-last-of-type(-n + 2) {
+				margin-bottom:0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1475px) {
+	
+	
+	
+	.contact_left {
+		flex-basis:470px;
+		flex-shrink: 0;
+	}
+	
+	.contact_right {
+		flex-grow:1;
+		flex-basis:auto;
+		//padding-left:7%;
+		.contact_location_wrapper {
+			.location_col {
+				flex-basis: 44%;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1320px) {
+	
+	
+	.contact_page_wrapper {
+		flex-direction: column;
+	}
+	
+	
+	.contact_left {
+		order:2;
+		max-width:900px;
+		margin:150px auto 0;
+	}
+	
+	.contact_right {
+		order:1;
+		padding-left:0;
+		margin:0 auto;
+		max-width: 670px;
+		.contact_location_wrapper {
+			.location_col {
+				flex-basis: 270px;
+			}
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	.contact_page_wrapper {
+		margin: 85px auto 0;
+	}
+	
+	
+	.contact_left {
+		margin: 120px auto 0;
+	}
+	
+	
+	.contact_right {
+		max-width: 600px;
+		.contact_location_wrapper {
+			.location_col {
+				flex-basis: 226px;
+				margin-bottom: 95px;
+			}
+		}
+	}
+	    
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 860px) {
+	
+	    
+	    .contact_right {
+		    max-width: 545px;
+	    }
+	    
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.contact_page_wrapper {
+		margin: 70px auto 0;
+	}
+	
+	
+	.contact_left {
+		margin: 75px auto 0;
+	}
+	
+	
+	.contact_right {
+		max-width: 100%;
+		.contact_location_wrapper {
+			display: block;
+			.location_col {
+				flex-basis: 100%;
+				margin-bottom: 65px;
+				text-align: center;
+				&:nth-last-of-type(-n+2) {
+					margin-bottom: 65px;
+				}
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	
+	
+	
+	
+} /* Media Query */
