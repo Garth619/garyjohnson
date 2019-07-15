@@ -13,19 +13,23 @@ get_header(); ?>
 	
 	<div class="video_center_wrapper">
 		
-		<div class="single_video">
+		<?php if(get_field('wistia_videos')): ?>
+		 
+			<?php while(has_sub_field('wistia_videos')): ?>
+		 
+				<div class="single_video">
 			
-			<div class="single_video_thumbnail">
+					<div class="single_video_thumbnail">
 				
-				<div class="my_wistia">
+						<div class="my_wistia">
 					
-					<div class="play_button_overlay">
+							<div class="play_button_overlay">
 						
-						<div class="play_button"></div><!-- play_button -->
+								<div class="play_button"></div><!-- play_button -->
 						
-					</div><!-- play_button_overlay -->
+							</div><!-- play_button_overlay -->
 					
-					<div class="video wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail">
+							<div class="video wistia_embed wistia_async_<?php the_sub_field( 'wistia_id' ); ?> popover=true popoverContent=thumbnail">
 						
 					</div><!-- video -->
 					
@@ -33,155 +37,14 @@ get_header(); ?>
 				
 			</div><!-- single_video_thumbnail -->
 			
-			<span class="video_title">GCJ  I  Wonder Why EKY TV</span><!-- video_title -->
+			<span class="video_title"><?php the_sub_field( 'video_title' ); ?></span><!-- video_title -->
 			
 		</div><!-- single_video -->
-		
-		<div class="single_video">
-			
-			<div class="single_video_thumbnail">
+		    
+			<?php endwhile; ?>
+		 
+		<?php endif; ?>
 				
-				<div class="my_wistia">
-					
-					<div class="play_button_overlay">
-						
-						<div class="play_button"></div><!-- play_button -->
-						
-					</div><!-- play_button_overlay -->
-					
-					<div class="video wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail">
-						
-					</div><!-- video -->
-					
-				</div><!-- my_wistia -->
-				
-			</div><!-- single_video_thumbnail -->
-			
-			<span class="video_title">GCJ  I  Wonder Why EKY TV</span><!-- video_title -->
-			
-		</div><!-- single_video -->
-		
-		<div class="single_video">
-			
-			<div class="single_video_thumbnail">
-				
-				<div class="my_wistia">
-					
-					<div class="play_button_overlay">
-						
-						<div class="play_button"></div><!-- play_button -->
-						
-					</div><!-- play_button_overlay -->
-					
-					<div class="video wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail">
-						
-					</div><!-- video -->
-					
-				</div><!-- my_wistia -->
-				
-			</div><!-- single_video_thumbnail -->
-			
-			<span class="video_title">GCJ  I  Wonder Why EKY TV</span><!-- video_title -->
-			
-		</div><!-- single_video -->
-		
-		<div class="single_video">
-			
-			<div class="single_video_thumbnail">
-				
-				<div class="my_wistia">
-					
-					<div class="play_button_overlay">
-						
-						<div class="play_button"></div><!-- play_button -->
-						
-					</div><!-- play_button_overlay -->
-					
-					<div class="video wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail">
-						
-					</div><!-- video -->
-					
-				</div><!-- my_wistia -->
-				
-			</div><!-- single_video_thumbnail -->
-			
-			<span class="video_title">GCJ  I  Wonder Why EKY TV</span><!-- video_title -->
-			
-		</div><!-- single_video -->
-		
-		<div class="single_video">
-			
-			<div class="single_video_thumbnail">
-				
-				<div class="my_wistia">
-					
-					<div class="play_button_overlay">
-						
-						<div class="play_button"></div><!-- play_button -->
-						
-					</div><!-- play_button_overlay -->
-					
-					<div class="video wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail">
-						
-					</div><!-- video -->
-					
-				</div><!-- my_wistia -->
-				
-			</div><!-- single_video_thumbnail -->
-			
-			<span class="video_title">GCJ  I  Wonder Why EKY TV</span><!-- video_title -->
-			
-		</div><!-- single_video -->
-		
-		<div class="single_video">
-			
-			<div class="single_video_thumbnail">
-				
-				<div class="my_wistia">
-					
-					<div class="play_button_overlay">
-						
-						<div class="play_button"></div><!-- play_button -->
-						
-					</div><!-- play_button_overlay -->
-					
-					<div class="video wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail">
-						
-					</div><!-- video -->
-					
-				</div><!-- my_wistia -->
-				
-			</div><!-- single_video_thumbnail -->
-			
-			<span class="video_title">GCJ  I  Wonder Why EKY TV</span><!-- video_title -->
-			
-		</div><!-- single_video -->
-		
-		<div class="single_video">
-			
-			<div class="single_video_thumbnail">
-				
-				<div class="my_wistia">
-					
-					<div class="play_button_overlay">
-						
-						<div class="play_button"></div><!-- play_button -->
-						
-					</div><!-- play_button_overlay -->
-					
-					<div class="video wistia_embed wistia_async_waichudc62 popover=true popoverContent=thumbnail">
-						
-					</div><!-- video -->
-					
-				</div><!-- my_wistia -->
-				
-			</div><!-- single_video_thumbnail -->
-			
-			<span class="video_title">GCJ  I  Wonder Why EKY TV</span><!-- video_title -->
-			
-		</div><!-- single_video -->
-	
-		
 	</div><!-- video_center_wrapper -->
 	
 </div><!-- internal_container -->
