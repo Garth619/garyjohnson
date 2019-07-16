@@ -42,7 +42,7 @@
 		
 		</div><!-- banner_title -->
 		
-		<a class="internal_consultation_button" href="">Click for your free consultation</a><!-- internal_consultation_button -->
+		<a class="internal_consultation_button" href="#consultation">Click for your free consultation</a><!-- internal_consultation_button -->
 		
 	</div><!-- banner_content -->
 	

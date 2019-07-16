@@ -1,6 +1,6 @@
 <footer id="footer_trigger">
 	
-	<div class="footer_form_wrapper">
+	<div id="consultation" class="footer_form_wrapper">
 		
 		<div class="footer_form_inner">
 		

@@ -65,7 +65,11 @@ a.internal_consultation_button {
 	font-size: 18px;
 	margin-top:30px;
 	padding:25px 10px;
+	transition: all 200ms ease-in-out;
 	@include montserratbold;
+	&:hover {
+		background: $gold;
+	}
 }
 
 
