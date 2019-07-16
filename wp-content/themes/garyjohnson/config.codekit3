@@ -344,6 +344,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/header_video_img_02_hover.jpg": {
+		"ft": 16384,
+		"iS": 98464,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/header_video_img_02_hover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/hero_logo_horizontal-01.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -419,11 +430,32 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/intl_video_img_02_hover.jpg": {
+		"ft": 16384,
+		"iS": 174005,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/intl_video_img_02_hover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/intl_video_logo-01.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/images/intl_video_logo-01.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/judolaw2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/judolaw2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -758,6 +790,14 @@
 		"oAP": "/page-templates/template-home.php",
 		"oF": 0
 		},
+	"/page-templates/template-judo-law.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-judo-law.php",
+		"oF": 0
+		},
 	"/page-templates/template-meetteam.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -948,6 +988,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_page-default.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/_page-judolaw.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_page-judolaw.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
