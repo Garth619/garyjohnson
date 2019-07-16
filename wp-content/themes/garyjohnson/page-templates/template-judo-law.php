@@ -31,6 +31,8 @@ get_header(); ?>
 			
 			<div class="judo_law_video_wrapper">
 				
+				<div class="judo_wistia wistia_embed wistia_async_<?php the_field( 'wistia_id_judo_law' ); ?> popover=true popoverContent=html"></div>
+				
 				<div class="judo_law_video_overlay">
 					
 					<div class="judo_law_video_content">
