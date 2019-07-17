@@ -1,3 +1,8 @@
+.att_bio_wrapper {
+	display: flex;
+	max-width:1295px;
+	margin:135px auto 0;
+}
 
 
 span.att_bio_position {
@@ -11,14 +16,6 @@ span.att_bio_position {
 	@include montserratblack;
 }
 
-
-.att_bio_wrapper {
-	display: flex;
-	max-width:1295px;
-	margin:135px auto 0;
-}
-
-
 .att_bio_left {
 	flex-basis:480px;
 	flex-shrink: 0;
@@ -30,6 +27,7 @@ span.att_bio_position {
 		}
 	}
 	.att_bio_info {
+		padding-left:35px;
 		ul {
 			list-style: none;
 			margin:58px 0 0;
@@ -93,5 +91,47 @@ span.att_bio_position {
 		width:100%;
 		height:5px;
 		background: $orange;
+	}
+}
+
+.att_bio_stats {
+	max-width:1295px;
+	margin:95px auto 0;
+	height:7000px;
+	ul {
+		list-style: none;
+	}
+	ul.att_bio_stats_menu {
+		&:last-of-type {
+			> li {
+					border-bottom:5px solid $gold;
+			}
+		}
+		> li {
+				text-transform: uppercase;
+				font-size: 17px;
+				line-height: 20px;
+				letter-spacing: 0.2em;
+				border-top:5px solid $gold;
+				padding:36px 73px;
+				position: relative;
+				@include montserratblack;
+				.stat_arrow {
+					position: absolute;
+					top:37px;
+					right:65px;
+					svg {
+						width:20px;
+						height:25px;
+					}
+				}
+		}
+		
+	}
+	ul.att_bio_stats_submenu {
+		display: none;
+		li {
+			
+		}
 	}
 }

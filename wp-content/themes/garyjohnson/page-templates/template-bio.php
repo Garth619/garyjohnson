@@ -52,6 +52,8 @@ get_header(); ?>
 		
 		<div class="att_bio_right content">
 			
+				<?php //get_template_part( 'loop', 'page' ); ?>
+			
 			<h2>Gary C. Johnson has been representing Plaintiffs in personal injury cases for over 40 years. He is the founder of Gary C. Johnson, P.S.C. which currently has 13 attorneys in four offices located in Pikeville, Lexington, Louisville and Hazard, Kentucky.</h2>
 			
 			<p>Gary C. Johnson and his firm are listed in the Martindale Hubbell Bar Register of Preeminent Lawyers and he has been named a Kentucky Super Lawyer for the last two years. In 2008, Gary C. Johnson was awarded the Peter Perlman Outstanding Trial Lawyer of the Year Award by the Kentucky Justice Association for his work as an advocate for the rights of the people and his service as a mentor to young lawyers in the state.</p>
@@ -62,15 +64,115 @@ get_header(); ?>
 
 			<p>Over a period of four years Gary was involved in national research of juror attitudes. Gary C. Johnson, David Ball, Don Keenan, and Jim Fitzger+ald set out to determine if there was a way to counter the insurance companies' propaganda which had literally poisoned modern jurors against injured victims. After four years of focus groups across the country the group concluded that there was an answer. A decision was made to share the research with other plaintiff lawyers and this led to the publication of the book, "Reptile - The 2009 Manual of the Plaintiff's Revolution". David Ball and Don Keenan, two members of the research group are the authors of this book. This research "wrote the book" for the modern approach to jury persuasion.</p>
 			
-			
-			
 		</div><!-- att_bio_right -->
 	
 	</div><!-- att_bio_wrapper -->
+	
+	<div class="att_bio_stats">
+		
+		<ul class="att_bio_stats_menu">
+			
+			<li>
+			
+				<span>Areas of Practice</span>
+				
+				<div class="stat_arrow">
+					
+					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
+					
+				</div><!-- stat_arrow -->
+				
+				<ul class="att_bio_stats_submenu">
+					
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+				
+				</ul><!-- att_bio_stats_submenu -->
+			
+			</li>
+			
+		</ul><!-- att_bio_stats_menu -->
+		
+		<ul class="att_bio_stats_menu">
+			
+			<li>Areas of Practice
+				
+				<ul class="att_bio_stats_submenu">
+					
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+				
+				</ul><!-- att_bio_stats_submenu -->
+			
+			</li>
+			
+		</ul><!-- att_bio_stats_menu -->
+		
+		<ul class="att_bio_stats_menu">
+			
+			<li>Areas of Practice
+				
+				<ul class="att_bio_stats_submenu">
+					
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+				
+				</ul><!-- att_bio_stats_submenu -->
+			
+			</li>
+			
+		</ul><!-- att_bio_stats_menu -->
+		
+		<ul class="att_bio_stats_menu">
+			
+			<li>Areas of Practice
+				
+				<ul class="att_bio_stats_submenu">
+					
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+				
+				</ul><!-- att_bio_stats_submenu -->
+			
+			</li>
+			
+		</ul><!-- att_bio_stats_menu -->
+		
+		<ul class="att_bio_stats_menu">
+			
+			<li>Areas of Practice
+				
+				<ul class="att_bio_stats_submenu">
+					
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+				
+				</ul><!-- att_bio_stats_submenu -->
+			
+			</li>
+			
+		</ul><!-- att_bio_stats_menu -->
+		
+	</div><!-- att_bio_stats -->
 	
 </div><!-- internal_container -->
 
 </div><!-- internal_main -->
 
+<?php get_footer(); ?>
 
-	<?php //get_template_part( 'loop', 'page' ); ?>
