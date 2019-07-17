@@ -74,31 +74,13 @@ get_header(); ?>
 			
 			<li>
 			
-				<span>Areas of Practice</span>
-				
 				<div class="stat_arrow">
 					
 					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
 					
 				</div><!-- stat_arrow -->
 				
-				<ul class="att_bio_stats_submenu">
-					
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-				
-				</ul><!-- att_bio_stats_submenu -->
-			
-			</li>
-			
-		</ul><!-- att_bio_stats_menu -->
-		
-		<ul class="att_bio_stats_menu">
-			
-			<li>Areas of Practice
+				<span>Areas of Practice</span>
 				
 				<ul class="att_bio_stats_submenu">
 					
@@ -116,7 +98,15 @@ get_header(); ?>
 		
 		<ul class="att_bio_stats_menu">
 			
-			<li>Areas of Practice
+			<li>
+			
+				<div class="stat_arrow">
+					
+					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
+					
+				</div><!-- stat_arrow -->
+				
+				<span>Areas of Practice</span>
 				
 				<ul class="att_bio_stats_submenu">
 					
@@ -134,7 +124,15 @@ get_header(); ?>
 		
 		<ul class="att_bio_stats_menu">
 			
-			<li>Areas of Practice
+			<li>
+			
+				<div class="stat_arrow">
+					
+					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
+					
+				</div><!-- stat_arrow -->
+				
+				<span>Areas of Practice</span>
 				
 				<ul class="att_bio_stats_submenu">
 					
@@ -152,7 +150,15 @@ get_header(); ?>
 		
 		<ul class="att_bio_stats_menu">
 			
-			<li>Areas of Practice
+			<li>
+			
+				<div class="stat_arrow">
+					
+					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
+					
+				</div><!-- stat_arrow -->
+				
+				<span>Areas of Practice</span>
 				
 				<ul class="att_bio_stats_submenu">
 					
@@ -168,7 +174,84 @@ get_header(); ?>
 			
 		</ul><!-- att_bio_stats_menu -->
 		
+		<ul class="att_bio_stats_menu">
+			
+			<li>
+			
+				<div class="stat_arrow">
+					
+					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
+					
+				</div><!-- stat_arrow -->
+				
+				<span>Areas of Practice</span>
+				
+				<ul class="att_bio_stats_submenu">
+					
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+					<li>Lorem Ipsum</li>
+				
+				</ul><!-- att_bio_stats_submenu -->
+			
+			</li>
+			
+		</ul><!-- att_bio_stats_menu -->
+		
+				
 	</div><!-- att_bio_stats -->
+	
+	<div class="att_awards_wrapper">
+		
+		<span class="att_awards_title">Awards + Memberships</span><!-- att_awards_title -->
+		
+		<div class="att_awards_slider">
+			
+			<div class="att_awards_slide">
+				
+				<div class="att_awards_slide_inner">
+				
+					<img src="<?php bloginfo('template_directory');?>/images/awards_img-01.svg"/>
+				
+				</div><!-- att_awards_slide_inner -->
+				
+			</div><!-- att_awards_slide -->
+			
+			<div class="att_awards_slide">
+				
+				<div class="att_awards_slide_inner">
+				
+					<img src="<?php bloginfo('template_directory');?>/images/awards_img-02.svg"/>
+				
+				</div><!-- att_awards_slide_inner -->
+				
+			</div><!-- att_awards_slide -->
+			
+			<div class="att_awards_slide">
+				
+				<div class="att_awards_slide_inner">
+				
+					<img src="<?php bloginfo('template_directory');?>/images/awards_img-03.svg"/>
+				
+				</div><!-- att_awards_slide_inner -->
+				
+			</div><!-- att_awards_slide -->
+			
+			<div class="att_awards_slide">
+				
+				<div class="att_awards_slide_inner">
+				
+					<img src="<?php bloginfo('template_directory');?>/images/awards_img-04.svg"/>
+				
+				</div><!-- att_awards_slide_inner -->
+				
+			</div><!-- att_awards_slide -->
+			
+		</div><!-- att_awards_slider -->
+		
+	</div><!-- att_awards_wrapper -->
 	
 </div><!-- internal_container -->
 

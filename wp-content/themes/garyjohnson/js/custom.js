@@ -521,7 +521,41 @@ $('.sec_four_slider').slick({
      },
   ]
  });
-
+ 
+ 
+ 
+ 
+$('.att_awards_slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+	arrows:false,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1375,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+     }
+   },
+   {
+      breakpoint: 1066,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     }
+   }
+  ]
+ });
+ 
 
 
 
@@ -594,6 +628,18 @@ $('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e
     $(this).addClass("active");
 	
 	})
+	
+	
+	
+	// att bio stats toggle
+	
+	
+	
+	$('.att_bio_stats ul.att_bio_stats_menu > li span').on('click', function(e) {
+	  
+		$(this).next('ul.att_bio_stats_submenu').slideToggle(300);
+	
+	});
 
 
   
