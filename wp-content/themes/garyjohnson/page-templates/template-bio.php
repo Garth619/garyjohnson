@@ -20,11 +20,15 @@ get_header(); ?>
 				
 				<?php $attorney_bio_image = get_field( 'attorney_bio_image' ); ?>
 				
-				<?php if ( $attorney_bio_image ) { ?>
+				<?php if ( $attorney_bio_image ) : ?>
 				
 				<img src="<?php echo $attorney_bio_image['url']; ?>" alt="<?php echo $attorney_bio_image['alt']; ?>" />
 				
-				<?php } ?>
+				<?php else: ?>
+								
+					<img src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" />
+				
+				<?php endif; ?>
 				
 			</div><!-- att_bio_image -->
 			
@@ -129,8 +133,12 @@ get_header(); ?>
 				
 							<?php $awards_logo = get_sub_field( 'awards_logo' ); ?>
 							
-							<img src="<?php echo $awards_logo['url']; ?>" alt="<?php echo $awards_logo['alt']; ?>" />
-				
+							<?php if($awards_logo) { ?>
+							
+								<img src="<?php echo $awards_logo['url']; ?>" alt="<?php echo $awards_logo['alt']; ?>" />
+							
+							<?php } ?>
+							
 						</div><!-- att_awards_slide_inner -->
 				
 					</div><!-- att_awards_slide -->
