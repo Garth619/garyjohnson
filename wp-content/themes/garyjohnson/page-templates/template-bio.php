@@ -10,7 +10,7 @@ get_header(); ?>
 	
 	<h1 class="internal_header"><?php the_title();?></h1><!-- internal_header -->
 	
-	<span class="att_bio_position">Partner</span><!-- att_bio_position -->
+	<span class="att_bio_position"><?php the_field( 'attorney_position' ); ?></span><!-- att_bio_position -->
 	
 	<div class="att_bio_wrapper">
 	
@@ -18,32 +18,45 @@ get_header(); ?>
 			
 			<div class="att_bio_image">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/att_img.jpg"/>
+				<?php $attorney_bio_image = get_field( 'attorney_bio_image' ); ?>
+				
+				<?php if ( $attorney_bio_image ) { ?>
+				
+				<img src="<?php echo $attorney_bio_image['url']; ?>" alt="<?php echo $attorney_bio_image['alt']; ?>" />
+				
+				<?php } ?>
 				
 			</div><!-- att_bio_image -->
 			
 			<div class="att_bio_info">
 				
 				<ul>
+					<?php if(get_field('location_att')) { ?>
+						<li>
+							<span class="att_bio_info_title"><?php the_field( 'location_title_att' ); ?></span><!-- att_bio_info_title -->
+							<span class="att_bio_info_content"><?php the_field( 'location_att' ); ?></span>
+							</li>
+					<?php } ?>
+					<?php if(get_field('phone_one_att') || get_field('phone_two_att')) { ?>
+						<li>
+							<span class="att_bio_info_title"><?php the_field( 'phone_title_att' ); ?></span><!-- att_bio_info_title -->
+							<a class="att_bio_info_content" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone_one_att')); ?>"><?php the_field( 'phone_one_att' ); ?></a>
+							<a class="att_bio_info_content" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone_two_att')); ?>"><?php the_field( 'phone_two_att' ); ?></a>
+						</li>
+					<?php } ?>
+					<?php if(get_field('fax_number_att')) { ?>
 					<li>
-						<span class="att_bio_info_title">Location</span><!-- att_bio_info_title -->
-						<span class="att_bio_info_content">Pikeville, Kentucky</span>
-					</li>
-					<li>
-						<span class="att_bio_info_title">Phone</span><!-- att_bio_info_title -->
-						<a class="att_bio_info_content" href="">866-606-4316</a>
-						<a class="att_bio_info_content" href="">606-262-4551</a>
-					</li>
-					<li>
-						<span class="att_bio_info_title">Fax</span><!-- att_bio_info_title -->
-						<a class="att_bio_info_content" href="">606-437-0021</a>
+						<span class="att_bio_info_title"><?php the_field( 'fax_title_att' ); ?></span><!-- att_bio_info_title -->
+						<span class="att_bio_info_content"><?php the_field( 'fax_number_att' ); ?></span>
 						
 					</li>
+					<?php } ?>
+					<?php if(get_field('email_address_att')) { ?>
 					<li>
-						<span class="att_bio_info_title">Email</span><!-- att_bio_info_title -->
-						<a class="att_bio_info_content email_me" href="">Email Me</a>
-						
+						<span class="att_bio_info_title"><?php the_field( 'email_title_att' ); ?></span><!-- att_bio_info_title -->
+						<a class="att_bio_info_content email_me" href="mailto:<?php the_field( 'email_address_att' ); ?>"><?php the_field( 'email_me' ); ?></a>
 					</li>
+					<?php } ?>
 				</ul>
 				
 			</div><!-- att_bio_info -->
@@ -52,17 +65,7 @@ get_header(); ?>
 		
 		<div class="att_bio_right content">
 			
-				<?php //get_template_part( 'loop', 'page' ); ?>
-			
-			<h2>Gary C. Johnson has been representing Plaintiffs in personal injury cases for over 40 years. He is the founder of Gary C. Johnson, P.S.C. which currently has 13 attorneys in four offices located in Pikeville, Lexington, Louisville and Hazard, Kentucky.</h2>
-			
-			<p>Gary C. Johnson and his firm are listed in the Martindale Hubbell Bar Register of Preeminent Lawyers and he has been named a Kentucky Super Lawyer for the last two years. In 2008, Gary C. Johnson was awarded the Peter Perlman Outstanding Trial Lawyer of the Year Award by the Kentucky Justice Association for his work as an advocate for the rights of the people and his service as a mentor to young lawyers in the state.</p>
-
-			<p>He has received several multi-million dollar jury verdicts and settlements over his long and distinguished career. He has the largest personal injury jury verdict of any lawyer in the state of Kentucky. He has tried cases in Kentucky, Georgia and West Virginia. He has also handled cases in several other states.</p>
-
-			<p>Gary C. Johnson continues to devote the majority of his time to the day-to-day practice of law. His firm's practice consists entirely of Plaintiff personal injury cases in the fields of vehicular negligence, products liability, and medical malpractice. In the last few years, however, Gary has diverted some of his time to the education of other trial lawyers. He has presented seminars for the Kentucky Bar Association, Kentucky Justice Association and the American Association of Justice on trial strategy and how to maximize damages in your case.</p>
-
-			<p>Over a period of four years Gary was involved in national research of juror attitudes. Gary C. Johnson, David Ball, Don Keenan, and Jim Fitzger+ald set out to determine if there was a way to counter the insurance companies' propaganda which had literally poisoned modern jurors against injured victims. After four years of focus groups across the country the group concluded that there was an answer. A decision was made to share the research with other plaintiff lawyers and this led to the publication of the book, "Reptile - The 2009 Manual of the Plaintiff's Revolution". David Ball and Don Keenan, two members of the research group are the authors of this book. This research "wrote the book" for the modern approach to jury persuasion.</p>
+				<?php get_template_part( 'loop', 'page' ); ?>
 			
 		</div><!-- att_bio_right -->
 	
@@ -70,185 +73,72 @@ get_header(); ?>
 	
 	<div class="att_bio_stats">
 		
-		<ul class="att_bio_stats_menu">
+		<?php if(get_field('attorney_additional_information')): ?>
+		 
+			<?php while(has_sub_field('attorney_additional_information')): ?>
+		 
+				<ul class="att_bio_stats_menu">
 			
-			<li>
+					<li>
 			
-				<div class="stat_arrow">
+						<div class="stat_arrow">
 					
-					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
+							<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
 					
-				</div><!-- stat_arrow -->
+						</div><!-- stat_arrow -->
 				
-				<span>Areas of Practice</span>
+						<span><?php the_sub_field( 'section_title' ); ?></span>
+						
+						<?php if(get_sub_field('list_items')): ?>
+							
+							<ul class="att_bio_stats_submenu">
+						 
+							<?php while(has_sub_field('list_items')): ?>
+						 
+								<li><?php the_sub_field( 'list_item' ); ?></li>		
+						    
+							<?php endwhile; ?>
+							
+							</ul>
+						 
+						<?php endif; ?>
 				
-				<ul class="att_bio_stats_submenu">
-					
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-				
-				</ul><!-- att_bio_stats_submenu -->
+					</li>
 			
-			</li>
-			
-		</ul><!-- att_bio_stats_menu -->
+				</ul><!-- att_bio_stats_menu -->
+		    
+			<?php endwhile; ?>
+		 
+		<?php endif; ?>
 		
-		<ul class="att_bio_stats_menu">
-			
-			<li>
-			
-				<div class="stat_arrow">
-					
-					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
-					
-				</div><!-- stat_arrow -->
-				
-				<span>Areas of Practice</span>
-				
-				<ul class="att_bio_stats_submenu">
-					
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-				
-				</ul><!-- att_bio_stats_submenu -->
-			
-			</li>
-			
-		</ul><!-- att_bio_stats_menu -->
-		
-		<ul class="att_bio_stats_menu">
-			
-			<li>
-			
-				<div class="stat_arrow">
-					
-					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
-					
-				</div><!-- stat_arrow -->
-				
-				<span>Areas of Practice</span>
-				
-				<ul class="att_bio_stats_submenu">
-					
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-				
-				</ul><!-- att_bio_stats_submenu -->
-			
-			</li>
-			
-		</ul><!-- att_bio_stats_menu -->
-		
-		<ul class="att_bio_stats_menu">
-			
-			<li>
-			
-				<div class="stat_arrow">
-					
-					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
-					
-				</div><!-- stat_arrow -->
-				
-				<span>Areas of Practice</span>
-				
-				<ul class="att_bio_stats_submenu">
-					
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-				
-				</ul><!-- att_bio_stats_submenu -->
-			
-			</li>
-			
-		</ul><!-- att_bio_stats_menu -->
-		
-		<ul class="att_bio_stats_menu">
-			
-			<li>
-			
-				<div class="stat_arrow">
-					
-					<?php echo file_get_contents("wp-content/themes/garyjohnson/images/nav_arrow-01.svg"); ?>
-					
-				</div><!-- stat_arrow -->
-				
-				<span>Areas of Practice</span>
-				
-				<ul class="att_bio_stats_submenu">
-					
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-					<li>Lorem Ipsum</li>
-				
-				</ul><!-- att_bio_stats_submenu -->
-			
-			</li>
-			
-		</ul><!-- att_bio_stats_menu -->
-		
-				
 	</div><!-- att_bio_stats -->
 	
 	<div class="att_awards_wrapper">
 		
-		<span class="att_awards_title">Awards + Memberships</span><!-- att_awards_title -->
+		<span class="att_awards_title"><?php the_field( 'awards_title_att' ); ?></span><!-- att_awards_title -->
 		
 		<div class="att_awards_slider">
 			
-			<div class="att_awards_slide">
+			<?php if(get_field('awards_slider_att')): ?>
+			 
+				<?php while(has_sub_field('awards_slider_att')): ?>
+			 
+					<div class="att_awards_slide">
 				
-				<div class="att_awards_slide_inner">
+						<div class="att_awards_slide_inner">
 				
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-01.svg"/>
+							<?php $awards_logo = get_sub_field( 'awards_logo' ); ?>
+							
+							<img src="<?php echo $awards_logo['url']; ?>" alt="<?php echo $awards_logo['alt']; ?>" />
 				
-				</div><!-- att_awards_slide_inner -->
+						</div><!-- att_awards_slide_inner -->
 				
-			</div><!-- att_awards_slide -->
-			
-			<div class="att_awards_slide">
-				
-				<div class="att_awards_slide_inner">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-02.svg"/>
-				
-				</div><!-- att_awards_slide_inner -->
-				
-			</div><!-- att_awards_slide -->
-			
-			<div class="att_awards_slide">
-				
-				<div class="att_awards_slide_inner">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-03.svg"/>
-				
-				</div><!-- att_awards_slide_inner -->
-				
-			</div><!-- att_awards_slide -->
-			
-			<div class="att_awards_slide">
-				
-				<div class="att_awards_slide_inner">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-04.svg"/>
-				
-				</div><!-- att_awards_slide_inner -->
-				
-			</div><!-- att_awards_slide -->
-			
+					</div><!-- att_awards_slide -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
+						
 		</div><!-- att_awards_slider -->
 		
 	</div><!-- att_awards_wrapper -->
