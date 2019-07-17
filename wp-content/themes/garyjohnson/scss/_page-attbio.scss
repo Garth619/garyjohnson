@@ -121,6 +121,10 @@ span.att_bio_position {
 					cursor: pointer;
 					position: relative;
 					z-index:1;
+					transition: all 200ms ease-in-out;
+				}
+				span.active {
+					color:$gold;
 				}
 				.stat_arrow {
 					position: absolute;
@@ -129,6 +133,13 @@ span.att_bio_position {
 					svg {
 						width:20px;
 						height:25px;
+						fill:$blue;
+						transition: all 200ms ease-in-out;
+					}
+				}
+				.stat_arrow.active {
+					svg {
+						fill:$gold;
 					}
 				}
 		}

@@ -636,7 +636,11 @@ $('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e
 	
 	
 	$('.att_bio_stats ul.att_bio_stats_menu > li span').on('click', function(e) {
-	  
+		
+		$(this).toggleClass('active');
+		
+		$(this).prev('.stat_arrow').toggleClass('active');
+		
 		$(this).next('ul.att_bio_stats_submenu').slideToggle(300);
 	
 	});
