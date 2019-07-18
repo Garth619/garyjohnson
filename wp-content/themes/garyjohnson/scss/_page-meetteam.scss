@@ -158,3 +158,99 @@
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 1330px) {
+	
+	.single_att {
+		height: 645px;
+	}
+	    
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1280px) {
+	
+	.meet_team_wrapper {
+		max-width: 850px;
+	}
+	
+	.single_att {
+		flex-basis: calc(50% - 50px);
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.single_att {
+		&:hover {
+			a {
+				span.att_view_profile {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+		a {
+			span.single_att_name {
+				margin-top: 0;
+			}
+		}
+	}
+	
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 930px) {
+	
+	
+	.single_att {
+	  height: 620px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 900px) {
+	
+	
+	.single_att {
+		height: 575px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 875px) {
+	
+	
+	.meet_team_wrapper {
+		display: block;
+		max-width: 420px;
+		margin: 95px auto 0;
+	}
+	
+	.single_att {
+		height:auto;
+		margin: 0 0px 45px;
+	}
+	
+	
+	
+} /* Media Query */
