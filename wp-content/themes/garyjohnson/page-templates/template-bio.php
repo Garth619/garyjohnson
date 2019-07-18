@@ -22,7 +22,7 @@ get_header(); ?>
 				
 				<?php if ( $attorney_bio_image ) : ?>
 				
-				<img src="<?php echo $attorney_bio_image['url']; ?>" alt="<?php echo $attorney_bio_image['alt']; ?>" />
+					<img src="<?php echo $attorney_bio_image['url']; ?>" alt="<?php echo $attorney_bio_image['alt']; ?>" />
 				
 				<?php else: ?>
 								

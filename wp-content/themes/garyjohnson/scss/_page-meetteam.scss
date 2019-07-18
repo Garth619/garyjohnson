@@ -1,0 +1,153 @@
+
+
+.meet_team_wrapper {
+	max-width:1670px;
+	margin:135px auto 0;
+	display: flex;
+	flex-wrap:wrap;
+	//justify-content: space-between;
+}
+
+
+.single_att {
+	flex-basis:calc(25% - 50px);
+	margin:0 25px 110px;
+	text-align: center;
+	height: 625px;
+	//background: pink;
+	a {
+		display: block;
+		text-decoration: none;
+		.single_att_img {
+			img {
+				max-width:100%;
+				height:auto;
+				display: block;
+			}
+		}
+		span {
+			display: block;
+		}
+		span.att_view_profile {
+			background: $orange;
+			display: block;
+			color:#fff;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+			padding:30px 20px;
+			max-width:297px;
+			margin:-55px auto 0;
+			position: relative;
+			z-index:1;
+			opacity: 0;
+			transition: all 400ms ease-in-out;
+			@include montserratblack;
+		}
+		span.single_att_name {
+			font-size: 34px;
+			color:$blue;
+			margin-top:23px;
+			@include notoserifreg;
+		}
+		span.single_att_position {
+			text-transform: uppercase;
+			color:$gold;
+			font-size: 17px;
+			letter-spacing: 0.2em;
+			margin-top:27px;
+			@include montserratblack;
+		}
+	}
+}
+
+
+.single_att {
+	&:hover {
+		a {
+			span.att_view_profile {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+.sec_four_logos {
+	display: flex;
+	flex-wrap:wrap;
+	margin:85px 0px 0px 0px;
+	.sec_four_single_logo {
+		flex-basis:calc(25% - 40px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:140px;
+		background:red;
+		margin:0 20px 55px;
+		img {
+			display: block;
+			max-width:100%;
+			height:auto;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1740px) {
+	
+	
+	.single_att {
+		margin: 0 25px 80px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1655px) {
+	
+	
+	.single_att {
+   	flex-basis: calc(33.33% - 50px);
+   	height: 745px;
+  }
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 1575px) {
+	
+	
+	.single_att {
+		margin: 0 25px 45px;
+	}
+	    
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1480px) {
+	
+	.single_att {
+		height: 695px;
+	}
+	    
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1450px) {
+	
+	.single_att {
+    height: 675px;
+	}
+	
+	
+	
+} /* Media Query */
