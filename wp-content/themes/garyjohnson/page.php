@@ -16,7 +16,7 @@
 		<?php get_template_part( 'loop', 'page' ); ?>
 		
 		
-<!--
+
 		<div class="blockquote_wrapper">
 			
 			<div class="blockquote_inner" style="background:url(<?php bloginfo('template_directory');?>/images/light-grey-terrazzo.png) top left repeat">
@@ -29,7 +29,7 @@
 			
 		</div>
 		
--->
+
 		
 				
 	</div><!-- internal_content -->

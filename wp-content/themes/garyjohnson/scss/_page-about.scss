@@ -1,0 +1,152 @@
+
+
+.about_top_wrapper {
+	display: flex;
+	//max-width:1505px;
+	justify-content: space-between;
+	margin:128px 0;
+	padding:0 110px;
+}
+
+
+.about_top_left {
+	flex-basis:46%;
+	&:before {
+		content:"";
+		display: block;
+		width:100%;
+		height:5px;
+		background: $orange;
+		margin-bottom:13px;
+	}
+}
+
+.about_top_right {
+	flex-basis:50%;
+	display: flex;
+	margin-top:-2px;
+	justify-content: flex-end;
+}
+
+
+	.about_right_video_wrapper {
+		max-width:625px;
+		cursor: pointer;
+		position: relative;
+		.my_wistia {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			z-index:1;
+		}
+		&:hover {
+			.play_button_overlay {
+				.play_button {
+					background: rgba(195,152,79,0.9);
+				}
+			}
+		}
+		span.about_right_title {
+			text-transform: uppercase;
+			text-transform: uppercase;
+			color:$orange;
+			letter-spacing: 0.2em;
+			display: block;
+			text-align: right;
+			margin-bottom:20px;
+			@include montserratblack;
+		}
+		.about_right_video {
+			position: relative;
+			img.about_video_thumb {
+				max-width: 100%;
+				height:auto;
+				display: block;
+			}
+			.play_button_overlay {
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.play_button {
+					width:205px;
+					height:205px;
+					&:after {
+						font-size: 28px;
+						line-height: 35px;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	.about_bottom_wrapper {
+		display: flex;
+	}
+	
+	.about_bottom_left {
+		flex-basis:45%;
+		a.about_blockquote_button {
+			background: $orange;
+			color:#fff;
+			text-decoration: none;
+			text-transform: lowercase;
+			font-size: 18px;
+			margin-top:64px;
+			padding:25px 30px;
+			display: inline-block;
+			box-shadow: 0px 4px 8px 0px rgba(10, 25, 57, 0.3);
+			transition: all 200ms ease-in-out;
+			@include montserratbold;
+			&:hover {
+				background: $gold;
+			}
+		}
+	}
+
+
+	
+	.about_bottom_blockquote {
+		margin-left:-100px;
+		.about_bottom_blockquote_inner {
+			padding:110px 0 143px 210px;
+			.about_bottom_blockquote_content {
+				max-width: 540px;
+				strong {
+					font-size: 60px;
+					line-height: 94px;
+					display: inline-block;
+					&:after {
+						content:"";
+						display: block;
+						width:100%;
+						height:6px;
+						background: $orange;
+					}
+					@include montserratbold;
+				}
+			}
+		}
+	}
+	
+	.about_bottom_right {
+		flex-basis:50%;
+		padding-left:9%;
+		&:before {
+			content:"";
+			display: block;
+			width:100%;
+			height:5px;
+			background: $orange;
+			margin-bottom:13px;
+		}
+	}
