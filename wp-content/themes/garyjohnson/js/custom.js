@@ -556,6 +556,39 @@ $('.att_awards_slider').slick({
   ]
  });
  
+ 
+ 
+ $('.about_awards_slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+	arrows:false,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1375,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+     }
+   },
+   {
+      breakpoint: 1066,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+     }
+   }
+  ]
+ });
+ 
 
 
 

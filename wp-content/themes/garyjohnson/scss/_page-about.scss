@@ -150,3 +150,55 @@
 			margin-bottom:13px;
 		}
 	}
+	
+	
+	
+	.about_awards_wrapper {
+		margin:260px auto 0;
+		max-width:1425px;
+		span.about_awards_title {
+			display: block;
+			text-transform: uppercase;
+			color:$gold;
+			text-align: center;
+			font-size: 16px;
+			letter-spacing: 0.2em;
+			@include montserratblack;
+		}
+	}
+	
+	
+	
+	.about_awards_slider {
+		margin:110px 0 0;
+		.slick-dots {
+		bottom: -40px;
+		li.slick-active {
+			button {
+				&:before {
+					color:$orange;
+				}
+			}
+		}
+		li:hover {
+			button {
+				&:before {
+					color:$orange;
+				}
+			}
+		}
+		li {
+			margin:0;
+			width:16px;
+			button {
+				width:16px;
+				&:before {
+					width:16px;
+					opacity: 1;
+					color: $gold;
+					font-size:26px;
+				}
+			}
+		}
+	}
+	}
