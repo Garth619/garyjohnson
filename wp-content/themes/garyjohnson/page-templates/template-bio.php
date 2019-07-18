@@ -26,7 +26,7 @@ get_header(); ?>
 				
 				<?php else: ?>
 								
-					<img src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" />
+					<img src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" alt="Attorney Placeholder Image" />
 				
 				<?php endif; ?>
 				
@@ -75,11 +75,11 @@ get_header(); ?>
 	
 	</div><!-- att_bio_wrapper -->
 	
+	<?php if(get_field('attorney_additional_information')): ?>
+	
 	<div class="att_bio_stats">
 		
-		<?php if(get_field('attorney_additional_information')): ?>
-		 
-			<?php while(has_sub_field('attorney_additional_information')): ?>
+		<?php while(has_sub_field('attorney_additional_information')): ?>
 		 
 				<ul class="att_bio_stats_menu">
 			
@@ -113,9 +113,11 @@ get_header(); ?>
 		    
 			<?php endwhile; ?>
 		 
-		<?php endif; ?>
-		
-	</div><!-- att_bio_stats -->
+		</div><!-- att_bio_stats -->
+	
+	<?php endif; ?>
+	
+	<?php if(get_field('awards_slider_att')): ?>
 	
 	<div class="att_awards_wrapper">
 		
@@ -123,7 +125,7 @@ get_header(); ?>
 		
 		<div class="att_awards_slider">
 			
-			<?php if(get_field('awards_slider_att')): ?>
+			
 			 
 				<?php while(has_sub_field('awards_slider_att')): ?>
 			 

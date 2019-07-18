@@ -254,3 +254,20 @@
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.meet_team_wrapper {
+		margin-top:55px;
+	}
+	
+	
+	.single_att {
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+	
+} /* Media Query */

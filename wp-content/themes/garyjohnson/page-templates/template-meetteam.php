@@ -11,126 +11,50 @@ get_header(); ?>
 	<h1 class="internal_header"><?php the_title();?></h1><!-- internal_header -->
 	
 	<div class="meet_team_wrapper">
-	
-		<div class="single_att">
-			
-			<a class="" href="">
-				
-				<div class="single_att_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/att_img.jpg"/>
-				
-				</div><!-- single_att_img -->
-				
-				<span class="att_view_profile">View Profile</span><!-- att_view_profile -->
-				
-				<span class="single_att_name">Gary C. Johnson Gary C. Johnson</span><!-- single_att_name -->
-				
-				<span class="single_att_position">Partner</span><!-- single_att_position -->
-			
-			</a>
-			
-		</div><!-- single_att -->
 		
-		<div class="single_att">
-			
-			<a class="" href="">
-				
-				<div class="single_att_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/att_img.jpg"/>
-				
-				</div><!-- single_att_img -->
-				
-				<span class="att_view_profile">View Profile</span><!-- att_view_profile -->
-				
-				<span class="single_att_name">Gary C. Johnson</span><!-- single_att_name -->
-				
-				<span class="single_att_position">Partner</span><!-- single_att_position -->
-			
-			</a>
-			
-		</div><!-- single_att -->
+		<?php $meet_attorneys = get_field( 'meet_attorneys' ); ?>
 		
-		<div class="single_att">
-			
-			<a class="" href="">
-				
-				<div class="single_att_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/att_img.jpg"/>
-				
-				</div><!-- single_att_img -->
-				
-				<span class="att_view_profile">View Profile</span><!-- att_view_profile -->
-				
-				<span class="single_att_name">Gary C. Johnson</span><!-- single_att_name -->
-				
-				<span class="single_att_position">Partner</span><!-- single_att_position -->
-			
-			</a>
-			
-		</div><!-- single_att -->
+		<?php if ( $meet_attorneys ): ?>
 		
-		<div class="single_att">
+		<?php foreach ( $meet_attorneys as $post ):  ?>
 			
-			<a class="" href="">
+			<?php setup_postdata ( $post ); ?>
 				
-				<div class="single_att_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/att_img.jpg"/>
-				
-				</div><!-- single_att_img -->
-				
-				<span class="att_view_profile">View Profile</span><!-- att_view_profile -->
-				
-				<span class="single_att_name">Gary C. Johnson</span><!-- single_att_name -->
-				
-				<span class="single_att_position">Partner</span><!-- single_att_position -->
+				<div class="single_att">
 			
-			</a>
+					<a class="" href="<?php the_permalink();?>">
+				
+						<div class="single_att_img">
+				
+							<?php $attorney_bio_image = get_field( 'attorney_bio_image' ); ?>
+							
+							<?php if ( $attorney_bio_image ) : ?>
+							
+								<img src="<?php echo $attorney_bio_image['url']; ?>" alt="<?php echo $attorney_bio_image['alt']; ?>" />
+								
+								<?php else: ?>
+								
+								<img src="<?php bloginfo('template_directory');?>/images/placeholder.jpg" alt="Attorney Placeholder Image" />
+							
+							<?php endif; ?>
+				
+						</div><!-- single_att_img -->
+				
+						<span class="att_view_profile">View Profile</span><!-- att_view_profile -->
+				
+						<span class="single_att_name"><?php the_title();?></span><!-- single_att_name -->
+				
+						<span class="single_att_position"><?php the_field( 'attorney_position' ); ?></span><!-- single_att_position -->
 			
-		</div><!-- single_att -->
+					</a>
+			
+				</div><!-- single_att -->
+			
+			<?php endforeach; ?>
+			
+		<?php wp_reset_postdata(); ?>
 		
-		<div class="single_att">
-			
-			<a class="" href="">
-				
-				<div class="single_att_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/att_img.jpg"/>
-				
-				</div><!-- single_att_img -->
-				
-				<span class="att_view_profile">View Profile</span><!-- att_view_profile -->
-				
-				<span class="single_att_name">Gary C. Johnson Gary C. Johnson</span><!-- single_att_name -->
-				
-				<span class="single_att_position">Partner</span><!-- single_att_position -->
-			
-			</a>
-			
-		</div><!-- single_att -->
-		
-		<div class="single_att">
-			
-			<a class="" href="">
-				
-				<div class="single_att_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/att_img.jpg"/>
-				
-				</div><!-- single_att_img -->
-				
-				<span class="att_view_profile">View Profile</span><!-- att_view_profile -->
-				
-				<span class="single_att_name">Gary C. Johnson</span><!-- single_att_name -->
-				
-				<span class="single_att_position">Partner</span><!-- single_att_position -->
-			
-			</a>
-			
-		</div><!-- single_att -->
+		<?php endif; ?>	
 	
 	</div><!-- meet_team_wrapper -->
 	
