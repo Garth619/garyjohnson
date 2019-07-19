@@ -87,6 +87,15 @@ h1,h2,h3,h4 {
 		text-transform: uppercase;
 		@include montserratblack;
 	}
+	a {
+		color:$gold;
+		@include sourcesansbold;
+		text-decoration: none;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			color:$orange;
+		}
+	}
 	ul {
 		list-style: none;
 		margin-bottom:35px;

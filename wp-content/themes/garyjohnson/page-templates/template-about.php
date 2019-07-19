@@ -93,7 +93,7 @@ and become complicated.</h2>
 			
 			<p>While we're helping you with the practical demands of life following a car accident or lost-time injury, we also concentrate on helping you recover the compensation you deserve from negligent defendants under the law.</p>
 
-			<p>For more information about our ability to take care of our clients when they need help, contact the law firm of Gary C. Johnson, P.S.C., for a free consultation in Louisville, Pikeville, Hazard or Lexington.</p>
+			<p>For more information about our ability to take care of our clients when they need help, contact the law firm of Gary C. Johnson, P.S.C., for a <a href="#consultation">free consultation</a> in Louisville, Pikeville, Hazard or Lexington.</p>
 			
 		</div><!-- about_bottom_right -->
 		
