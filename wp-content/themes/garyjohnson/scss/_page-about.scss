@@ -346,10 +346,18 @@
 			}
 		}
 		
+		.about_bottom_left {
+			a.about_blockquote_button {
+				margin-top: 44px;
+			}
+		}
+		
+		
+		
 		
 		.about_bottom_blockquote {
 			width: calc(100% + 174px);
-			margin: 37px 0 37px -87px;
+			margin: 0px 0 37px -87px;
 			.about_bottom_blockquote_inner {
 				padding: 86px 87px 95px;
 				max-width: 100%;
@@ -363,6 +371,29 @@
 		  .about_awards_slider {
 				margin: 40px 0 0;
 			}
+			
+			
+		.about_bottom_blockquote {
+			
+			.about_bottom_blockquote_inner {
+		
+				.about_bottom_blockquote_content {
+					
+					strong {
+						font-size: 39px;
+						line-height: 66px;
+						&:after {
+							
+						}
+						&:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+							
+						}
+					}
+				}
+			}
+		}
+		
+		
 		
 		
 	} /* Media Query */
