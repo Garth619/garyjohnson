@@ -14,18 +14,7 @@ get_header(); ?>
 		
 		<div class="about_top_left">
 			
-			<h2>People who survive serious accidents are often surprised to find how quickly their life and the lives of those around them change 
-and become complicated.</h2>
-			
-			<p>People who survive serious accidents are often surprised to find how quickly their life and the lives of those around them change and become complicated. Economic pressures demand immediate attention. Inability to work causes the bills to pile up. Transportation becomes an issue. Creditors start calling. The lawyers of Gary C. Johnson, P.S.C., can help you deal with these problems while you focus on your recovery and deal with the pain.</p>
-
-			<p>At the law firm of Gary C. Johnson, P.S.C., our attorneys help people prove liability and collect damages from negligent truck drivers, property owners, hospitals, physicians and their insurance companies, and drug companies.</p>
-
-			<h2>We accept cases on a contingent fee basis, which means that we collect no attorney’s fee unless we succeed in recovering damages for you through settlement or trial.</h2>
-
-			<p>We also advance all of the costs and expenses involved in the investigation and proof of your personal injury or wrongful death claims, and we only recover our expenses if we are successful on your behalf.</p>
-
-			<p>Our founding attorney, Gary C. Johnson, has a long record of public service in Kentucky. He served as Pike County Attorney for 18 years, followed by four years as Kentucky State Senator. In 2008, he was awarded the Kentucky Justice Association's annual Outstanding Trial Lawyer Award. Many Kentuckians know Gary Johnson best as the host of WYMT's show, Simply the Law, seen every Tuesday night at 7 pm.</p>
+			<?php the_field( 'about_top_content' ); ?>
 			
 		</div><!-- about_top_left -->
 		
@@ -33,13 +22,19 @@ and become complicated.</h2>
 			
 			<div class="about_right_video_wrapper">
 				
-				<span class="about_right_title">Learn About Our Firm</span><!-- about_right_title -->
+				<span class="about_right_title"><?php the_field( 'learn_about_our_firm_title' ); ?></span><!-- about_right_title -->
 				
 				<div class="about_right_video">
 					
-					<div class="my_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- my_wistia -->
+					<div class="my_wistia wistia_embed wistia_async_<?php the_field( 'learn_about_our_firm_wistia_id' ); ?> popover=true popoverContent=html"></div><!-- my_wistia -->
 					
-					<img class="about_video_thumb" src="<?php bloginfo('template_directory');?>/images/intl_about_img.jpg"/>
+					<?php $learn_about_our_firm_video_thumbnail = get_field( 'learn_about_our_firm_video_thumbnail' ); ?>
+					
+					<?php if ( $learn_about_our_firm_video_thumbnail ) { ?>
+					
+					<img class="about_video_thumb" src="<?php echo $learn_about_our_firm_video_thumbnail['url']; ?>" alt="<?php echo $learn_about_our_firm_video_thumbnail['alt']; ?>" />
+					
+					<?php } ?>
 					
 					<div class="play_button_overlay">
 						
@@ -65,14 +60,23 @@ and become complicated.</h2>
 					
 					<div class="about_bottom_blockquote_content">
 						
-						<strong>Easter Kentucky</strong>
-						<strong>Attorneys</strong>
-						<strong>Committed to</strong>
-						<strong>client service.</strong>
+						<span>
+						
+							<?php if(get_field('about_bottom_blockquote')): ?>
+							 
+								<?php while(has_sub_field('about_bottom_blockquote')): ?>
+							 
+									<strong><?php the_sub_field( 'line_breaks' ); ?></strong>
+							    
+								<?php endwhile; ?>
+							 
+							<?php endif; ?>
+						
+						</span>
 						
 					</div><!-- about_bottom_blockquote_content -->
 					
-					<a class="about_blockquote_button" href="#consultation">Click for your free consultation</a><!-- about_blockquote_button -->
+					<a class="about_blockquote_button" href="#consultation"></a><!-- about_blockquote_button -->
 					
 				</div><!-- about_bottom_blockquote_inner -->
 				
@@ -82,18 +86,7 @@ and become complicated.</h2>
 		
 		<div class="about_bottom_right content">
 			
-			<p><strong>Our commitment to service is shown by the way our team of attorneys and staff work diligently to help clients with their problems outside the areas that further their legal claims. While we're working to win legal claims, the entire staff goes the extra mile to help people with such problems as the following:</strong></p>
-			
-			<ul>
-				<li>Car repairs and auto rentals following an accident</li>
-				<li>All communications and negotiations with defense attorneys and insurance adjusters</li>
-				<li>Communicate and negotiate with creditors and bill collectors</li>
-				<li>Communicate with your physicians on a regular basis to ensure that continued treatment is available, regardless of your ability to pay during the pendency of your claim.</li>
-			</ul>
-			
-			<p>While we're helping you with the practical demands of life following a car accident or lost-time injury, we also concentrate on helping you recover the compensation you deserve from negligent defendants under the law.</p>
-
-			<p>For more information about our ability to take care of our clients when they need help, contact the law firm of Gary C. Johnson, P.S.C., for a <a href="#consultation">free consultation</a> in Louisville, Pikeville, Hazard or Lexington.</p>
+			<?php the_field( 'about_bottom_content' ); ?>
 			
 		</div><!-- about_bottom_right -->
 		
@@ -101,60 +94,30 @@ and become complicated.</h2>
 	
 	<div class="about_awards_wrapper">
 		
-		<span class="about_awards_title">Awards + Memberships</span><!-- about_awards_title -->
+		<span class="about_awards_title"><?php the_field( 'about_awards_slider_title' ); ?></span><!-- about_awards_title -->
 		
 		<div class="about_awards_slider">
 			
-			<div class="about_awards_slide">
+			<?php if(get_field('about_page_awards_slider')): ?>
+			 
+				<?php while(has_sub_field('about_page_awards_slider')): ?>
+			 
+					<div class="about_awards_slide">
 				
-				<div class="about_awards_slide_inner">
+						<div class="about_awards_slide_inner">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-02.svg"/>
+							<?php $logo = get_sub_field( 'logo' ); ?>
+		
+							<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 					
-				</div><!-- about_awards_slide_inner -->
+						</div><!-- about_awards_slide_inner -->
 				
-			</div><!-- about_awards_slide -->
-			
-			<div class="about_awards_slide">
-				
-				<div class="about_awards_slide_inner">
-					
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-03.svg"/>
-					
-				</div><!-- about_awards_slide_inner -->
-				
-			</div><!-- about_awards_slide -->
-			
-			<div class="about_awards_slide">
-				
-				<div class="about_awards_slide_inner">
-					
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-01.svg"/>
-					
-				</div><!-- about_awards_slide_inner -->
-				
-			</div><!-- about_awards_slide -->
-			
-			<div class="about_awards_slide">
-				
-				<div class="about_awards_slide_inner">
-					
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-04.svg"/>
-					
-				</div><!-- about_awards_slide_inner -->
-				
-			</div><!-- about_awards_slide -->
-			
-			<div class="about_awards_slide">
-				
-				<div class="about_awards_slide_inner">
-					
-					<img src="<?php bloginfo('template_directory');?>/images/awards_img-04.svg"/>
-					
-				</div><!-- about_awards_slide_inner -->
-				
-			</div><!-- about_awards_slide -->
-			
+					</div><!-- about_awards_slide -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
+						
 		</div><!-- about_awards_slider -->
 		
 	</div><!-- about_awards_wrapper -->

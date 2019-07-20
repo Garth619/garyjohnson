@@ -43,7 +43,7 @@
 					
 							<span class="phone_title">Phone</span><!-- phone_title -->
 					
-							<a class="footer_phone" href=""><?php the_sub_field( 'phone_adress' ); ?></a><!-- footer_phone -->
+							<a class="footer_phone" href="<?php echo str_replace(['-', '(', ')', ' '], '', get_sub_field('phone_adress')); ?>"><?php the_sub_field( 'phone_adress' ); ?></a><!-- footer_phone -->
 					
 							<a class="get_directions" href="<?php the_sub_field( 'google_maps_link' ); ?>" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
 					

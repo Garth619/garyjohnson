@@ -56,14 +56,26 @@
 					<a class="" href="<?php bloginfo('url');?>">
 						
 						<div class="desktop_logo">
-				
-							<?php echo file_get_contents("wp-content/themes/garyjohnson/images/hero_logo_vertical-01.svg"); ?>
+							
+							<?php $desktop_logo = get_field( 'desktop_logo','option'); ?>
+							
+							<?php if ( $desktop_logo ) { ?>
+							
+							<img src="<?php echo $desktop_logo['url']; ?>" alt="<?php echo $desktop_logo['alt']; ?>" />
+							
+							<?php } ?>
 						
 						</div><!-- desktop_logo -->
 						
 						<div class="mobile_logo">
-				
-							<?php echo file_get_contents("wp-content/themes/garyjohnson/images/hero_logo_horizontal-01.svg"); ?>
+							
+							<?php $mobile_logo = get_field( 'mobile_logo','option'); ?>
+							
+							<?php if ( $mobile_logo ) { ?>
+							
+							<img src="<?php echo $mobile_logo['url']; ?>" alt="<?php echo $mobile_logo['alt']; ?>" />
+							
+							<?php } ?>
 						
 						</div><!-- desktop_logo -->
 					
@@ -87,9 +99,9 @@
 				
 				<div class="phone_consultation_wrapper">
 				
-					<a class="phone" href="tel:6062624551">(606) 262-4551</a>
+					<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('header_main_phone','option')); ?>"><?php the_field( 'header_main_phone','option'); ?></a>
 				
-					<span class="free_consultation"><strong>call for your</strong> free consultation</span><!-- free_consultation -->
+					<span class="free_consultation"><?php the_field( 'call_for_your_free_consultation','option'); ?></span><!-- free_consultation -->
 				
 				</div><!-- phone_consultation_wrapper -->
 				

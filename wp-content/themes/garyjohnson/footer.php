@@ -7,10 +7,16 @@
 			<div class="footer_cta_wrapper">
 			
 				<div class="footer_cta">
-				
-					<span>Request your</span>
-					<span>free case</span>
-					<span>consultation</span>
+					
+					<?php if(get_field('footer_form_call_to_action','option')): ?>
+					 
+						<?php while(has_sub_field('footer_form_call_to_action','option')): ?>
+					 
+							<span><?php the_sub_field( 'line_break' ); ?></span>
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 				
 				</div><!-- footer_cta -->
 			
@@ -18,7 +24,7 @@
 		
 			<div class="footer_form">
 			
-				<span class="form_cta">How Can We Help You?</span><!-- form_cta -->
+				<span class="form_cta"><?php the_field( 'how_can_we_help_you','option'); ?></span><!-- form_cta -->
 			
 				<span class="required">*Fields Required</span><!-- required -->	
 			
@@ -34,69 +40,35 @@
 			
 			<div class="footer_location_inner">
 				
-				<div class="location_col">
+				<?php if(get_field('address','option')): ?>
+				 
+					<?php while(has_sub_field('address','option')): ?>
+				 
+						<div class="location_col">
 					
-					<span class="location_col_title">Pikeville</span><!-- location_col_title -->
+							<span class="location_col_title"><?php the_sub_field( 'location_name' ); ?></span><!-- location_col_title -->
 					
-					<span class="street_address">110 Caroline Ave,<br/> Pikeville, KY 41501</span><!-- street_address -->
+							<span class="street_address"><?php the_sub_field( 'address' ); ?></span><!-- street_address -->
+							
+							<?php if(get_sub_field('po_box')) { ?>
 					
-					<span class="po_box_address">P.O. Box 231<br/> Pikeville, KY 41501</span><!-- po_box_address -->
+								<span class="po_box_address"><?php the_sub_field( 'po_box' ); ?></span><!-- po_box_address -->
+							
+							<?php } ?>
 					
-					<span class="phone_title">Phone</span><!-- phone_title -->
+							<span class="phone_title">Phone</span><!-- phone_title -->
 					
-					<a class="footer_phone" href="">(606) 437-40021</a><!-- footer_phone -->
+							<a class="footer_phone" href="<?php echo str_replace(['-', '(', ')', ' '], '', get_sub_field('phone_adress')); ?>"><?php the_sub_field( 'phone_adress' ); ?></a><!-- footer_phone -->
 					
-					<a class="get_directions" href="">Get Directions</a><!-- get_directions -->
+							<a class="get_directions" href="<?php the_sub_field( 'google_maps_link' ); ?>" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
 					
-				</div><!-- location_col -->
+						</div><!-- location_col -->
 				
-				<div class="location_col">
-					
-					<span class="location_col_title">Hazard</span><!-- location_col_title -->
-					
-					<span class="street_address">941 N Main St #202,<br/> Hazard, KY 41701</span><!-- street_address -->
-					
-					<span class="po_box_address">P.O. Box 359<br/> Hazard, KY 41701</span><!-- po_box_address -->
-					
-					<span class="phone_title">Phone</span><!-- phone_title -->
-					
-					<a class="footer_phone" href="">(606) 436-6059</a><!-- footer_phone -->
-					
-					<a class="get_directions" href="">Get Directions</a><!-- get_directions -->
-					
-				</div><!-- location_col -->
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
-				<div class="location_col">
-					
-					<span class="location_col_title">Lexington</span><!-- location_col_title -->
-					
-					<span class="street_address">2265 Executive Dr,<br/> Lexington, KY 40505</span><!-- street_address -->
-					
-					<span class="po_box_address">P.O. Box 55106<br/> Lexington, KY 40505</span><!-- po_box_address -->
-					
-					<span class="phone_title">Phone</span><!-- phone_title -->
-					
-					<a class="footer_phone" href="">(606) 268-4300</a><!-- footer_phone -->
-					
-					<a class="get_directions" href="">Get Directions</a><!-- get_directions -->
-					
-				</div><!-- location_col -->
-				
-				<div class="location_col">
-					
-					<span class="location_col_title">Louisville</span><!-- location_col_title -->
-					
-					<span class="street_address">9300 Shelbyville Rd,<br/> Ste. 609<br/> Louisville, KY 40222</span><!-- street_address -->
-					
-					<span class="phone_title">Phone</span><!-- phone_title -->
-					
-					<a class="footer_phone" href="">(606) 437-40021</a><!-- footer_phone -->
-					
-					<a class="get_directions" href="">Get Directions</a><!-- get_directions -->
-					
-				</div><!-- location_col -->
-				
-				<a class="locations_button" href="">View All Locations</a><!-- locations_button -->
+				<a class="locations_button" href="<?php the_field( 'view_all_locations_page_link','option'); ?>"><?php the_field( 'view_all_locations_verbaige','option'); ?></a><!-- locations_button -->
 				
 			</div><!-- footer_location_inner -->
 			
