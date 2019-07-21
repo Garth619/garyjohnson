@@ -233,7 +233,7 @@ jQuery(document).ready(function($){
 		
 		
 
-    // createWaypoint('section_one', '.sticky_header', 'visible', -300, null, true);
+    createWaypoint('header_trigger', '.header_right', 'fixed', -107, null, true);
     
    
 

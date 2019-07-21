@@ -120,6 +120,25 @@ h1,h2,h3,h4 {
 	p {
 		margin-bottom:35px;
 	}
+	blockquote {
+		font-size: 24px;
+		color:$orange;
+		padding:34px 35px 55px;
+		line-height: 41px;
+		a {
+			color:$orange;
+			border-bottom: 1px solid $orange;
+			transition: all 200ms ease-in-out;
+			text-decoration: none;
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
+		}
+		@include montserratbold;
+		p {
+			margin-bottom: 0;
+		}
+	}
 }
 
 
@@ -161,6 +180,9 @@ img.aligncenter {
 	h1 {
 		font-size: 37px;
     line-height: 46px;
+	}
+	blockquote {
+		padding: 10px 0px 40px;
 	}
 }
 	

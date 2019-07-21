@@ -225,8 +225,48 @@ a.internal_consultation_button {
 	width:100%;
 	margin:128px 0 105px -50px;
 	position: relative;
+	&:after {
+		content:"";
+		display: block;
+		width:1000%;
+		height:100%;
+		position: absolute;
+		top:0;
+		left:0;
+		background: url(#{$themePath}images/light-grey-terrazzo.png) top left repeat;
+	}
+	.blockquote_inner {
+		position: relative;
+		z-index: 1;
+		padding: 86px 0 95px 80px;
+		.blockquote_content {
+			max-width: 750px;
+			font-size: 45px;
+			line-height: 76px;
+			@include montserratbold;
+			strong {
+				padding-bottom:6px;
+				border-bottom:5px solid $orange;
+			}
+		}
+		.blockquote_name {
+			color:$gold;
+			text-transform: uppercase;
+			font-size: 16px;
+			letter-spacing: 0.2em;
+			margin-top:40px;
+			@include montserratblack;
+		}
+	}
+}
+
+
+/*
+.blockquote_wrapper {
+	width:100%;
+	margin:128px 0 105px -50px;
+	position: relative;
 	height:559px;
-	
 	.blockquote_inner {
 		position: absolute;
 		top:0;
@@ -253,6 +293,7 @@ a.internal_consultation_button {
 		}
 	}
 }
+*/
 
 
 .small_sidebar_box {
@@ -473,7 +514,7 @@ a.internal_consultation_button {
 	}
 	
 	.internal_main {
-		margin-top: 188px;
+		margin-top: 0px;
 	}
 	
 	

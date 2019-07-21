@@ -628,6 +628,7 @@ header {
 		flex-direction: column;
 		height: 188px;
 		box-shadow: none;
+		position: relative;
 	}
 	
 	
@@ -647,7 +648,12 @@ header {
 	}
 	
 
-
+	.header_right.fixed {
+		position: fixed;
+		width: 100%;
+		top:0;
+		left:0;
+	}
 	
 	.header_right {
 		flex-basis: auto;

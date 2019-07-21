@@ -382,12 +382,16 @@ a.consultation_button {
 @media screen and (max-width: 767px) {
 	
 	
+	#section_one {
+		margin-top:0;
+	}
+	
 	.sec_one_left {
 		height:auto;
 		padding:0 18px 45px;
 		img {
 			height: 720px;
-			top:20px;
+			top:0px;
 			object-position: 40% 0;
 		}
 	}

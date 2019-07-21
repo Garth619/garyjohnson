@@ -70,6 +70,7 @@ get_header(); ?>
 		<div class="att_bio_right content">
 			
 				<?php get_template_part( 'loop', 'page' ); ?>
+				
 			
 		</div><!-- att_bio_right -->
 	

@@ -49,7 +49,7 @@
 	
 	<header>
 		
-		<div class="header_left">
+		<div id="header_trigger" class="header_left">
 			
 			<div class="vertical_logo">
 					

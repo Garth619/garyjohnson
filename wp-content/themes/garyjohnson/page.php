@@ -14,12 +14,11 @@
 		<h1><?php the_title();?></h1>
 		
 		<?php get_template_part( 'loop', 'page' ); ?>
-		
-		
 
+<!--
 		<div class="blockquote_wrapper">
 			
-			<div class="blockquote_inner" style="background:url(<?php bloginfo('template_directory');?>/images/light-grey-terrazzo.png) top left repeat">
+			<div class="blockquote_inner">
 				
 				<div class="blockquote_content"><strong>“We are driven by the passion to work</strong> tirelessly for our clients to get them back on their feet and the <strong>results they deserve.”</strong></div>
 				
@@ -28,6 +27,7 @@
 			</div>
 			
 		</div>
+-->
 		
 
 		

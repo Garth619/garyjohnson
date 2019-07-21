@@ -23,25 +23,7 @@
 	h2 {
 		
 	}
-	blockquote {
-		font-size: 24px;
-		color:$orange;
-		padding:34px 35px 55px;
-		line-height: 41px;
-		a {
-			color:$orange;
-			border-bottom: 1px solid $orange;
-			transition: all 200ms ease-in-out;
-			text-decoration: none;
-			&:hover {
-				border-bottom: 1px solid transparent;
-			}
-		}
-		@include montserratbold;
-		p {
-			margin-bottom: 0;
-		}
-	}
+	
 }
 
 
@@ -183,9 +165,7 @@
    
    
    .judo_law_left {
-	   blockquote {
-		   padding: 10px 0px 40px;
-	   }
+	   
    }
    
    

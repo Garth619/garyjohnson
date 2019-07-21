@@ -563,3 +563,37 @@ function ilaw_id_friendly_text($string) {
 
 
 
+// Shortcode Att Bio Blockquote
+
+function att_blockquote( $attbio, $content = null ) { 
+	
+	
+	if(basename(get_page_template()) === 'page.php'){
+
+
+	
+	$attbio = shortcode_atts( array(
+       'name' => '',
+   ), $attbio );
+	
+	
+	ob_start();?>
+	
+	<div class="blockquote_wrapper">
+			
+		<div class="blockquote_inner">
+				
+			<div class="blockquote_content"><?php echo $content;?></div>
+				
+				<div class="blockquote_name">-<?php echo $attbio['name']; ?></div>
+			
+			</div>
+			
+	</div>
+	
+<?php return ob_get_clean(); } }
+
+add_shortcode( 'attblockquote', 'att_blockquote' );
+
+
+
