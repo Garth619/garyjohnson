@@ -115,8 +115,7 @@ header {
 							background-size: 16px 9px;
 							position: absolute;
 							top:7px;
-							right:-22px;
-							
+							right: -18px;
 							transition: all 200ms ease-in-out;
 						}
 						&:before {
@@ -153,7 +152,7 @@ header {
 }
 
 .header_right {
-	flex-basis:380px;
+	flex-basis: 357px;
 	flex-shrink:0;
 	padding-right:57px;
 	a, span {
@@ -678,6 +677,7 @@ header {
 	
 	.phone_consultation_wrapper {
 		margin-top:11px;
+		display: flex;
 	}
 	
 	.desktop_logo {
