@@ -305,9 +305,13 @@ a.locations_button {
 	}
 	
 	.footer_form {
-		margin: 124px 0 0;
+		margin: 121px 0 0;
 		flex-basis:auto;
 		flex-grow:1;
+		padding-left: 5%;
+		input[type="submit"] {
+			margin-top: 15px;
+		}
 	}
 	
 	
@@ -320,6 +324,7 @@ a.locations_button {
 	
 	.copyright {
 		padding: 0 70px;
+		height: 103px;
 	}
 	
 	
