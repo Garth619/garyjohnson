@@ -6,8 +6,8 @@
 			
 			<div class="sec_one_header">
 			
-				<span>We go the</span><br/>
-				<span>extra mile for</span><br/>
+				<span>We go the</span>
+				<span>extra mile for</span>
 				<span>our clients</span>
 			
 			</div><!-- sec_one_header -->

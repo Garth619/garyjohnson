@@ -94,35 +94,35 @@
 				<ul class="social_media">
 					<?php if(get_field('google_icon_link','option')) { ?>
 					<li>
-						<a href="<?php the_field( 'google_icon_link','option'); ?>" target="_blank" rel="noopener">
+						<a class="google" href="<?php the_field( 'google_icon_link','option'); ?>" target="_blank" rel="noopener">
 							<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-01.svg"); ?>
 						</a>
 					</li>
 					<?php } ?>
 					<?php if(get_field('facebook_icon_link','option')) { ?>
 						<li>
-							<a href="<?php the_field( 'facebook_icon_link','option'); ?>" target="_blank" rel="noopener">
+							<a class="facebook" href="<?php the_field( 'facebook_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-02.svg"); ?>
 							</a>
 						</li>
 					<?php } ?>
 					<?php if(get_field('linkedin_icon_link','option')) { ?>
 						<li>
-							<a href="<?php the_field( 'linkedin_icon_link','option'); ?>" target="_blank" rel="noopener">
+							<a class="linkedin" href="<?php the_field( 'linkedin_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-03.svg"); ?>
 							</a>
 						</li>
 						<?php } ?>
 						<?php if(get_field('twitter_icon_link','option')) { ?>
 						<li>
-							<a href="<?php the_field( 'twitter_icon_link','option'); ?>" target="_blank" rel="noopener">
+							<a class="twitter" href="<?php the_field( 'twitter_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-04.svg"); ?>
 							</a>
 						</li>
 						<?php } ?>
 						<?php if(get_field('youtube_icon_link','option')) { ?>
 						<li>
-							<a href="<?php the_field( 'youtube_icon_link','option'); ?>" target="_blank" rel="noopener">
+							<a class="youtube" href="<?php the_field( 'youtube_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-05.svg"); ?>
 							</a>
 						</li>

@@ -471,7 +471,7 @@ $('.sec_one_video_wrapper').slick({
 	dots:true,
 	responsive: [
     {
-      breakpoint: 1066,
+      breakpoint: 767,
       settings: "unslick"
      },
    

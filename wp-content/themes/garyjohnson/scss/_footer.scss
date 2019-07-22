@@ -280,6 +280,10 @@ a.locations_button {
 					}
 				}
 			}
+			a.twitter {
+				position: relative;
+				top:3px;
+			}
 		}
 	}
 }
@@ -386,12 +390,16 @@ a.locations_button {
 		flex-basis: 385px;
 		.footer_cta {
 			span {
-				font-size: 55px;
+				font-size: 59px;
 				line-height: 84px;
 			}
 		}
 	}
 	
+	.footer_form {
+		margin: 100px 0 0;
+		padding-left:0;
+	}
 	
 	.footer_form_inner {
 		display: block;
@@ -415,6 +423,9 @@ a.locations_button {
 	
 	
 } /* Media Query */
+
+
+
 
 
 @media screen and (max-width: 767px) {
