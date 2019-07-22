@@ -129,7 +129,7 @@
 						<?php } ?>
 					</ul>
 					
-					<a class="ilawyer" href="//ilawyermarketing" target="_blank" rel="noopener">
+					<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 						<img src="<?php bloginfo('template_directory');?>/images/footer_logo-01.svg"/>
 					</a>
 				

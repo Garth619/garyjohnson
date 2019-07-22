@@ -20,15 +20,9 @@
 		
 			<picture>
 					
-<!--
-				<source type="image/webp" media="(max-width: 1450px)" srcset="<?php echo $section_one_banner_ipad_webp['url']; ?>" >
-				
-				<source type="image/jpg" media="(max-width: 1450px)" srcset="<?php echo $section_one_banner_ipad['url']; ?>">
--->
-					
 				<img src="<?php bloginfo('template_directory');?>/images/header_img_desk.jpg"/>
 		
-				</picture>
+			</picture>
 		
 		</div><!-- sec_one_left_img -->
 		
@@ -38,11 +32,12 @@
 	
 	<div class="sec_one_right">
 		
-		<div class="sec_one_video_wrapper">
+		<div class="sec_one_wistia_wrapper">
 			
 			<div class="sec_one_single_vid">
 				
-				<a class="" href="">
+					<div class="sec_one_single_vid_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- sec_one_single_vid_wistia -->
+				
 					
 					<div class="sec_one_video_img">
 						
@@ -62,13 +57,13 @@
 					
 					<span class="click_to_watch">Click to watch</span><!-- click_to_watch -->
 					
-				</a>
+				
 				
 			</div><!-- sec_one_single_vid -->
 			
 			<div class="sec_one_single_vid">
 				
-				<a class="" href="">
+					<div class="sec_one_single_vid_wistia wistia_embed wistia_async_waichudc62 popover=true popoverContent=html"></div><!-- sec_one_single_vid_wistia -->
 					
 					<div class="sec_one_video_img">
 						
@@ -89,11 +84,11 @@
 					<span class="click_to_watch">Click to watch</span><!-- click_to_watch -->
 
 					
-				</a>
+				
 				
 			</div><!-- sec_one_single_vid -->
 			
-		</div><!-- sec_one_video_wrapper -->
+		</div><!-- sec_one_wistia_wrapper -->
 		
 	</div><!-- sec_one_right -->
 

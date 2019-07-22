@@ -28,7 +28,7 @@
 			
 			<div class="sec_four_hover">
 				
-				<a class="" href="">
+				<a class="" href="<?php the_permalink(54);?>">
 				
 				<div class="sec_four_hover_inner">
 					
@@ -77,7 +77,7 @@
 			
 			<div class="sec_four_hover">
 				
-				<a class="" href="">
+				<a class="" href="<?php the_permalink(54);?>">
 				
 				<div class="sec_four_hover_inner">
 					
@@ -126,7 +126,7 @@
 			
 			<div class="sec_four_hover">
 				
-				<a class="" href="">
+				<a class="" href="<?php the_permalink(54);?>">
 				
 				<div class="sec_four_hover_inner">
 					
@@ -175,7 +175,7 @@
 			
 			<div class="sec_four_hover">
 				
-				<a class="" href="">
+				<a class="" href="<?php the_permalink(54);?>">
 				
 				<div class="sec_four_hover_inner">
 					

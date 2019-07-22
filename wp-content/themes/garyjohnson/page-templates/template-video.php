@@ -53,4 +53,4 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-</script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>

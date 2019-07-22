@@ -129,37 +129,22 @@ jQuery(document).ready(function($){
      /* Wistia - Call function when script needs to be loaded either by hover or waypoints
      --------------------------------------------------------------------------------------- */
 
-    //function wistiaLoad() {
-     // jQuery.getScript('https://fast.wistia.com/assets/external/E-v1.js', function(data, textStatus, jqxhr) {
-        //console.log('wistia load:', textStatus); // Success
-     // });
-   // }
-
-    // examples:
-
-    // jQuery(".banner-box-1").one("mouseenter", function(e){
-    //   wistiaLoad();
-    // });
-
-    // createWaypoint('section-1', null, null, '100%', wistiaLoad, false)
-    
-    
-     // loads wistia on click to improve initial page speed
-    $('.wistia_embed').click(function () {
+       $('.wistia_embed').click(function () {
         //make sure to only load if Wistia is not already loaded
+       
         let self = this
         if (typeof Wistia === 'undefined') {
-            jQuery.getScript("https://fast.wistia.com/assets/external/E-v1.js", function (data, textStatus, jqxhr) {
+            $.getScript("https://fast.wistia.com/assets/external/E-v1.js", function (data, textStatus, jqxhr) {
                 // We got the text but, it's possible parsing could take some time on slower devices. Unfortunately, js parsing does not have
                 // a hook we can listen for. So we need to set an interval to check when it's ready 
                 var interval = setInterval(function () {
-                    if (jQuery(self).attr('id') && window._wq) {
-                        var videoId = jQuery(self).attr('id').split('-')[1];
+                    if ($(self).attr('id') && window._wq) {
+                        var videoId = $(self).attr('id').split('-')[1];
                         window._wq = window._wq || [];
                         _wq.push({
                             id: videoId,
                             onReady: function (video) {
-                                jQuery(self).find('.wistia_click_to_play').eq(0).trigger('click');
+                                $(self).find('.wistia_click_to_play').eq(0).trigger('click');
                             }
                         });
                         clearInterval(interval);
@@ -168,6 +153,12 @@ jQuery(document).ready(function($){
             });
         }
     });
+
+    // prevent page from jumping to the top
+    $('a[href="#"]').click(function(e){
+        e.preventDefault();
+    });
+
 
    
     
@@ -241,25 +232,7 @@ jQuery(document).ready(function($){
 
 
 		
-		/* Live Chat - Call function when script needs to be loaded either by hover, click or waypoints
-   --------------------------------------------------------------------------------------------------- */ 
-   
-   
-   
-   function livechatLoad() {
-	   if(my_data.live_chat) {
-      jQuery.getScript(my_data.live_chat, function(data, textStatus, jqxhr) {
-        console.log('Live Chat load:', textStatus); // Success
-      });
-      // alert( my_data.live_chat);
-      }
-    }
-   
-   
-   // createWaypoint('section_one', null, null, -100, livechatLoad, false);
-   // createWaypoint('internal_trigger', null, null, -100, livechatLoad, false);
-
-
+	
 
 	 // nav
 	 

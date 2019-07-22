@@ -24,7 +24,7 @@
 				
 					<img src="<?php bloginfo('template_directory');?>/images/content01_img.jpg"/>
 				
-					<a class="meet_attorneys_button" href="">Meet the Attorneys</a><!-- meet_attorneys_button -->
+					<a class="meet_attorneys_button" href="<?php the_permalink(79);?>">Meet the Attorneys</a><!-- meet_attorneys_button -->
 				
 				</div><!-- sec_three_top_img_inner -->
 				

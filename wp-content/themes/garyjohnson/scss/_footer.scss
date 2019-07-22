@@ -205,7 +205,12 @@ a.get_directions {
 	margin-top:45px;
 	padding-bottom:20px;
 	border-bottom:4px solid $orange;
+	transition: all 200ms ease-in-out;
 	@include montserratblack;
+	&:hover {
+		color:$gold;
+		border-bottom:4px solid $gold;
+	}
 }
 
 
