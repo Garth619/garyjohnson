@@ -280,6 +280,10 @@ a.locations_button {
 					}
 				}
 			}
+			a.google {
+				position: relative;
+				top:3px;
+			}
 			a.twitter {
 				position: relative;
 				top:3px;
@@ -433,7 +437,7 @@ a.locations_button {
 	
 	
 	.footer_cta_wrapper {
-		margin: 47px 0px 0 0;
+		margin: 43px 0px 0 0;
 		max-width: 290px;
 		width:100%;
 		.footer_cta {
@@ -462,7 +466,7 @@ a.locations_button {
 		input[type="submit"] {
 			margin-top: 33px;
 			width:100vw;
-			margin-left:-45px;
+			margin-left: -35px;
 			padding: 25px 75px;
 		}
 	}
@@ -470,6 +474,8 @@ a.locations_button {
 	
 	.footer_form_wrapper {
 		padding-bottom:0;
+		padding-left: 35px;
+    padding-right: 35px;
 	}
 	
 	.footer_location_wrapper {
