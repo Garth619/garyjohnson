@@ -125,7 +125,7 @@
 			
 	</header>
 	
-	<div class="tablet_nav">
+	<div id="nav_trigger" class="tablet_nav">
 		
 		<div class="mobile_close"></div><!-- mobile_close -->
 		

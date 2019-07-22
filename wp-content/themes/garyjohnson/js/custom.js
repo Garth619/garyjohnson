@@ -235,6 +235,8 @@ jQuery(document).ready(function($){
 
     createWaypoint('header_trigger', '.header_right', 'fixed', -107, null, true);
     
+    createWaypoint('nav_trigger', '.tablet_nav', 'fixed', -107, null, true);
+    
    
 
 
@@ -429,6 +431,8 @@ jQuery(document).ready(function($){
 		     
 		     $('.open_close_wrapper').on('click', function(e) {
 			     	
+			     //$('.header_left').css("position","fixed");
+			     
 			     $('.header_right').fadeOut(200);
 			     
 			     $('header').addClass('open-menu');
@@ -438,6 +442,8 @@ jQuery(document).ready(function($){
 		     
 		     $('.mobile_close').on('click', function(e) {
 			     	
+			     //$('.header_left').css("position","relative");
+			     
 			     $('.header_right').fadeIn(200);
 			     
 			     $('header').removeClass('open-menu');

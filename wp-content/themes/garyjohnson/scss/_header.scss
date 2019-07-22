@@ -424,8 +424,8 @@ header {
 				}
 			}
 			li.menu-item-has-children {
-				&:hover {
-					a {
+				a {
+					&:hover {
 						&:before {
 							opacity: 1;
 						}
@@ -639,6 +639,7 @@ header {
 		flex-basis:auto;
 		flex-shrink: 0;
 		height:107px;
+		width:100%;
 		background: #fff;
 		padding:3px 10px 0;
 		position: relative;
@@ -716,12 +717,18 @@ header {
 		}
 	}
 	
+	.tablet_nav.fixed {
+		position: fixed;
+		top:0;
+	}
 	
 	.tablet_nav {
 		z-index:5;
 		top: 107px;
-		height: calc(100vh - 107px);
+		height:200vh;
+		//height: calc(100vh - 107px);
 		padding: 88px 0 50px;
+		position: absolute;
 	}
 	
 	.mobile_close {
