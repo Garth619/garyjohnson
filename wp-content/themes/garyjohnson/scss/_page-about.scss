@@ -4,13 +4,13 @@
 	display: flex;
 	max-width:1505px;
 	justify-content: space-between;
-	margin:128px auto;
-	//padding:0 110px;
+	margin: 122px auto 137px;
 }
 
 
 .about_top_left {
 	flex-basis:46%;
+	margin-top:6px;
 	&:before {
 		content:"";
 		display: block;
@@ -95,13 +95,14 @@
 	
 	.about_bottom_left {
 		flex-basis:45%;
+		margin-top:10px;
 		a.about_blockquote_button {
 			background: $orange;
 			color:#fff;
 			text-decoration: none;
 			text-transform: lowercase;
 			font-size: 18px;
-			margin-top: 52px;
+			margin-top: 60px;
 			padding:25px 30px;
 			display: inline-block;
 			box-shadow: 0px 4px 8px 0px rgba(10, 25, 57, 0.3);
@@ -167,7 +168,7 @@
 	
 	
 	.about_awards_wrapper {
-		margin:260px auto 0;
+		margin: 206px auto 0;
 		max-width:1425px;
 		span.about_awards_title {
 			display: block;
