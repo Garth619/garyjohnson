@@ -79,52 +79,58 @@
 			<div class="copyright_inner">
 				
 				<ul class="copyright_list">
-					<li>&copy; 2019 by Gary C. Johnson, Attorneys at Law. All rights reserved.</li>
-					<li><a href="">Disclaimer</a></li>
-					<li><a href="">Site Map</a></li>
-					<li><a href="">Google +</a></li>
+					<li><?php the_field( 'copyright','option'); ?></li>
+					<?php if(get_field('disclaimer','option')) { ?>
+					<li><a href="<?php the_field( 'disclaimer','option'); ?>">Disclaimer</a></li>
+					<?php } 
+					if(get_field('site_map','option')) { ?>
+					<li><a href="<?php the_field( 'site_map','option'); ?>">Site Map</a></li>
+					<?php }
+					 if(get_field('google_plus','option')) { ?>
+					<li><a href="<?php the_field( 'google_plus','option'); ?>" target="_blank" rel="noopener">Google +</a></li>
+					<?php } ?>
 				</ul>
 				
 				<ul class="social_media">
+					<?php if(get_field('google_icon_link','option')) { ?>
 					<li>
-						<a href="">
+						<a href="<?php the_field( 'google_icon_link','option'); ?>" target="_blank" rel="noopener">
 							<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-01.svg"); ?>
 						</a>
 					</li>
+					<?php } ?>
+					<?php if(get_field('facebook_icon_link','option')) { ?>
 						<li>
-							<a href="">
-							
+							<a href="<?php the_field( 'facebook_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-02.svg"); ?>
-							
 							</a>
 						</li>
+					<?php } ?>
+					<?php if(get_field('linkedin_icon_link','option')) { ?>
 						<li>
-							<a href="">
-							
+							<a href="<?php the_field( 'linkedin_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-03.svg"); ?>
-							
 							</a>
 						</li>
+						<?php } ?>
+						<?php if(get_field('twitter_icon_link','option')) { ?>
 						<li>
-							<a href="">
-							
+							<a href="<?php the_field( 'twitter_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-04.svg"); ?>
-							
 							</a>
 						</li>
+						<?php } ?>
+						<?php if(get_field('youtube_icon_link','option')) { ?>
 						<li>
-							<a href="">
-							
+							<a href="<?php the_field( 'youtube_icon_link','option'); ?>" target="_blank" rel="noopener">
 								<?php echo file_get_contents("wp-content/themes/garyjohnson/images/footer_icon-05.svg"); ?>
-							
 							</a>
 						</li>
+						<?php } ?>
 					</ul>
 					
 					<a class="ilawyer" href="//ilawyermarketing" target="_blank" rel="noopener">
-						
 						<img src="<?php bloginfo('template_directory');?>/images/footer_logo-01.svg"/>
-					
 					</a>
 				
 			</div><!-- copyright_inner -->

@@ -4,9 +4,9 @@
 
 	<div class="not_found_wrapper">
 		
-		<h1 class="not_found_header">404</h1><!-- internal_header -->
+		<h1 class="not_found_header"><?php the_field( '404_header','option'); ?></h1><!-- internal_header -->
 		
-		<span class="not_found_verbiage">Sorry, We couldn’t find this page</span><!-- not_found_verbiage -->
+		<span class="not_found_verbiage"><?php the_field( '404_verbiage','option'); ?></span><!-- not_found_verbiage -->
 		
 		<span class="go_back" onclick="goBack()">go back</span>
 	

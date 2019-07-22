@@ -93,13 +93,17 @@
 			
 			<div class="small_sidebar_inner">
 				
-				<span class="small_sidebar_title">About Our Firm</span><!-- small_sidebar_title -->
+				<span class="small_sidebar_title"><?php the_field( 'sidebar_video_title','option'); ?></span><!-- small_sidebar_title -->
 				
 				<div class="small_sidebar_video">
 					
+					<div class="sidebar_wistia wistia_embed wistia_async_<?php the_field( 'sidebar_wistia_id','option'); ?> popover=true popoverContent=html"></div>
+					
 					<div class="play_button"></div><!-- play_button -->
-				
-					<img src="<?php bloginfo('template_directory');?>/images/header_video_img_01.jpg"/>
+					
+					<?php $sidebar_video_thumb = get_field( 'sidebar_video_thumb','option'); ?>
+					
+					<img src="<?php echo $sidebar_video_thumb['url']; ?>" alt="<?php echo $sidebar_video_thumb['alt']; ?>" />
 				
 				</div><!-- small_sidebar_video -->
 				
@@ -108,3 +112,4 @@
 		</div><!-- small_sidebar_box -->
 		
 	</div><!-- sidebar_wrapper -->
+	
