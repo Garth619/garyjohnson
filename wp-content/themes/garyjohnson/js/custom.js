@@ -234,6 +234,10 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('section_four', '#section_four', 'visible', 300, null, true);
 		
+		createWaypoint('sec_five_trigger', '#sec_five_trigger', 'visible', 800, null, true);
+		
+		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 800, null, true);
+		
 	
 
 	 // nav
