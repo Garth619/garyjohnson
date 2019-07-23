@@ -228,9 +228,9 @@ jQuery(document).ready(function($){
     
     createWaypoint('nav_trigger', '.tablet_nav', 'fixed', -107, null, true);
     
-    createWaypoint('section_two', '#section_two', 'visible', 500, null, true)
+    createWaypoint('section_two', '#section_two', 'visible', 500, null, true);
     
-   
+		createWaypoint('sec_three_trigger', '#sec_three_trigger', 'visible', 600, null, true);
 
 
 		

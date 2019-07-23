@@ -6,7 +6,7 @@
 		
 		<span class="sec_three_description">At the law firm of Gary C. Johnson, P.S.C., we provide comprehensive client service in the aftermath of serious accidents. We work hard to maximize the financial value of your legal claims and also work closely with you and your family to help you meet the personal challenges that can result from an injury or a death in the family.</span><!-- sec_three_description -->
 		
-		<div class="sec_three_top_content_wrapper content">
+		<div id="sec_three_trigger" class="sec_three_top_content_wrapper content">
 			
 			<div class="sec_three_top_content">
 			
