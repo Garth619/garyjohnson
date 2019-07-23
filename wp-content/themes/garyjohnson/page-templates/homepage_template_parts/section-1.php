@@ -69,7 +69,7 @@
 					
 					<div class="sec_one_video_img">
 						
-						<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/header_video_img_02.jpg"/><!-- video_thumb -->
+						<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/header_video_img_02_hover.jpg"/><!-- video_thumb -->
 						
 						<div class="sec_one_video_overlay">
 							

@@ -161,6 +161,25 @@ a.consultation_button {
 	
 	&:nth-of-type(2) {
 		&:hover {
+			.sec_one_video_img {
+				.sec_one_video_overlay {
+					background: rgba(10,13,40,0.65);
+				}
+			}
+		}
+		.sec_one_video_img {
+			position: relative;
+			.sec_one_video_overlay {
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background: rgba(10,13,40,0.8);
+				transition: all 200ms ease-in-out;
+			}
+		}
+		&:hover {
 			a {
 				.sec_one_video_img {
 					.sec_one_video_overlay {

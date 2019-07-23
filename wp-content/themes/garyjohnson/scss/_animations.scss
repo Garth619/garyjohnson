@@ -79,7 +79,7 @@ body.ready {
 	.sec_one_left {
 		img {
 			transform: translateX(0);
-			transition: all 5000ms cubic-bezier(.17,.66,.34,.98);
+			transition: all 4000ms cubic-bezier(.25,.66,.34,.98);
 		}
 	}
 	
@@ -137,6 +137,11 @@ body.ready {
 	body.ready {
 	 .sec_one_single_vid {
 		 transform: translateY(0px);
+		 &:hover {
+			 .play_button {
+				 background: rgba(193,151,80,0.85);
+			 }
+		 }
 			 &:after {
 				 transform: translateY(100%);
 			 }
@@ -160,7 +165,8 @@ body.ready {
 	 .play_button {
 			transform: translateY(0px);
 			opacity: 1;
-			transition-delay:1000ms
+			transition-delay:1000ms;
+			transition: background 200ms ease-in-out;
 		}
 		.judo_play {
 			transform: translateY(0px);
