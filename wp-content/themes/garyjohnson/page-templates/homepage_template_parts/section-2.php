@@ -4,7 +4,7 @@
 		
 		<div class="sec_two_slider">
 			
-			<div class="sec_two_single_slide">
+			<div class="sec_two_single_slide one">
 				
 				<div class="sec_two_inner_slide">
 					
@@ -18,7 +18,7 @@
 				
 			</div><!-- sec_two_single_slide -->
 			
-			<div class="sec_two_single_slide">
+			<div class="sec_two_single_slide two">
 				
 				<div class="sec_two_inner_slide">
 					
@@ -32,7 +32,7 @@
 				
 			</div><!-- sec_two_single_slide -->
 			
-			<div class="sec_two_single_slide">
+			<div class="sec_two_single_slide three">
 				
 				<div class="sec_two_inner_slide">
 					
@@ -46,7 +46,7 @@
 				
 			</div><!-- sec_two_single_slide -->
 			
-			<div class="sec_two_single_slide">
+			<div class="sec_two_single_slide four">
 				
 				<div class="sec_two_inner_slide">
 					

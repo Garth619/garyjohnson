@@ -228,6 +228,8 @@ jQuery(document).ready(function($){
     
     createWaypoint('nav_trigger', '.tablet_nav', 'fixed', -107, null, true);
     
+    createWaypoint('section_two', '#section_two', 'visible', 500, null, true)
+    
    
 
 
