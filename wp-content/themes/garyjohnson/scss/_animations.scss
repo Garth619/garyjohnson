@@ -448,4 +448,278 @@ body.ready {
 	}
 	
 	
+	// section four
+	
+	.sec_four_reg {
+		.sec_four_reg_inner {
+			.sec_four_svg {
+				svg {
+					transform: translateY(-30px);
+					transition: transform 1800ms cubic-bezier(.17,.66,.34,.98);
+				}
+			}
+			span.sp_amount {
+				transform: translateY(-30px);
+				transition: transform 1800ms cubic-bezier(.17,.66,.34,.98);
+				&:after {
+					transform: scale(0,1);
+					transform-origin: top center;
+					transition: transform 1000ms cubic-bezier(.17,.66,.34,.98);
+				}
+			}
+			span.sp_type {
+				transform: translateY(-30px);
+				transition: transform 1800ms cubic-bezier(.17,.66,.34,.98);
+			}
+			.sec_four_svg.one {
+				svg {
+					path.sp-1-st2 {
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 1000;
+						transition: stroke-dashoffset 2200ms linear;
+					}
+					line {
+						stroke-dasharray: 100;
+						stroke-dashoffset: 100;
+						transition: stroke-dashoffset 3000ms linear;
+					}
+				}
+			}
+			.sec_four_svg.two {
+				svg {
+					path.sp-2-st1 {
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 1000;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+					path.sp-2-st2 {
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 1000;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+					polyline {
+						stroke-dasharray: 200;
+						stroke-dashoffset: 200;
+						transition: stroke-dashoffset 2500ms linear;
+					}
+					rect {
+						stroke-dasharray: 200;
+						stroke-dashoffset: 200;
+						transition: stroke-dashoffset 2500ms linear;
+					}
+					line {
+						stroke-dasharray: 100;
+						stroke-dashoffset: 100;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+				}
+			}
+			.sec_four_svg.three {
+				svg {
+					path.sp-3-st1 {
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 1000;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+					rect {
+						stroke-dasharray: 200;
+						stroke-dashoffset: 200;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+					line {
+						stroke-dasharray: 100;
+						stroke-dashoffset: 100;
+						transition: stroke-dashoffset 3000ms linear;
+					}
+					circle {
+						stroke-dasharray: 100;
+						stroke-dashoffset: 100;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+				}
+			}
+			.sec_four_svg.four {
+				svg {
+					path.sp-4-st1 {
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 1000;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+					line {
+						stroke-dasharray: 100;
+						stroke-dashoffset: 100;
+						transition: stroke-dashoffset 3000ms linear;
+					}
+					circle {
+						stroke-dasharray: 100;
+						stroke-dashoffset: 100;
+						transition: stroke-dashoffset 3200ms linear;
+					}
+					polyline {
+						stroke-dasharray: 200;
+						stroke-dashoffset: 200;
+						transition: stroke-dashoffset 2500ms linear;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	#section_four.visible {
+		.sec_four_reg {
+			.sec_four_reg_inner {
+				span.sp_amount {
+					transform: translateY(0);
+					&:after {
+						transform: scale(1,1);
+					}
+				}
+				span.sp_type {
+					transform: translateY(0px);
+				}
+				.sec_four_svg {
+					svg {
+						transform: translateY(0px);
+						path, line, rect, polyline {
+							stroke-dashoffset: 0;
+						}
+					}
+				}
+			}
+		}
+		.sec_four_reg.one {
+			.sec_four_reg_inner {
+				span.sp_amount {
+					transition-delay: 0ms;
+					&:after {
+						transition-delay: 0ms;
+					}
+				}
+				span.sp_type {
+					
+				}
+				.sec_four_svg {
+					svg {
+						transition-delay: 0ms;
+						path, line, rect, polyline {
+							transition-delay: 0ms;
+						}
+					}
+				}
+			}
+		}
+		.sec_four_reg.two {
+			.sec_four_reg_inner {
+				span.sp_amount {
+					transition-delay: 300ms;
+					&:after {
+						transition-delay: 300ms;
+					}
+				}
+				span.sp_type {
+					transition-delay: 300ms;
+				}
+				.sec_four_svg {
+					svg {
+						transition-delay: 300ms;
+						path, line, rect, polyline {
+							transition-delay: 300ms;
+						}
+					}
+				}
+			}
+		}
+		.sec_four_reg.three {
+			.sec_four_reg_inner {
+				span.sp_amount {
+					transition-delay: 600ms;
+					&:after {
+						transition-delay: 600ms;
+					}
+				}
+				span.sp_type {
+					transition-delay: 600ms;
+				}
+				.sec_four_svg {
+					svg {
+						transition-delay: 600ms;
+						path, line, rect, polyline {
+							transition-delay: 600ms;
+						}
+					}
+				}
+			}
+		}
+		.sec_four_reg.four {
+			.sec_four_reg_inner {
+				span.sp_amount {
+					transition-delay: 900ms;
+					&:after {
+						transition-delay: 900ms;
+					}
+				}
+				span.sp_type {
+					transition-delay: 900ms;
+				}
+				.sec_four_svg {
+					svg {
+						transition-delay: 900ms;
+						path, line, rect, polyline {
+							transition-delay: 900ms;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+	
+	.sec_four_hover {
+		.sec_four_hover_inner {
+			.sec_four_hover_description_wrapper {
+				span.sec_four_hover_description {
+					transform: translateY(-35px);
+					opacity: 0;
+					transition: transform 800ms cubic-bezier(.17,.66,.34,.98), opacity 300ms cubic-bezier(.17,.66,.34,.98);
+				}
+			}
+			.view_sp_button_wrapper {
+				span.view_sp_button {
+					transform: translateY(-35px);
+					opacity: 0;
+					transition: transform 800ms cubic-bezier(.17,.66,.34,.98);
+				}
+			}
+		}
+	}
+	
+	
+	#section_four.visible {
+		.sec_four_slide {
+			&:hover {
+				.sec_four_hover {
+					.sec_four_hover_inner {
+						.sec_four_hover_description_wrapper {
+							span.sec_four_hover_description {
+								transform: translateY(0px);
+								opacity: 1;
+							}
+						}
+						.view_sp_button_wrapper {
+							span.view_sp_button {
+								transform: translateY(0px);
+								opacity: 1;
+								//transition-delay: 00ms;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
 } /* Media Query */

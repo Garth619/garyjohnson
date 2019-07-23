@@ -232,6 +232,8 @@ jQuery(document).ready(function($){
 
 		createWaypoint('sec_three_bottom_trigger', '#sec_three_bottom_trigger', 'visible', 500, null, true);
 		
+		createWaypoint('section_four', '#section_four', 'visible', 300, null, true);
+		
 	
 
 	 // nav

@@ -6,7 +6,7 @@
 		
 		<div class="sec_four_slide">
 			
-			<div class="sec_four_reg">
+			<div class="sec_four_reg one">
 				
 				<div class="sec_four_reg_inner">
 					
@@ -54,7 +54,7 @@
 		
 		<div class="sec_four_slide">
 			
-			<div class="sec_four_reg">
+			<div class="sec_four_reg two">
 				
 				<div class="sec_four_reg_inner">
 					
@@ -103,7 +103,7 @@
 		
 		<div class="sec_four_slide">
 			
-			<div class="sec_four_reg">
+			<div class="sec_four_reg three">
 				
 				<div class="sec_four_reg_inner">
 					
@@ -152,7 +152,7 @@
 		
 		<div class="sec_four_slide">
 			
-			<div class="sec_four_reg">
+			<div class="sec_four_reg four">
 				
 				<div class="sec_four_reg_inner">
 					
