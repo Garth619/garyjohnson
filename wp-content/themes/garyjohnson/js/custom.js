@@ -222,9 +222,7 @@ jQuery(document).ready(function($){
     }
 		
 		
-		
-
-    createWaypoint('header_trigger', '.header_right', 'fixed', -107, null, true);
+		createWaypoint('header_trigger', '.header_right', 'fixed', -107, null, true);
     
     createWaypoint('nav_trigger', '.tablet_nav', 'fixed', -107, null, true);
     
@@ -232,7 +230,7 @@ jQuery(document).ready(function($){
     
 		createWaypoint('sec_three_trigger', '#sec_three_trigger', 'visible', 600, null, true);
 
-
+		createWaypoint('sec_three_bottom_trigger', '#sec_three_bottom_trigger', 'visible', 500, null, true);
 		
 	
 

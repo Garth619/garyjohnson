@@ -32,7 +32,7 @@
 			
 		</div><!-- sec_three_top_content_wrapper -->
 		
-		<div class="sec_three_bottom_content_wrapper">
+		<div id="sec_three_bottom_trigger" class="sec_three_bottom_content_wrapper">
 			
 			<div class="sec_three_blockquote">
 				
