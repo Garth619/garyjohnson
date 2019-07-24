@@ -10,7 +10,7 @@ get_header(); ?>
 	
 	<h1 class="internal_header"><?php the_title();?></h1><!-- internal_header -->
 	
-	<div class="about_top_wrapper content">
+	<div id="about_trigger" class="about_top_wrapper content">
 		
 		<div class="about_top_left">
 			
@@ -50,7 +50,7 @@ get_header(); ?>
 		
 	</div><!-- about_top_wrapper -->
 	
-	<div class="about_bottom_wrapper">
+	<div id="about_bottom_trigger" class="about_bottom_wrapper">
 		
 		<div class="about_bottom_left">
 			

@@ -222,6 +222,8 @@ jQuery(document).ready(function($){
     }
 		
 		
+		// homepage
+		
 		createWaypoint('header_trigger', '.header_right', 'fixed', -107, null, true);
     
     createWaypoint('nav_trigger', '.tablet_nav', 'fixed', -107, null, true);
@@ -237,6 +239,10 @@ jQuery(document).ready(function($){
 		createWaypoint('sec_five_trigger', '#sec_five_trigger', 'visible', 800, null, true);
 		
 		createWaypoint('footer_trigger', '#footer_trigger', 'visible', 800, null, true);
+		
+		// about page
+		
+		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 500, null, true);
 		
 	
 
