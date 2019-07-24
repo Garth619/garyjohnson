@@ -461,20 +461,13 @@ jQuery(document).ready(function($){
 
 
 
-$('.sec_one_wistia_wrapper').slick({
+$('.sec_one_right.mobile .sec_one_wistia_wrapper').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
 	arrows:false,
 	mobileFirst:true,
 	dots:true,
-	responsive: [
-    {
-      breakpoint: 768,
-      settings: "unslick"
-     },
-   
-	]
  });
  
  

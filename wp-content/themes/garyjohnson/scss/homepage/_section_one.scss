@@ -95,6 +95,12 @@ a.consultation_button {
 }
 
 
+.sec_one_right.mobile {
+	display: none;
+}
+
+
+
 .sec_one_wistia_wrapper {
 	max-width:710px;
 	margin:152px auto 0;
@@ -496,6 +502,15 @@ a.consultation_button {
 		height:auto;
 		padding: 1px 66px 60px;
 	}
+	
+	.sec_one_right.mobile {
+		display: block;
+	}
+	
+	.sec_one_right.desktop {
+		display: none;
+	}
+
 	
 	
 	.sec_one_wistia_wrapper {
