@@ -579,7 +579,7 @@ function att_blockquote( $attbio, $content = null ) {
 	
 	ob_start();?>
 	
-	<div class="blockquote_wrapper">
+	<div id="blockquote_trigger" class="blockquote_wrapper">
 			
 		<div class="blockquote_inner">
 				

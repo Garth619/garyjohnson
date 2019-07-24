@@ -248,6 +248,9 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('att_awards_trigger', '#att_awards_trigger', 'visible', 700, null, true);
 		
+		createWaypoint('blockquote_trigger', '#blockquote_trigger', 'visible', 500, null, false);
+		
+		
 		
 	
 
