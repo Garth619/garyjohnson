@@ -120,7 +120,7 @@ get_header(); ?>
 	
 	<?php if(get_field('awards_slider_att')): ?>
 	
-	<div class="att_awards_wrapper">
+	<div id="att_awards_trigger" class="att_awards_wrapper">
 		
 		<span class="att_awards_title"><?php the_field( 'awards_title_att' ); ?></span><!-- att_awards_title -->
 		

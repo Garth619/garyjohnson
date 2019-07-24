@@ -244,6 +244,11 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 500, null, true);
 		
+		createWaypoint('about_awards_trigger', '#about_awards_trigger', 'visible', 700, null, true);
+		
+		createWaypoint('att_awards_trigger', '#att_awards_trigger', 'visible', 700, null, true);
+		
+		
 	
 
 	 // nav

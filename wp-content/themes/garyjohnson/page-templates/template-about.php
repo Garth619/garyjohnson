@@ -92,7 +92,7 @@ get_header(); ?>
 		
 	</div><!-- about_bottom_wrapper -->
 	
-	<div class="about_awards_wrapper">
+	<div id="about_awards_trigger" class="about_awards_wrapper">
 		
 		<span class="about_awards_title"><?php the_field( 'about_awards_slider_title' ); ?></span><!-- about_awards_title -->
 		
