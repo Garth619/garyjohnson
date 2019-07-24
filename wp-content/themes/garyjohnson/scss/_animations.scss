@@ -1425,9 +1425,215 @@ body.ready {
 	}
 	
 
+	// case results
 	
+	.cr_single {
+		&:before {
+			transform: scale(0,1);
+			transform-origin: top left;
+			transition: all 1300ms cubic-bezier(0.17, 0.66, 0.34, 0.98);
+		}
+	}
+	
+	
+	body.ready {
+		.cr_single {
+			&:before {
+				transform: scale(1,1);
+			}
+		}
+		.cr_col {
+			&:last-of-type {
+				.cr_single {
+					&:before {
+						transition-delay:400ms;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	// video center
+	
+	
+	
+	.single_video {
+		span.video_title {
+			transform: translateY(-20px);
+			opacity: 0;
+			transition: transform 800ms cubic-bezier(.17,.66,.34,.98), opacity 300ms linear, background 200ms linear;	
+		}
+		.single_video_thumbnail {
+			.my_wistia {
+				.play_button_overlay {
+					.play_button {
+						transform: translateY(-20px);
+						opacity: 0;
+						transition: transform 800ms cubic-bezier(.17,.66,.34,.98), opacity 300ms linear, background 200ms linear;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	body.ready {
+		.single_video {
+			span.video_title {
+				transform: translateY(0px);
+				opacity: 1;
+			}
+			.single_video_thumbnail {
+				.my_wistia {
+					.play_button_overlay {
+						.play_button {
+							transform: translateY(0px);
+							opacity: 1;
+						}
+					}
+				}
+			}
+			&:nth-of-type(3n + 1) {
+				span.video_title {
+					transition-delay: 800ms, 800ms, 0ms;
+				}
+				.single_video_thumbnail {
+					.my_wistia {
+						.play_button_overlay {
+							.play_button {
+								transition-delay: 700ms, 700ms, 0ms;
+							}
+						}
+					}
+				}
+			}
+			&:nth-of-type(3n + 2) {
+				span.video_title {
+					transition-delay: 1000ms, 1000ms, 0ms;
+				}
+				.single_video_thumbnail {
+					.my_wistia {
+						.play_button_overlay {
+							.play_button {
+								transition-delay: 900ms, 900ms, 0ms;
+							}
+						}
+					}
+				}
+			}
+			&:nth-of-type(3n + 3) {
+				span.video_title {
+					transition-delay: 1200ms, 1200ms, 0ms;
+				}
+				.single_video_thumbnail {
+					.my_wistia {
+						.play_button_overlay {
+							.play_button {
+								transition-delay: 1100ms, 1100ms, 0ms;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 	
+	
+	// judo law
+	
+	
+	.judo_law_left {
+		&:before {
+			transform: scale(0,1);
+			transform-origin: top left;
+			transition: all 1300ms cubic-bezier(0.17, 0.66, 0.34, 0.98);
+		}
+	}
+	
+	
+	body.ready {
+		.judo_law_left {
+			&:before {
+				transform: scale(1,1);
+			}
+		}
+	}
+	
+	.judo_law_video_wrapper {
+		position: relative;
+		overflow: hidden;
+		&:after {
+			content:"";
+			display: block;
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background: #fff;
+			transform: translateX(0);
+			transition: all 1000ms cubic-bezier(.17,.66,.34,.98);
+		}
+		.judo_law_video_overlay {
+			span.click_watch {
+				transform: translateY(-30px);
+				opacity: 0;
+				transition: transform 800ms cubic-bezier(.17,.66,.34,.98), opacity 300ms linear;
+			}
+			.judo_law_video_content {
+				.judo_law_logo_wrapper {
+					transform: translateY(-30px);
+					opacity: 0;
+					transition: transform 800ms cubic-bezier(.17,.66,.34,.98), opacity 300ms linear;
+				}
+			}
+		}
+	}
+	
+	body.ready {
+		.judo_law_video_wrapper {
+			transform: translateY(0px);
+			&:after {
+				transform: translateX(-100%);
+				transition-delay: 300ms;
+			}
+			.judo_law_video_overlay {
+				span.click_watch {
+					transform: translateY(0px);
+					opacity: 1;
+					transition-delay: 1200ms;
+				}
+				.judo_law_video_content {
+					.judo_law_logo_wrapper {
+						transform: translateY(0px);
+						opacity: 1;
+						transition-delay: 1100ms;
+					}
+				}
+			}
+		}
+	}
+	
+	// contact
+	
+	
+	.contact_left {
+		overflow: hidden;
+		img {
+			transform: scale(1.15);
+			transition: all 1200ms cubic-bezier(.17,.66,.34,.98);
+		}
+	}
+	
+	body.ready {
+		.contact_left {
+			img {
+				transform: scale(1);
+			}
+		}
+	}
 
 	
 } /* Media Query */
