@@ -223,6 +223,11 @@ header {
 					border-bottom:4px solid $gold;
 				}
 			}
+			li.orange.current-menu-item {
+				a {
+					color:$gold;
+				}
+			}
 			li.orange {
 				text-transform: uppercase;
 				font-size: 16px;
@@ -502,9 +507,15 @@ header {
 		ul {
 			list-style: none;
 			li.current-menu-item {
+				margin-bottom:35px;
 				a {
 					color:$gold;
 					border-bottom: 4px solid $gold;
+				}
+			}
+			li.orange.current-menu-item {
+				a {
+					color:$gold;
 				}
 			}
 			li.orange {
@@ -725,7 +736,7 @@ header {
 	.tablet_nav {
 		z-index:5;
 		top: 107px;
-		height:200vh;
+		height:100%;
 		//height: calc(100vh - 107px);
 		padding: 88px 0 50px;
 		position: absolute;

@@ -523,6 +523,30 @@
 	} /* Media Query */
 	
 	
+	@media screen and (max-width: 430px) {
+		
+		
+	.about_bottom_left {
+		
+		a.about_blockquote_button {
+			width:100%;
+			max-width:300px;
+			text-align: center;
+			padding-left:20px;
+			padding-right:20px;
+			&:after {
+				content:"click for free consutation";
+			}
+			&:hover {
+				
+			}
+		}
+	}
+		
+		
+	} /* Media Query */
+	
+	
 	@media screen and (max-width: 420px) {
 		
 		

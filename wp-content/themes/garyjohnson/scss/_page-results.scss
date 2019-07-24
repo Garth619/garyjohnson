@@ -84,19 +84,22 @@
 		display: block;
 	}
 	
+	.cr_single {
+    margin-bottom: 90px;
+  }
+	
 	.cr_col {
 		&:first-of-type {
 			.cr_single {
 				&:last-of-type {
-					margin-bottom:130px;
+					margin-bottom:90px;
 				}
 			}
 		}
 		
 	}
 	    
-	
-	
+
 	
 } /* Media Query */
 
@@ -115,6 +118,9 @@
 	.case_results_grid {
 		margin: 75px 0 0;
 	}
+	
+	
+	
 	
 	
 } /* Media Query */

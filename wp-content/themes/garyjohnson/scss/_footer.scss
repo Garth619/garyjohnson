@@ -435,6 +435,17 @@ a.locations_button {
 
 
 
+@media screen and (max-width: 1066px) {
+	
+	
+	.footer_form_wrapper {
+		
+	}
+	
+	
+	
+} /* Media Query */
+
 
 
 @media screen and (max-width: 767px) {
@@ -451,6 +462,11 @@ a.locations_button {
 				line-height: 58px;
 				&:after {
 					height:2px;
+				}
+				&:nth-of-type(2) {
+					&:after {
+						margin-top: -6px;
+					}
 				}
 			}
 		}
@@ -518,7 +534,7 @@ a.locations_button {
 
 	
 		.copyright {
-    	padding: 33px 15px 40px;
+    	padding: 33px 10px 40px;
 		}
 	
 	

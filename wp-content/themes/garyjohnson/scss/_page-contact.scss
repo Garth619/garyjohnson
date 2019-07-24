@@ -104,6 +104,7 @@ body.page-template-template-contact {
 		order:2;
 		max-width:900px;
 		margin:150px auto 0;
+		flex-basis:100%;
 	}
 	
 	.contact_right {
@@ -111,6 +112,7 @@ body.page-template-template-contact {
 		padding-left:0;
 		margin:0 auto;
 		max-width: 670px;
+		flex-basis:100%;
 		.contact_location_wrapper {
 			.location_col {
 				flex-basis: 270px;
@@ -172,7 +174,7 @@ body.page-template-template-contact {
 	
 	
 	.contact_page_wrapper {
-		margin: 70px auto 0;
+		margin: 55px auto 0;
 	}
 	
 	

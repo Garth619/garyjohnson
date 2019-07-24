@@ -226,7 +226,7 @@ jQuery(document).ready(function($){
 		
 		createWaypoint('header_trigger', '.header_right', 'fixed', -107, null, true);
     
-    createWaypoint('nav_trigger', '.tablet_nav', 'fixed', -107, null, true);
+    createWaypoint('header_trigger', '.tablet_nav', 'fixed', -107, null, true);
     
     createWaypoint('section_two', '#section_two', 'visible', 500, null, true);
     
@@ -461,7 +461,7 @@ jQuery(document).ready(function($){
 
 
 
-$('.sec_one_video_wrapper').slick({
+$('.sec_one_wistia_wrapper').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -470,7 +470,7 @@ $('.sec_one_video_wrapper').slick({
 	dots:true,
 	responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: "unslick"
      },
    
@@ -487,7 +487,7 @@ $('.sec_one_video_wrapper').slick({
 	dots:true,
 	responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
       slidesToShow: 2,
       slidesToScroll: 2,

@@ -247,6 +247,7 @@ a.internal_consultation_button {
 			strong {
 				padding-bottom:6px;
 				border-bottom:5px solid $orange;
+				@include montserratbold;
 			}
 		}
 		.blockquote_name {

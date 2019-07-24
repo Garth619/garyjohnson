@@ -118,6 +118,7 @@ span.sec_three_description {
 		strong {
 			position: relative;
 			display: inline-block;
+			@include montserratbold;
 			&:after {
 				content:"";
 				display: block;
