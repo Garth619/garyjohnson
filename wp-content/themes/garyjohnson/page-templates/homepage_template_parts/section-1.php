@@ -5,14 +5,20 @@
 		<div class="sec_one_left_content">
 			
 			<div class="sec_one_header">
-			
-				<span>We go the</span>
-				<span>extra mile for</span>
-				<span>our clients</span>
+				
+				<?php if(get_field('section_one_header')): ?>
+				 
+					<?php while(has_sub_field('section_one_header')): ?>
+				 
+						<span><?php the_sub_field( 'line_break' ); ?></span>
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 			
 			</div><!-- sec_one_header -->
 			
-			<a class="consultation_button" href="#consultation">Click for your free consultation</a><!-- consultation_button -->
+			<a class="consultation_button" href="#consultation"><?php the_field( 'section_one_click_verbiage'); ?></a><!-- consultation_button -->
 			
 		</div><!-- sec_one_left_content -->
 		
@@ -41,7 +47,9 @@
 					
 					<div class="sec_one_video_img">
 						
-						<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/header_video_img_01.jpg"/><!-- video_thumb -->
+						<?php $section_one_video_one_image = get_field( 'section_one_video_one_image' ); ?>
+				
+						<img class="video_thumb" src="<?php echo $section_one_video_one_image['url']; ?>" alt="<?php echo $section_one_video_one_image['alt']; ?>" />
 						
 						<div class="sec_one_video_overlay">
 							
