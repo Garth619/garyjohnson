@@ -12,7 +12,7 @@
 	flex-basis:44%;
 }
 
-.single_testl {
+.single_test {
 	padding-bottom:153px;
 	&:before {
 		content:"";
@@ -40,3 +40,98 @@
 		}
 	}
 }
+
+.testi_col {
+	.single_test {
+			&:last-of-type {
+				padding-bottom:20;
+			}
+		}
+	}
+	
+	
+	@media screen and (max-width: 1200px) {
+		
+		
+		.testimonial_wrapper {
+			display: block;
+		}
+		
+		
+		.testi_col {
+			&:last-of-type {
+				.single_test {
+					&:last-of-type {
+						padding-bottom:0;
+					}
+				}
+			}
+			.single_test {
+				&:last-of-type {
+					padding-bottom:90px;
+				}
+			}
+		}
+
+		.single_test {
+			padding-bottom: 90px;
+		}
+		
+    
+		
+		
+	} /* Media Query */
+	
+	
+	
+	@media screen and (max-width: 1066px) {
+		
+		
+		.testimonial_wrapper {
+			margin-top:90px;
+		}
+		
+		
+	} /* Media Query */
+	
+	
+	@media screen and (max-width: 767px) {
+		
+		
+		.testimonial_wrapper {
+			margin-top:55px;
+		}
+		
+		.single_test {
+			.single_test_content {
+				p {
+					font-size: 25px;
+					line-height: 40px;
+				}
+			}
+		}
+		
+		.single_test {
+    	padding-bottom: 54px;
+		}
+		
+		
+		.testi_col {
+			&:last-of-type {
+				.single_test {
+					&:last-of-type {
+						padding-bottom:10px;
+					}
+				}
+			}
+			.single_test {
+				&:last-of-type {
+					padding-bottom:54px;
+				}
+			}
+		}
+
+				    
+		
+		
+	} /* Media Query */

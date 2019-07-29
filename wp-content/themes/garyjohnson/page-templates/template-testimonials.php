@@ -15,7 +15,7 @@ get_header(); ?>
 		
 		<div class="testi_col">
 			
-			<div class="single_testl">
+			<div class="single_test">
 				
 				<div class="single_test_content">
 					
@@ -25,9 +25,9 @@ get_header(); ?>
 					
 				</div><!-- single_test_content -->
 				
-			</div><!-- single_testl -->
+			</div><!-- single_test -->
 			
-			<div class="single_testl">
+			<div class="single_test">
 				
 				<div class="single_test_content">
 					
@@ -39,9 +39,9 @@ get_header(); ?>
 					
 				</div><!-- single_test_content -->
 				
-			</div><!-- single_testl -->
+			</div><!-- single_test -->
 			
-			<div class="single_testl">
+			<div class="single_test">
 				
 				<div class="single_test_content">
 					
@@ -53,13 +53,13 @@ get_header(); ?>
 					
 				</div><!-- single_test_content -->
 				
-			</div><!-- single_testl -->
+			</div><!-- single_test -->
 			
 		</div><!-- testi_col -->
 		
 		<div class="testi_col">
 			
-			<div class="single_testl">
+			<div class="single_test">
 				
 				<div class="single_test_content">
 					
@@ -71,9 +71,9 @@ get_header(); ?>
 					
 				</div><!-- single_test_content -->
 				
-			</div><!-- single_testl -->
+			</div><!-- single_test -->
 			
-			<div class="single_testl">
+			<div class="single_test">
 				
 				<div class="single_test_content">
 					
@@ -85,9 +85,9 @@ get_header(); ?>
 					
 				</div><!-- single_test_content -->
 				
-			</div><!-- single_testl -->
+			</div><!-- single_test -->
 			
-			<div class="single_testl">
+			<div class="single_test">
 				
 				<div class="single_test_content">
 					
@@ -99,7 +99,7 @@ get_header(); ?>
 					
 				</div><!-- single_test_content -->
 				
-			</div><!-- single_testl -->
+			</div><!-- single_test -->
 			
 		</div><!-- testi_col -->
 		
