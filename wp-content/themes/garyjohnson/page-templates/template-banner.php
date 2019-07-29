@@ -46,6 +46,18 @@
 		
 	</div><!-- banner_content -->
 	
-	<img class="banner_image" src="<?php bloginfo('template_directory');?>/images/intl_header_img.jpg"/>
+	<?php $default_banner = get_field( 'default_banner','option'); ?>
+	
+	<?php $custom_banner = get_field( 'practice_area_banner'); ?>
+	
+	<?php if ( $custom_banner ) : ?>
+	
+		<img class="banner_image" src="<?php echo $custom_banner['url']; ?>" alt="<?php echo $custom_banner['alt']; ?>" />
+		
+		<?php else: ?>
+		
+		<img class="banner_image" src="<?php echo $default_banner['url']; ?>" alt="<?php echo $default_banner['alt']; ?>" />
+	
+	<?php endif; ?>
 	
 </div><!-- internal_banner -->

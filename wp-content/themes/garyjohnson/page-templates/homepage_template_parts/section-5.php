@@ -2,23 +2,21 @@
 	
 	<div class="sec_five_inner">
 		
-		<h2 class="sec_five_inner_header">lorem ipsum dol sit amet con sec</h2><!-- sec_five_inner -->
+		<h2 class="sec_five_inner_header"><?php the_field( 'section_five_header_gj' ); ?></h2><!-- sec_five_inner -->
 		
 		<div id="sec_five_trigger" class="sec_five_container">
 			
 			<div class="sec_five_image">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/content02_img.jpg"/>
-				
+				<?php $section_five_image = get_field( 'section_five_image' ); ?>
+
+				<img src="<?php echo $section_five_image['url']; ?>" alt="<?php echo $section_five_image['alt']; ?>" />
+
 			</div><!-- sec_five_image -->
 			
 			<div class="sec_five_content content">
 				
-				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a volutpat enim. Aenean sagittis rhoncus felis, pulvinar vulputate nunc dapibusa.</h2>
-				
-				<p>Duis ligula velit, cursus vitae varius quis, rutrum eget nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam accumsan convallis lorem in rhoncus. Praesent at vulputate lorem. Morbi et elementum velit. Aenean porttitor euismod est, ut sollicitudin enim. Duis pharetra velit vitae odio volutpat pellentesque. Donec faucibus porta varius. Nunc sit amet laoreet velit. Nam urna dui, ornare ut venenatis vulputate, pellentesque aliquam nibh. Sed et ligula at nibh interdum sodales. Maecenas porttitor consectetur justo, vitae aliquet turpis vestibulum eget.</p>
-
-				<p>Duis ligula velit, cursus vitae varius quis, rutrum eget nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam accumsan convallis lorem in rhoncus. Praesent at vulputate lorem. Morbi et elementum velit. Aenean porttitor euismod est, ut sollicitudin enim. Duis pharetra velit vitae odio volutpat pellentesque. Donec faucibus porta varius. Nunc sit amet laoreet velit. Nam urna dui</p>
+				<?php the_field( 'section_five_content_gj' ); ?>
 				
 			</div><!-- sec_five_content -->
 			
