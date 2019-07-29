@@ -220,7 +220,7 @@
 	
 	
 	.single_att {
-	  height: 620px;
+	  height: 590px;
 	}
 	
 	
@@ -243,14 +243,33 @@
 	
 	
 	.meet_team_wrapper {
-		display: block;
-		max-width: 470px;
+		//display: block;
+		max-width: 100%;
+		justify-content: space-between;
 		margin: 95px auto 0;
 	}
 	
 	.single_att {
-		height:auto;
+		flex-basis: 48%;
 		margin: 0 0px 45px;
+		height: 555px;
+		a {
+			span.single_att_name {
+				font-size: 30px;
+			}
+			.single_att_img {
+				height:419px;
+				position: relative;
+				img {
+					position: absolute;
+					top:0;
+					left:0;
+					width:100%;
+					height:100%;
+					object-fit:cover;
+				}
+			}
+		}
 	}
 	
 	
@@ -263,13 +282,29 @@
 	
 	.meet_team_wrapper {
 		margin-top:55px;
+		display: block;
+		max-width: 440px;
 	}
 	
 	
 	.single_att {
+		height:auto;
 		&:last-of-type {
 			margin-bottom:0;
 		}
+		a {
+			.single_att_img {
+				height:auto;
+				img {
+					position: relative;
+				}
+			}
+		}
 	}
+	
+	
+	
+	
+	
 	
 } /* Media Query */

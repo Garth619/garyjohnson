@@ -228,13 +228,13 @@ jQuery(document).ready(function($){
     
     createWaypoint('header_trigger', '.tablet_nav', 'fixed', -107, null, true);
     
-    createWaypoint('section_two', '#section_two', 'visible', 500, null, true);
+    createWaypoint('section_two', '#section_two', 'visible', 600, null, true);
     
-		createWaypoint('sec_three_trigger', '#sec_three_trigger', 'visible', 600, null, true);
+		createWaypoint('sec_three_trigger', '#sec_three_trigger', 'visible', 800, null, true);
 
 		createWaypoint('sec_three_bottom_trigger', '#sec_three_bottom_trigger', 'visible', 500, null, true);
 		
-		createWaypoint('section_four', '#section_four', 'visible', 300, null, true);
+		createWaypoint('section_four', '#section_four', 'visible', 500, null, true);
 		
 		createWaypoint('sec_five_trigger', '#sec_five_trigger', 'visible', 800, null, true);
 		
@@ -242,13 +242,13 @@ jQuery(document).ready(function($){
 		
 		// about page
 		
-		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 500, null, true);
+		createWaypoint('about_bottom_trigger', '#about_bottom_trigger', 'visible', 800, null, true);
 		
-		createWaypoint('about_awards_trigger', '#about_awards_trigger', 'visible', 700, null, true);
+		createWaypoint('about_awards_trigger', '#about_awards_trigger', 'visible', 800, null, true);
 		
 		createWaypoint('att_awards_trigger', '#att_awards_trigger', 'visible', 700, null, true);
 		
-		createWaypoint('blockquote_trigger', '#blockquote_trigger', 'visible', 500, null, false);
+		createWaypoint('blockquote_trigger', '#blockquote_trigger', 'visible', 600, null, false);
 		
 		
 		
@@ -494,8 +494,6 @@ $('.sec_one_right.mobile .sec_one_wistia_wrapper').slick({
  });
  
  
-
-
 
 $('.sec_four_slider').slick({
   infinite: true,

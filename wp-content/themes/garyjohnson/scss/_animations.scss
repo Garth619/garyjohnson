@@ -621,8 +621,8 @@ body.ready {
 						transition: stroke-dashoffset 3200ms linear;
 					}
 					line {
-						stroke-dasharray: 100;
-						stroke-dashoffset: 100;
+						stroke-dasharray: 200;
+						stroke-dashoffset: 200;
 						transition: stroke-dashoffset 3000ms linear;
 					}
 					circle {
@@ -656,7 +656,7 @@ body.ready {
 				.sec_four_svg {
 					svg {
 						transform: translateY(0px);
-						path, line, rect, polyline {
+						path, circle, line, rect, polyline {
 							stroke-dashoffset: 0;
 						}
 					}

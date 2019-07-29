@@ -10,7 +10,7 @@
 			 
 					<div class="sec_four_slide">
 			
-						<div class="sec_four_reg one">
+						<div class="sec_four_reg <?php the_sub_field( 'class' ); ?>">
 				
 							<div class="sec_four_reg_inner">
 					
