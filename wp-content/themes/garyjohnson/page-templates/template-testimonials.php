@@ -15,91 +15,49 @@ get_header(); ?>
 		
 		<div class="testi_col">
 			
-			<div class="single_test">
+			<?php if(get_field('testimonials_column_one_gj')): ?>
+			 
+				<?php while(has_sub_field('testimonials_column_one_gj')): ?>
+			 
+					<div class="single_test">
 				
-				<div class="single_test_content">
+						<div class="single_test_content">
 					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
+							<?php the_sub_field( 'single_testimonial_content_gj' ); ?>
 					
-					<span class="testi_name">Cassie Edmiston</span><!-- testi_name -->
+							<span class="testi_name"><?php the_sub_field( 'single_testimonial_name_gj' ); ?></span><!-- testi_name -->
 					
-				</div><!-- single_test_content -->
+						</div><!-- single_test_content -->
 				
-			</div><!-- single_test -->
-			
-			<div class="single_test">
-				
-				<div class="single_test_content">
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<span class="testi_name">Cassie Edmiston</span><!-- testi_name -->
-					
-				</div><!-- single_test_content -->
-				
-			</div><!-- single_test -->
-			
-			<div class="single_test">
-				
-				<div class="single_test_content">
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<span class="testi_name">Cassie Edmiston</span><!-- testi_name -->
-					
-				</div><!-- single_test_content -->
-				
-			</div><!-- single_test -->
+					</div><!-- single_test -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
 		</div><!-- testi_col -->
 		
 		<div class="testi_col">
 			
-			<div class="single_test">
+			<?php if(get_field('testimonials_column_two_gj')): ?>
+			 
+				<?php while(has_sub_field('testimonials_column_two_gj')): ?>
+			 
+					<div class="single_test">
 				
-				<div class="single_test_content">
+						<div class="single_test_content">
 					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
+							<?php the_sub_field( 'single_testimonial_content_gj' ); ?>
 					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
+							<span class="testi_name"><?php the_sub_field( 'single_testimonial_name_gj' ); ?></span><!-- testi_name -->
 					
-					<span class="testi_name">Cassie Edmiston</span><!-- testi_name -->
-					
-				</div><!-- single_test_content -->
+						</div><!-- single_test_content -->
 				
-			</div><!-- single_test -->
-			
-			<div class="single_test">
-				
-				<div class="single_test_content">
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<span class="testi_name">Cassie Edmiston</span><!-- testi_name -->
-					
-				</div><!-- single_test_content -->
-				
-			</div><!-- single_test -->
-			
-			<div class="single_test">
-				
-				<div class="single_test_content">
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<p>“This has been my second time working with a lawyer firm and let me tell you they were the best!! I was very well taken care of. My case was handled with such grace. I highly recommend them. They were friendly with all my worries.”</p>
-					
-					<span class="testi_name">Cassie Edmiston</span><!-- testi_name -->
-					
-				</div><!-- single_test_content -->
-				
-			</div><!-- single_test -->
+					</div><!-- single_test -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
 		</div><!-- testi_col -->
 		
