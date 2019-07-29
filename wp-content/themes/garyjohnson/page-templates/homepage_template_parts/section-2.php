@@ -4,61 +4,27 @@
 		
 		<div class="sec_two_slider">
 			
-			<div class="sec_two_single_slide one">
+			<?php if(get_field('section_two_slider')): ?>
+			 
+				<?php while(has_sub_field('section_two_slider')): ?>
+			 
+					<div class="sec_two_single_slide <?php the_sub_field( 'class' ); ?>">
 				
-				<div class="sec_two_inner_slide">
+						<div class="sec_two_inner_slide">
 					
-					<span class="slide_number">01</span><!-- slide_number -->
+							<span class="slide_number"><?php the_sub_field( 'number' ); ?></span><!-- slide_number -->
 					
-					<span class="sec_two_slide_title">Proven Results</span><!-- sec_two_slide_title -->
+							<span class="sec_two_slide_title"><?php the_sub_field( 'title' ); ?></span><!-- sec_two_slide_title -->
 					
-					<span class="sec_two_slide_description">Largest personal injury verdict in Kentucky</span><!-- sec_two_slide_description -->
+							<span class="sec_two_slide_description"><?php the_sub_field( 'description' ); ?></span><!-- sec_two_slide_description -->
 					
-				</div><!-- sec_two_inner_slide -->
+					</div><!-- sec_two_inner_slide -->
 				
-			</div><!-- sec_two_single_slide -->
-			
-			<div class="sec_two_single_slide two">
-				
-				<div class="sec_two_inner_slide">
-					
-					<span class="slide_number">02</span><!-- slide_number -->
-					
-					<span class="sec_two_slide_title">We Win For You</span><!-- sec_two_slide_title -->
-					
-					<span class="sec_two_slide_description">Over $300 million in clients settlements</span><!-- sec_two_slide_description -->
-					
-				</div><!-- sec_two_inner_slide -->
-				
-			</div><!-- sec_two_single_slide -->
-			
-			<div class="sec_two_single_slide three">
-				
-				<div class="sec_two_inner_slide">
-					
-					<span class="slide_number">03</span><!-- slide_number -->
-					
-					<span class="sec_two_slide_title">Experienced</span><!-- sec_two_slide_title -->
-					
-					<span class="sec_two_slide_description">Trademarked litigation strategy called Judo Law</span><!-- sec_two_slide_description -->
-					
-				</div><!-- sec_two_inner_slide -->
-				
-			</div><!-- sec_two_single_slide -->
-			
-			<div class="sec_two_single_slide four">
-				
-				<div class="sec_two_inner_slide">
-					
-					<span class="slide_number">04</span><!-- slide_number -->
-					
-					<span class="sec_two_slide_title">Trustworthy</span><!-- sec_two_slide_title -->
-					
-					<span class="sec_two_slide_description">Many connections in the community</span><!-- sec_two_slide_description -->
-					
-				</div><!-- sec_two_inner_slide -->
-				
-			</div><!-- sec_two_single_slide -->
+				</div><!-- sec_two_single_slide -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
 		</div><!-- sec_two_slider -->
 		
