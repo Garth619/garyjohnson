@@ -31,12 +31,12 @@
 	flex-direction: column;
 	justify-content: center;
 	.banner_title {
-		color:#fff;
-		font-size: 59px;
-		line-height: 81px;
-		@include montserratbold;
 		.banner_header {
 			display: inline-block;
+			color:#fff;
+			font-size: 59px;
+			line-height: 81px;
+			@include montserratbold;
 			&:after {
 				content:"";
 				display: block;

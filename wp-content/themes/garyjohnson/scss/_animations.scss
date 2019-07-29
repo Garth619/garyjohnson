@@ -1416,7 +1416,7 @@ body.ready {
 	
 	
 	.content {
-		h1 {
+		h1.pa_header, h2.pa_header {
 			&:after {
 				transform: scale(0,1);
 				transform-origin: top left;
@@ -1427,7 +1427,7 @@ body.ready {
 	
 	body.ready {
 		.content {
-			h1 {
+			h1.pa_header, h2.pa_header {
 				&:after {
 					transform:scale(1,1);
 					transition-delay: 1000ms;

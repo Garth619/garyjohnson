@@ -55,9 +55,11 @@ h1,h2,h3,h4 {
 	font-size: 18px;
 	line-height: 34px;
 	@include sourcesanssemibold;
-	h1 {
+	h1.pa_header, h2.pa_header {
 		font-size: 60px;
 		line-height: 71px;
+		color:$blue;
+		padding:0;
 		@include montserratblack;
 		&:after {
 			content:"";
@@ -146,7 +148,7 @@ h1,h2,h3,h4 {
 	
 	
 	.content {
-		h1 {
+		h1.pa_header, h2.pa_header {
 			font-size: 44px;
     	line-height: 53px;
 			&:after {
@@ -177,7 +179,7 @@ img.aligncenter {
 }
 	
 .content {
-	h1 {
+	h1.pa_header, h2.pa_header {
 		font-size: 37px;
     line-height: 46px;
 	}
