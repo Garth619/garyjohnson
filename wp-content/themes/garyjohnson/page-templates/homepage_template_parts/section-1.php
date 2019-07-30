@@ -38,6 +38,8 @@
 	
 	<div class="sec_one_right desktop">
 		
+		<?php // having issues with slick slider dirsupting my desktop animations with the "mobileFirst" setting so there are two "sec_one_right" sections, one for desktop one for mobile ?>
+		
 		<div class="sec_one_wistia_wrapper">
 			
 			<div class="sec_one_single_vid">
@@ -84,7 +86,10 @@
 
 						<div class="sec_one_video_overlay">
 							
-							<img class="judo_play" src="<?php bloginfo('template_directory');?>/images/header_icon-01.svg"/>
+							
+							<?php $section_one_video_two_judo_law_logo = get_field( 'section_one_video_two_judo_law_logo' ); ?>
+
+							<img class="judo_play" src="<?php echo $section_one_video_two_judo_law_logo['url']; ?>" alt="<?php echo $section_one_video_two_judo_law_logo['alt']; ?>" />
 							
 						</div><!-- sec_one_video_overlay -->
 						

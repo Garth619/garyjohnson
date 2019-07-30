@@ -269,6 +269,10 @@ jQuery(document).ready(function($){
 	     	  
 	     	  $('nav').addClass('desktop');
 	     	  
+	     	  // top nav arrow wrapper
+	     	  
+	     	  $('nav ul.menu > li.menu-item-has-children > a').append("<div class='menu_arrow'></div>");
+	     	  
 	     	  // megamenu bg
 	     	  
 	     	  $('header').after("<div class='mega_menu_bg'></div>");
@@ -339,13 +343,7 @@ jQuery(document).ready(function($){
 							$('.mega_menu_bg').removeClass('show');
 					
 					});
-					
-/*
-					$('').on('mouseover', function(e) {
-					  
-					
-					});
-*/
+
 					
 	     
 	     }

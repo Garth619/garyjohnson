@@ -37,10 +37,10 @@ body.page-template-template-contact {
 		justify-content: space-between;
 		//margin-bottom: 60px;
 		.location_col {
-			flex-basis: 50%;
+			flex-basis: 45%;
 			margin-bottom:125px;
 			&:nth-of-type(2), &:nth-of-type(4) {
-				padding-left:11%;
+				//padding-left:11%;
 			}
 			&:nth-last-of-type(-n + 2) {
 				margin-bottom:0;
@@ -57,7 +57,7 @@ body.page-template-template-contact {
 	.contact_location_wrapper {
 		.location_col {
 			&:nth-of-type(2), &:nth-of-type(4) {
-				padding-left:5%;
+				//padding-left:5%;
 			}
 		}
 	}
