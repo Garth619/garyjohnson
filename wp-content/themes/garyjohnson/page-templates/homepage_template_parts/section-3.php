@@ -20,7 +20,7 @@
 					
 					<?php $section_three_image = get_field( 'section_three_image' ); ?>
 
-					<img src="<?php echo $section_three_image['url']; ?>" alt="<?php echo $section_three_image['alt']; ?>" />
+					<img data-src="<?php echo $section_three_image['url']; ?>" alt="<?php echo $section_three_image['alt']; ?>" />
 				
 					<a class="meet_attorneys_button" href="<?php the_field( 'meet_the_attorneys_page_link' ); ?>">Meet the Attorneys</a><!-- meet_attorneys_button -->
 				
@@ -34,7 +34,7 @@
 			
 			<div class="sec_three_blockquote">
 				
-				<div class="sec_three_blockquote_inner" style="background:url(<?php bloginfo('template_directory');?>/images/light-grey-terrazzo.png) top left repeat">
+				<div class="sec_three_blockquote_inner" data-src="<?php bloginfo('template_directory');?>/images/light-grey-terrazzo.png">
 					
 					<div class="sec_three_blockquote_content">
 						

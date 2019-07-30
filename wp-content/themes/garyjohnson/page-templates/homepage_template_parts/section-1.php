@@ -25,11 +25,13 @@
 		<div class="sec_one_left_img">
 		
 			<picture>
+			
+				<source type="image/webp" srcset="<?php bloginfo('template_directory');?>/images/hero.webp" >
 					
 				<img src="<?php bloginfo('template_directory');?>/images/header_img_desk.jpg"/>
 		
 			</picture>
-		
+					
 		</div><!-- sec_one_left_img -->
 		
 		
@@ -50,8 +52,16 @@
 					<div class="sec_one_video_img">
 						
 						<?php $section_one_video_one_image = get_field( 'section_one_video_one_image' ); ?>
+						
+						<?php $section_one_video_one_image_webp = get_field( 'section_one_video_one_image_webp' ); ?>
+						
+						<picture>
+							
+							<source type="image/webp" srcset="<?php echo $section_one_video_one_image_webp['url']; ?>" >
 				
-						<img class="video_thumb" src="<?php echo $section_one_video_one_image['url']; ?>" alt="<?php echo $section_one_video_one_image['alt']; ?>" />
+							<img class="video_thumb" src="<?php echo $section_one_video_one_image['url']; ?>" alt="<?php echo $section_one_video_one_image['alt']; ?>" />
+						
+						</picture>
 						
 						<div class="sec_one_video_overlay">
 							
@@ -82,7 +92,15 @@
 						
 						<?php $section_one_video_two_image = get_field( 'section_one_video_two_image' ); ?>
 						
-						<img class="video_thumb" src="<?php echo $section_one_video_two_image['url']; ?>" alt="<?php echo $section_one_video_two_image['alt']; ?>" />
+						<?php $section_one_video_two_image_webp = get_field( 'section_one_video_two_image_webp' ); ?>
+						
+						<picture>
+						
+							<source type="image/webp" srcset="<?php echo $section_one_video_two_image_webp['url']; ?>" >
+						
+							<img class="video_thumb" src="<?php echo $section_one_video_two_image['url']; ?>" alt="<?php echo $section_one_video_two_image['alt']; ?>" />
+						
+						</picture>
 
 						<div class="sec_one_video_overlay">
 							
@@ -124,8 +142,16 @@
 					<div class="sec_one_video_img">
 						
 						<?php $section_one_video_one_image = get_field( 'section_one_video_one_image' ); ?>
+						
+						<?php $section_one_video_one_image_webp = get_field( 'section_one_video_one_image_webp' ); ?>
+						
+						<picture>
+							
+							<source type="image/webp" srcset="<?php echo $section_one_video_one_image_webp['url']; ?>" >
 				
-						<img class="video_thumb" src="<?php echo $section_one_video_one_image['url']; ?>" alt="<?php echo $section_one_video_one_image['alt']; ?>" />
+							<img class="video_thumb" src="<?php echo $section_one_video_one_image['url']; ?>" alt="<?php echo $section_one_video_one_image['alt']; ?>" />
+						
+						</picture>
 						
 						<div class="sec_one_video_overlay">
 							
@@ -156,11 +182,21 @@
 						
 						<?php $section_one_video_two_image = get_field( 'section_one_video_two_image' ); ?>
 						
-						<img class="video_thumb" src="<?php echo $section_one_video_two_image['url']; ?>" alt="<?php echo $section_one_video_two_image['alt']; ?>" />
+						<?php $section_one_video_two_image_webp = get_field( 'section_one_video_two_image_webp' ); ?>
+						
+						<picture>
+						
+							<source type="image/webp" srcset="<?php echo $section_one_video_two_image_webp['url']; ?>" >
+						
+							<img class="video_thumb" src="<?php echo $section_one_video_two_image['url']; ?>" alt="<?php echo $section_one_video_two_image['alt']; ?>" />
+						
+						</picture>
 
 						<div class="sec_one_video_overlay">
 							
-							<img class="judo_play" src="<?php bloginfo('template_directory');?>/images/header_icon-01.svg"/>
+							<?php $section_one_video_two_judo_law_logo = get_field( 'section_one_video_two_judo_law_logo' ); ?>
+
+							<img class="judo_play" src="<?php echo $section_one_video_two_judo_law_logo['url']; ?>" alt="<?php echo $section_one_video_two_judo_law_logo['alt']; ?>" />
 							
 						</div><!-- sec_one_video_overlay -->
 						

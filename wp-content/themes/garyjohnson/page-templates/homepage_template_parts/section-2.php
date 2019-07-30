@@ -1,4 +1,4 @@
-<section id="section_two" style="background:url(<?php bloginfo('template_directory');?>/images/light-grey-terrazzo.png) top left repeat">
+<section id="section_two" data-src="<?php bloginfo('template_directory');?>/images/light-grey-terrazzo.png">
 	
 	<div class="sec_two_inner">
 		

@@ -37,6 +37,7 @@ $themePath: '/wp-content/themes/garyjohnson/';
         url(#{$themePath}fonts/NotoSerif.woff) format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @mixin notoserifreg {

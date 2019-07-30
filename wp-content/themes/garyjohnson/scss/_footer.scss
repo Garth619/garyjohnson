@@ -111,23 +111,26 @@ footer {
 		}
 	}
 	.gform_footer {
-		
+		background: $gold;
+		width:254px;
+		margin:23px auto 0;
+		padding:23px 0;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			background: $orange;
+		}
 	}
 	input[type="submit"] {
 		border:none;
-		background: $gold;
+		background: transparent;
+		width:100%;
 		cursor: pointer;
 		color:#fff;
 		text-transform: uppercase;
 		font-size: 20px;
 		letter-spacing: 0.2em;
-		padding:23px 75px;
-		margin-top:23px;
-		transition: all 200ms ease-in-out;
 		@include montserratblack;
-		&:hover {
-			background: $orange;
-		}
+		
 	}
 	.gfield_description, .validation_message {
 		color:$gold;
@@ -325,8 +328,11 @@ a.locations_button {
 		flex-basis:auto;
 		flex-grow:1;
 		padding-left: 5%;
+		.gform_footer {
+			margin: 14px auto 0;
+		}
 		input[type="submit"] {
-			margin-top: 15px;
+			//margin-top: 15px;
 		}
 	}
 	
@@ -487,11 +493,16 @@ a.locations_button {
 				}
 			}
 		}
-		input[type="submit"] {
-			margin-top: 33px;
+		.gform_footer {
+			margin-top: 49px;
 			width:100vw;
 			margin-left: -35px;
-			padding: 25px 75px;
+			padding: 26px 75px;
+		}
+		input[type="submit"] {
+			
+			
+			
 		}
 	}
 	

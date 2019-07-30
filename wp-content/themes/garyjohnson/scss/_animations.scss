@@ -903,6 +903,47 @@ body.ready {
 	}
 	
 	
+	
+	
+	
+	
+	
+	
+	.footer_form {
+		.gform_footer {
+			position: relative;
+			background: transparent;
+			z-index: 1;
+			overflow: hidden;
+			&:before, &:after {
+				content:"";
+				display: block;
+				width:100%;
+				height:100%;
+				position: absolute;
+				top:0;
+				left:0;
+			}
+			&:before {
+				background:$orange;
+				z-index:-2;
+			}
+			&:after {
+				background:$gold;
+				z-index:-1;
+				transform: translateX(-100%);
+				transition: transform 675ms cubic-bezier(.17,.66,.34,.98);
+			}
+			&:hover {
+				background: transparent;
+				&:after {
+					transform: translateX(0%);
+				}
+			}
+		}
+	}
+	
+	
 	// about our firm
 	
 	
